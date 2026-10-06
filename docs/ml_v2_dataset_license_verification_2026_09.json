@@ -1,0 +1,299 @@
+{
+  "verification_date": "2026-09-19",
+  "purpose": "Commercial training eligibility verification for AgriMind AI V2, performed against the datasets flagged 'B / needs verification' in the V2 research report, plus the Five Crop Diseases Dataset already used for V1 evaluation.",
+  "methodology_note": "Every license claim below was checked this session via direct web_fetch/web_search against the dataset's own page (Kaggle JSON-LD metadata, Mendeley JSON-LD metadata, Zenodo record, or the CDLA/Roboflow license text) or, where the direct page could not be retrieved, against citing academic papers that explicitly quote the license. No dataset was downloaded. Every conclusion is tagged CONFIRMED, INFERRED, or UNRESOLVED in verification_notes.",
+  "datasets": [
+    {
+      "name": "Potato Disease Leaf Dataset (PLD)",
+      "authoritative_source": "https://www.kaggle.com/datasets/rizwan123456789/potato-disease-leaf-datasetpld",
+      "mirror_source": null,
+      "dataset_version": "v1 (identifier 1562973)",
+      "license": "Database: Open Database (ODC-ODbL 1.0), Contents: Database Contents License (ODC-DbCL 1.0)",
+      "license_source": "Kaggle dataset page JSON-LD metadata, retrieved via web_search snippet of the page itself, 2026-09-19",
+      "original_creator_source": "Rizwan Saeed; 4,062 images collected from Central Punjab, Pakistan, described in an associated multi-level YOLOv5 + CNN paper",
+      "commercial_use_explicitly_permitted": "yes, in general -- ODbL/DbCL are not non-commercial licenses",
+      "commercial_ml_training_permitted": "uncertain -- see verification_notes",
+      "derivative_works_models_permitted": "uncertain -- ODbL distinguishes 'Derivative Databases' (copyleft, must stay under ODbL) from 'Produced Works' (outputs of using the database, which ODbL's own text treats more permissively, typically only requiring attribution) -- whether a trained ML model counts as a Produced Work has not been independently verified against the exact ODbL 1.0 legal text this session",
+      "attribution_required": "yes",
+      "share_alike_required": "yes, for the database/contents themselves if redistributed; unclear whether this extends to a trained model (see above)",
+      "non_commercial_restriction": "no",
+      "no_derivatives_restriction": "no",
+      "redistribution_requirement": "yes, under the same ODbL/DbCL terms, for the database and its contents specifically",
+      "provenance_concerns": "Field-collected, real Pakistani farm imagery -- valuable for closing V1's lab-to-field gap. License family (ODbL/DbCL) is uncommon among the datasets reviewed and is data/database-oriented rather than an image-copyright license, so its application to ML model training is genuinely less settled than a standard CC license.",
+      "is_aggregation": false,
+      "upstream_license_variation_risk": "low -- single original collection, not a compilation",
+      "classification": "B",
+      "obligations": [
+        "Attribution to the original creator if the dataset (or a derivative database) is redistributed",
+        "Any redistributed derivative database/contents must remain under ODbL/DbCL"
+      ],
+      "risks": [
+        "Legal effect of ODbL/DbCL on a trained model (as opposed to redistributing the raw data) is not clearly established from the license text alone and was not independently resolved this session"
+      ],
+      "evidence": [
+        "https://www.kaggle.com/datasets/rizwan123456789/potato-disease-leaf-datasetpld (license field, JSON-LD)"
+      ],
+      "decision": "Do not treat as clear commercial-training-eligible without a specific legal read of ODbL/DbCL Produced-Works provisions as applied to ML models. Promising real-world data; verification-required, not blocked.",
+      "verification_notes": "CONFIRMED: the stated Kaggle license is 'Database: Open Database, Contents: Database Contents License'. INFERRED: this is the ODC-ODbL 1.0 + ODC-DbCL 1.0 combination Kaggle offers under that label. UNRESOLVED: how ODbL/DbCL's Produced-Works treatment applies specifically to a trained ML model has not been confirmed against primary legal text this session."
+    },
+    {
+      "name": "Five Crop Diseases Dataset",
+      "authoritative_source": "https://www.kaggle.com/datasets/shubham2703/five-crop-diseases-dataset",
+      "mirror_source": null,
+      "dataset_version": "as used for V1's 13,324-image evaluation",
+      "license": "CC BY-NC-SA 4.0",
+      "license_source": "Kaggle dataset page, retrieved via web_search snippet of the page itself, 2026-09-19 -- the page's own 'License' field explicitly reads 'CC BY-NC-SA 4.0'",
+      "original_creator_source": "Kaggle user shubham2703; explicitly a COMPILATION, not an original collection",
+      "commercial_use_explicitly_permitted": "no -- NC (NonCommercial) clause",
+      "commercial_ml_training_permitted": "no",
+      "derivative_works_models_permitted": "no, not for commercial purposes, under the stated NC term",
+      "attribution_required": "yes (BY)",
+      "share_alike_required": "yes (SA)",
+      "non_commercial_restriction": "yes -- explicit",
+      "no_derivatives_restriction": "no",
+      "redistribution_requirement": "yes, share-alike, for non-commercial redistribution",
+      "provenance_concerns": "CONFIRMED this is a compilation, not original data, per the dataset's own description text: Corn and Potato images are drawn from PlantVillage; Rice images are drawn from 'Dhan-Shomadhan: A Dataset of Rice Leaf Disease Classification for Bangladeshi Local Rice' (the compiler's own text notes 'This dataset has the license CC BY 4.0' for that specific sub-source); Wheat images are drawn from a 'Wheat Disease Detection' dataset on Kaggle (distinct from 'Wheat Disease Dataset - Small' verified elsewhere in this document); Sugarcane images (300 total: 100 Red Rot, 100 Healthy, 100 Bacterial Blight) are drawn from a 'Sugarcane Disease Dataset' on Kaggle. This directly explains the origin and exact image counts of V1's existing three generic Sugarcane classes. The compiler wrapped these mixed-license sub-sources in a single CC BY-NC-SA 4.0 umbrella license for the compilation as a whole -- notably, this appears to add a non-commercial restriction on top of at least the Rice sub-source, which the compiler's own text says originates under the more permissive CC BY 4.0. This is exactly the kind of aggregation-level license overriding source-level license that Task 4/5 warned about.",
+      "is_aggregation": true,
+      "upstream_license_variation_risk": "high -- confirmed at least 4 distinct upstream sources (PlantVillage, Dhan-Shomadhan, an unverified 'Wheat Disease Detection' Kaggle set, an unverified 'Sugarcane Disease Dataset' Kaggle set) with at least one (Dhan-Shomadhan) independently confirmed to carry a more permissive license (CC BY 4.0) than the compilation's own stated CC BY-NC-SA 4.0",
+      "classification": "D",
+      "obligations": [],
+      "risks": [
+        "Already used for V1 evaluation -- this is acceptable (evaluation is not redistribution or commercial training use), but this dataset, AS COMPILED, must not be used for V2 commercial training",
+        "The individual Rice sub-source (Dhan-Shomadhan) may independently be CC BY 4.0 and usable if sourced directly from its own original repository rather than through this NC-licensed compilation -- this was not independently re-verified this session and would need its own check before use"
+      ],
+      "evidence": [
+        "https://www.kaggle.com/datasets/shubham2703/five-crop-diseases-dataset (License field and 'About Dataset' provenance text, both directly quoted in the page's own content)"
+      ],
+      "decision": "Remains evaluation-only. Its stated license (CC BY-NC-SA 4.0) explicitly forbids commercial training use of the compilation as distributed. Do not change its status to training-eligible.",
+      "verification_notes": "CONFIRMED: stated license is CC BY-NC-SA 4.0, directly from the dataset's own Kaggle page. CONFIRMED: it is a compilation of at least 4 distinct upstream sources, per the page's own description. INFERRED, not independently re-confirmed this session: the exact license status of the 'Wheat Disease Detection' and 'Sugarcane Disease Dataset' Kaggle sub-sources it draws from."
+    },
+    {
+      "name": "Wheat Disease Dataset - Small (a.k.a. 'Wheat disease images (small dataset)')",
+      "authoritative_source": "https://zenodo.org/records/7573133 (DOI 10.5281/zenodo.7573133)",
+      "mirror_source": "https://www.kaggle.com/datasets/yasserhessein/wheat-disease-dataset-small",
+      "dataset_version": "v1, published 2023-01-26",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "license_source": "Zenodo record page itself, 'Rights' section, retrieved via direct web_fetch of https://zenodo.org/records/7573133, 2026-09-19",
+      "original_creator_source": "Long, Megan C.; Hartley, Matthew; Morris, Richard J.; Brown, James K. M. -- John Innes Centre (Crop Genetics / Computational & Systems Biology); underlies Long et al. 2023, Plant Pathology, DOI 10.1111/ppa.13684",
+      "commercial_use_explicitly_permitted": "yes",
+      "commercial_ml_training_permitted": "yes",
+      "derivative_works_models_permitted": "yes",
+      "attribution_required": "yes",
+      "share_alike_required": "no",
+      "non_commercial_restriction": "no",
+      "no_derivatives_restriction": "no",
+      "redistribution_requirement": "no beyond standard CC BY attribution",
+      "provenance_concerns": "The Kaggle mirror's own license tag ('Other (specified in description)') is ambiguous and should NOT be relied on alone -- the AUTHORITATIVE source is this Zenodo record, published directly by the original authors, with an explicit CC BY 4.0 license. Real field + glasshouse images from the UK, Ireland, Ethiopia, and Tanzania per the underlying paper. This 999-image set is stated to be a subset of a larger 19,172-image dataset available on request from the corresponding author (james.brown@jic.ac.uk) -- the larger set's license was not independently verified this session and should not be assumed identical without asking.",
+      "is_aggregation": false,
+      "upstream_license_variation_risk": "low for the 999-image Zenodo-hosted subset specifically",
+      "classification": "A",
+      "obligations": [
+        "Attribution to Long, Hartley, Morris, and Brown (John Innes Centre) per CC BY 4.0"
+      ],
+      "risks": [
+        "Only 999 of the full 19,172-image dataset are hosted at this confirmed-CC-BY-4.0 location; the larger set requires direct author contact and its license was not verified"
+      ],
+      "evidence": [
+        "https://zenodo.org/records/7573133 (Rights section: 'License: Creative Commons Attribution 4.0 International')"
+      ],
+      "decision": "Training-eligible for the 999-image Zenodo-hosted subset. Source from Zenodo directly, not the ambiguous Kaggle mirror. If the larger 19,172-image set is later obtained via direct author request, its license must be separately confirmed before use.",
+      "verification_notes": "CONFIRMED directly at the authoritative source (Zenodo), superseding the ambiguous Kaggle mirror tag."
+    },
+    {
+      "name": "WheatRust21",
+      "authoritative_source": "UNRESOLVED -- no public dataset repository located",
+      "mirror_source": null,
+      "dataset_version": "unknown",
+      "license": "UNRESOLVED",
+      "license_source": "N/A -- see verification_notes",
+      "original_creator_source": "Images collected at the Plant Pathology Division, ICAR-Indian Agricultural Research Institute, New Delhi, and its regional centre in Madhya Pradesh, over the 2019-2021 crop seasons, per the citing paper (ScienceDirect, DOI referenced in the paper 'Deep transfer learning model for disease identification in wheat crop')",
+      "commercial_use_explicitly_permitted": "uncertain",
+      "commercial_ml_training_permitted": "uncertain",
+      "derivative_works_models_permitted": "uncertain",
+      "attribution_required": "uncertain",
+      "share_alike_required": "uncertain",
+      "non_commercial_restriction": "uncertain",
+      "no_derivatives_restriction": "uncertain",
+      "redistribution_requirement": "uncertain",
+      "provenance_concerns": "The paper describing WheatRust21 (6,556 field-condition images of Stripe/Stem/Leaf rust and healthy wheat) does not appear, from this session's searches, to link to a public download repository (no Kaggle, Mendeley, Zenodo, or GitHub link surfaced). It may be available only on request from the original ICAR-IARI authors, similar to the Long et al. full dataset above.",
+      "is_aggregation": false,
+      "upstream_license_variation_risk": "unknown",
+      "classification": "C",
+      "obligations": [],
+      "risks": [
+        "Dataset may not be publicly obtainable at all, independent of licensing"
+      ],
+      "evidence": [
+        "https://www.sciencedirect.com/science/article/abs/pii/S1574954123000973 (describes the dataset and its collection, but no data-access link was found in the retrievable portion of the paper)"
+      ],
+      "decision": "Commercial training eligibility could not be established. No public repository was located this session, so licensing cannot even be assessed. Do not pursue without first locating an authoritative public release or contacting the original authors directly.",
+      "verification_notes": "UNRESOLVED. This is a genuine gap, not an inferred restriction -- the dataset's existence and description are confirmed, but its accessibility and license are not."
+    },
+    {
+      "name": "Wheat Plant Diseases (Kaggle)",
+      "authoritative_source": "https://www.kaggle.com/datasets/kushagra3204/wheat-plant-diseases",
+      "mirror_source": null,
+      "dataset_version": "not independently pinned this session",
+      "license": "CC0 (Public Domain Dedication)",
+      "license_source": "Quoted directly in a peer-reviewed article citing this dataset: 'Source: https://www.kaggle.com/datasets/kushagra3204/wheat-plant-diseases. License: CC0 (Public Domain Dedication).' (PMC article, ShuffleNetV2 SSM MLCA paper, accessed the dataset 2025-09-05)",
+      "original_creator_source": "Kushagra Agarwal, Kaggle compilation",
+      "commercial_use_explicitly_permitted": "yes",
+      "commercial_ml_training_permitted": "yes",
+      "derivative_works_models_permitted": "yes",
+      "attribution_required": "no (CC0 waives even attribution, though crediting is good practice)",
+      "share_alike_required": "no",
+      "non_commercial_restriction": "no",
+      "no_derivatives_restriction": "no",
+      "redistribution_requirement": "no",
+      "provenance_concerns": "Two independent citing papers describe different class counts for this dataset: one (PMC, 2026) lists 9 disease classes (Blast, Brown Rust, Yellow Rust, Common Root Rot, Healthy, Leaf Blight, Mildew, Septoria, Smut) with no pest classes; another (RSIS, cited in the V2 research report) describes a 15-class, 14,000+ image version that additionally includes pest categories (Aphid, Mite, Stem fly). This suggests either the dataset has been updated/expanded over time, or the two papers describe different versions -- the exact current class list and image count must be re-checked directly on Kaggle at the point of use, and any pest-damage classes should be excluded from the disease taxonomy per the same scope decision flagged for Rice/Hispa in the V2 research report.",
+      "is_aggregation": true,
+      "upstream_license_variation_risk": "unclear -- not stated whether this compiles other named datasets or is original photography",
+      "classification": "B",
+      "obligations": [],
+      "risks": [
+        "Class list and image count are inconsistent across two independent citing sources -- must be re-verified directly at point of use",
+        "Not verified whether this is original photography or itself a compilation of other sources"
+      ],
+      "evidence": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13388468/ (explicit license quote)",
+        "https://rsisinternational.org/journals/ijrias/download_pdf.php?id=3512 (15-class version, cited in the earlier V2 research report)"
+      ],
+      "decision": "License itself (CC0) is as permissive as possible and, if confirmed current on Kaggle, would be Class A. Held at B pending direct re-verification of the current class list/version and its provenance (original vs. compiled), given the discrepancy found between citing sources.",
+      "verification_notes": "CONFIRMED (license, via a citing paper's explicit quote, not the Kaggle page's own JSON-LD, which was not independently retrieved this session). UNRESOLVED: exact current class list/version and whether it is a compilation of other sources."
+    },
+    {
+      "name": "Rice Leaf Disease Image Samples (Sethy et al.)",
+      "authoritative_source": "https://data.mendeley.com/datasets/fwcj7stb8r/1 (DOI 10.17632/fwcj7stb8r.1)",
+      "mirror_source": "Multiple Kaggle re-uploads exist (e.g. maimunulkjisan/rice-leaf-dataset-from-mendeley-data, self-tagged CC0 on Kaggle) -- prefer the Mendeley original",
+      "dataset_version": "v1, published 2020-07-18",
+      "license": "CC BY 4.0",
+      "license_source": "Mendeley Data page JSON-LD metadata, retrieved via web_search snippet of the page itself: 'license':{'text':'CC BY 4.0'}, 2026-09-19",
+      "original_creator_source": "Prabira Kumar Sethy et al., Sambalpur University / Bargarh district, Odisha, India; underlies Sethy et al. 2020, Computers and Electronics in Agriculture 175, 105527",
+      "commercial_use_explicitly_permitted": "yes",
+      "commercial_ml_training_permitted": "yes",
+      "derivative_works_models_permitted": "yes",
+      "attribution_required": "yes",
+      "share_alike_required": "no",
+      "non_commercial_restriction": "no",
+      "no_derivatives_restriction": "no",
+      "redistribution_requirement": "no beyond standard CC BY attribution",
+      "provenance_concerns": "Real field-collected imagery (multiple citing papers note illumination variation/field conditions as a known challenge of this set, confirming it is not a clean lab-style dataset). 4 classes: Bacterial Blight, Blast, Brown Spot, Tungro -- directly supports adding Bacterial Leaf Blight and Tungro to the V2 Rice taxonomy proposed in the research report. A related companion dataset, RiceSeg-5932 (pixel-level segmentation masks for the same images), is a separate Mendeley release explicitly derived from this one -- not itself needed for classification training but confirms the base image set's continued public availability and identity.",
+      "is_aggregation": false,
+      "upstream_license_variation_risk": "low",
+      "classification": "A",
+      "obligations": [
+        "Attribution to Sethy, Barpanda, Rath, and Behera per CC BY 4.0"
+      ],
+      "risks": [],
+      "evidence": [
+        "https://data.mendeley.com/datasets/fwcj7stb8r/1 (license field, JSON-LD)"
+      ],
+      "decision": "Training-eligible. Source directly from the Mendeley DOI rather than any Kaggle re-upload, to avoid depending on a third party's re-statement of the license.",
+      "verification_notes": "CONFIRMED directly at the authoritative Mendeley source."
+    },
+    {
+      "name": "Rice Leaf Disease (RLD), Roboflow",
+      "authoritative_source": "No single authoritative 'RLD' project was identified -- multiple distinct 'Rice Leaf Disease' projects exist on Roboflow Universe under different individual uploaders",
+      "mirror_source": "Examples found: universe.roboflow.com/harsha-etczl/rice-leaf-disease-pnczf; universe.roboflow.com/rony/rice-leaf-disease-8xysl; universe.roboflow.com/rice-leaf-diseases/rice-leaf-diseases-oi5yo; universe.roboflow.com/project-khcjh/rice-leaf-disease-detection-obj (this last one's 6-class list -- Bacterial Leaf Blight, Brown Spot, Leaf Blast, Leaf Scald, Narrow Brown Spot, Healthy -- matches the 'RLD' dataset described in arXiv:2603.25006, and is the most likely match to the paper's citation)",
+      "dataset_version": "varies by project",
+      "license": "CC BY 4.0 (self-declared by each individual uploader, consistently across every project checked)",
+      "license_source": "Each Roboflow Universe project's own page/schema.org metadata, retrieved via web_search, 2026-09-19",
+      "original_creator_source": "Individual Roboflow community uploaders (Harsha, Rony, 'Project', 'RICE LEAF DISEASES', 'SourceError', 'Ho Huu Tuong K17 DN', 'ASHIKUR RAHMAN') -- original photographic provenance of each is NOT independently documented on the Roboflow pages themselves",
+      "commercial_use_explicitly_permitted": "yes, per each project's self-declared CC BY 4.0 tag",
+      "commercial_ml_training_permitted": "yes, per the self-declared tag, WITH THE CAVEAT below",
+      "derivative_works_models_permitted": "yes, per the self-declared tag",
+      "attribution_required": "yes",
+      "share_alike_required": "no",
+      "non_commercial_restriction": "no",
+      "no_derivatives_restriction": "no",
+      "redistribution_requirement": "no beyond standard CC BY attribution",
+      "provenance_concerns": "Roboflow lets any uploader self-declare a CC BY 4.0 license for a project regardless of whether they personally hold rights to the underlying images. None of the 'Rice Leaf Disease' projects found this session document where their images actually came from -- they could be original photography by the uploader, or a re-upload/re-annotation of PlantVillage, Sethy et al., or another already-cataloged source. This is exactly the aggregation-provenance risk flagged for SAGE in Task 4: a permissive license tag at the point of re-upload does not establish that the uploader had the right to apply that license if the images originated elsewhere under different terms.",
+      "is_aggregation": "unknown per-project -- cannot be ruled out",
+      "upstream_license_variation_risk": "high, specifically because upstream image origin is undocumented on Roboflow itself",
+      "classification": "B",
+      "obligations": [
+        "Attribution, per the self-declared CC BY 4.0 tag, IF the tag is validly applied"
+      ],
+      "risks": [
+        "Cannot confirm the self-declaring uploader actually held rights to apply a CC BY 4.0 license, since original image provenance is undocumented on the Roboflow pages themselves",
+        "Multiple near-identical 'Rice Leaf Disease' projects from different uploaders raises the possibility of the same underlying images being re-uploaded and re-licensed by multiple parties"
+      ],
+      "evidence": [
+        "https://universe.roboflow.com/project-khcjh/rice-leaf-disease-detection-obj",
+        "https://arxiv.org/html/2603.25006 (cites 'the RLD dataset from the Roboflow platform, licensed under CC BY 4.0')"
+      ],
+      "decision": "Do not treat Roboflow's self-declared license alone as sufficient provenance confirmation. If pursued, prefer the confirmed-original sources (PlantDoc, the Mendeley Rice sets, Sethy et al.) over an undocumented Roboflow re-upload for the same disease coverage.",
+      "verification_notes": "CONFIRMED: the license tag shown on each Roboflow page. UNRESOLVED: whether the underlying images are the uploader's own original work or an unattributed re-upload of another source."
+    },
+    {
+      "name": "Sugarcane Plant Diseases Dataset (akilesh253)",
+      "authoritative_source": "https://www.kaggle.com/datasets/akilesh253/sugarcane-plant-diseases-dataset",
+      "mirror_source": null,
+      "dataset_version": "v4 (identifier 5814505)",
+      "license": "Community Data License Agreement - Sharing - Version 1.0 (CDLA-Sharing-1.0)",
+      "license_source": "Kaggle dataset page JSON-LD metadata, retrieved via web_search snippet of the page itself, 2026-09-19; CDLA-Sharing-1.0 terms independently verified against the Linux Foundation's own CDLA FAQ (https://cdla.dev/faq-resources/faq/) and the CommonAccord-hosted full agreement text",
+      "original_creator_source": "Kaggle user AKILESH_S; described as an 'Augmented Dataset for Sugarcane Plant' -- 19,926 images across 6 classes, explicitly stated to include heavy augmentation (rotation, flipping, zooming, resizing, cropping)",
+      "commercial_use_explicitly_permitted": "yes -- CDLA-Sharing-1.0 explicitly states there is 'no prohibition on commercial use of data'",
+      "commercial_ml_training_permitted": "yes, explicitly -- CDLA's own FAQ states: 'Training an ML model based on data under the agreement, even copyrighted data, creates no obligation under the agreement for the use or the distribution of the trained model or for the insights it generates'",
+      "derivative_works_models_permitted": "yes -- CDLA-Sharing-1.0's own text (Section 3.5, per the CommonAccord-hosted copy) states: 'This Agreement imposes no obligations or restrictions on Your Use or Publication of Results,' where 'Results' includes the outputs of computational/analytical use such as a trained model",
+      "attribution_required": "no requirement on the trained model itself; the agreement's own text must accompany redistribution of the DATA",
+      "share_alike_required": "yes, but ONLY if the raw or 'Enhanced' data itself is redistributed -- not for a trained model or its outputs",
+      "non_commercial_restriction": "no",
+      "no_derivatives_restriction": "no",
+      "redistribution_requirement": "yes, for redistribution of the data itself (must remain under CDLA-Sharing-1.0 and include the agreement text) -- does not apply to a trained model",
+      "provenance_concerns": "The dataset is explicitly stated to be heavily augmented (19,926 images) from an unstated, smaller base image count -- the effective count of genuinely unique source photographs is materially lower than 19,926 and was not disclosed. Original photographic provenance (field vs. lab, geography) is not stated on the Kaggle page text retrieved this session.",
+      "is_aggregation": "unclear -- appears to be an original/augmented collection rather than a compilation of other named datasets, but this was not independently confirmed",
+      "upstream_license_variation_risk": "low, given the license explicitly covers the dataset as published, but base-image provenance is thin",
+      "classification": "A",
+      "obligations": [
+        "If the raw dataset itself (or an enhanced/modified version of it) is redistributed, it must remain under CDLA-Sharing-1.0 with the agreement text included -- this does not extend to a trained model"
+      ],
+      "risks": [
+        "Unknown true count of unique base images before augmentation -- treat the effective training contribution as smaller than 19,926",
+        "Original collection provenance (field/lab, location) not independently confirmed"
+      ],
+      "evidence": [
+        "https://www.kaggle.com/datasets/akilesh253/sugarcane-plant-diseases-dataset (license field, JSON-LD)",
+        "https://cdla.dev/faq-resources/faq/ (explicit confirmation that ML training creates no obligation on the trained model)",
+        "https://commonaccord.org/i.php?f=G%2FMicrosoft%2FCommunity-Data-License-Agreements%2FCDLA-Sharing-1.0%2FForm%2F0.md (Section 3.5, 'no obligations or restrictions on Your Use or Publication of Results')"
+      ],
+      "decision": "Training-eligible. This is a materially different and more favorable licensing situation than the earlier research report's cautious 'B' rating assumed -- CDLA-Sharing-1.0's copyleft applies to redistributing the data, not to a trained model built from it. Upgraded to Class A on this verification pass. Still note the augmentation/base-image-count caveat when assessing effective dataset size.",
+      "verification_notes": "CONFIRMED: the stated license, and its explicit, unambiguous treatment of ML training and model outputs as unrestricted, per CDLA's own official FAQ and the agreement's own text."
+    },
+    {
+      "name": "Sugarcane Leaf Image Dataset (Kamlesh11v Kaggle upload)",
+      "authoritative_source": "Traced to: Thite, S.; Suryawanshi, Y.; Patil, K.; Chumchu, P. (2023), 'Sugarcane Leaf Dataset', Mendeley Data, DOI 10.17632/355y629ynj.1 -- https://data.mendeley.com/datasets/355y629ynj/1 -- published alongside Thite et al. 2024, Data in Brief 53, 110268, DOI 10.1016/j.dib.2024.110268",
+      "mirror_source": "https://www.kaggle.com/datasets/kamlesh11v/sugarcane-leaf-image-dataset",
+      "dataset_version": "Mendeley v1, published 2023-07-08",
+      "license": "CC BY 4.0 (at the traced Mendeley/Data-in-Brief source) -- the Kaggle re-upload itself does not display a clear license tag in the metadata retrieved this session",
+      "license_source": "Mendeley Data page JSON-LD metadata ('license':{'text':'CC BY 4.0'}), and independently the Data in Brief journal article's own copyright line: 'This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/)' -- both retrieved via web_search of the respective pages, 2026-09-19",
+      "original_creator_source": "Sandip Thite, Yogesh Suryawanshi, Kailas Patil (Vishwakarma University, Pune, India), Prawit Chumchu (Kasetsart University, Thailand); images captured via mobile-phone camera in Kendur, Taluka Shirur, Pune district, Maharashtra, India",
+      "commercial_use_explicitly_permitted": "yes, at the confirmed Mendeley/Data-in-Brief source",
+      "commercial_ml_training_permitted": "yes, at the confirmed Mendeley/Data-in-Brief source",
+      "derivative_works_models_permitted": "yes, at the confirmed Mendeley/Data-in-Brief source",
+      "attribution_required": "yes (BY)",
+      "share_alike_required": "no",
+      "non_commercial_restriction": "no",
+      "no_derivatives_restriction": "no",
+      "redistribution_requirement": "no beyond standard CC BY attribution",
+      "provenance_concerns": "IMPORTANT: this classification applies to the AUTHORITATIVE MENDELEY SOURCE, not automatically to the Kamlesh11v Kaggle re-upload. The chain traced this session: (1) the Kaggle listing's description text is a verbatim match to the Thite et al. Data in Brief abstract -- same total image count (6,748), same class list in the same order (smut, yellow leaf disease, pokkah boeng, mosaic, grassy shoot, brown spot, brown rust, banded chlorosis, sett rot, healthy, dried leaves), same framing language; (2) the Kaggle file size (790.03 MB) is plausible for 6,748 high-resolution (768x1024) images. This is strong circumstantial evidence the Kaggle upload IS a re-hosting of the Mendeley dataset. It is NOT byte-level confirmed, since no files were downloaded or hash-compared this session, per the task's own instruction not to assume identity from similarity alone.",
+      "is_aggregation": false,
+      "upstream_license_variation_risk": "low at the Mendeley source itself; the open question is specifically whether the Kaggle mirror is a faithful, unmodified re-hosting",
+      "classification": "B",
+      "obligations": [
+        "Attribution to Thite, Suryawanshi, Patil, and Chumchu per CC BY 4.0, once sourced"
+      ],
+      "risks": [
+        "The Kaggle re-upload's own license tag is not clearly set -- do not rely on it as a license source",
+        "Identity between the Kaggle files and the Mendeley files is inferred from strong circumstantial evidence, not confirmed byte-for-byte"
+      ],
+      "evidence": [
+        "https://data.mendeley.com/datasets/355y629ynj/1 (license field, JSON-LD)",
+        "https://www.sciencedirect.com/science/article/pii/S2352340924002373 and https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10964057/ (Data in Brief article, explicit CC BY 4.0 copyright line, and the matching description text/class list/image count)",
+        "https://www.kaggle.com/datasets/kamlesh11v/sugarcane-leaf-image-dataset (description text compared against the above)"
+      ],
+      "decision": "Commercial training eligibility COULD be established, but at the Mendeley source (DOI 10.17632/355y629ynj.1), not confirmed for the Kaggle mirror specifically. Recommended action: acquire this dataset directly from the Mendeley DOI rather than the Kaggle re-upload, which sidesteps the identity question entirely and gives a license-confirmed copy.",
+      "verification_notes": "CONFIRMED at the authoritative Mendeley source. INFERRED (strong circumstantial match, not byte-level confirmed) that the Kaggle mirror is the same dataset. Per the task's explicit instruction, this is recorded as inferred, not presented as confirmed fact for the Kaggle copy itself."
+    }
+  ]
+}

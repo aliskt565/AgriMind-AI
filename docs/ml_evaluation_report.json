@@ -1,0 +1,1861 @@
+{
+  "_2026_09_18_note": "This file documents the ORIGINAL 280-image, 7-class evaluation only (unchanged below). A separate, larger evaluation (13,324 + 2,265 + 250 + 46 + 110 images across 5 distinct tests) was added on 2026-09-18 -- see docs/ml_evaluation_expanded_2026_09.json and the corresponding new section at the top of docs/ml_evaluation_report.md. The two evaluations are complementary, not a supersession: this 280-image / 92.86% figure remains valid and is distinct from the newer 250-image / 96.0% figure in the expanded evaluation (same 7-class scope, different sample, different result -- do not conflate them).",
+  "scope_note": "Covers ONLY 7 of 18 model classes -- see script docstring. NOT an overall model accuracy.",
+  "data_source": "spMohanty/PlantVillage-Dataset (CC-BY-SA-3.0), github.com/spMohanty/PlantVillage-Dataset",
+  "samples_per_class_requested": 40,
+  "total_images_evaluated": 280,
+  "labels": [
+    "Corn___Common_Rust",
+    "Corn___Gray_Leaf_Spot",
+    "Corn___Healthy",
+    "Corn___Northern_Leaf_Blight",
+    "Potato___Early_Blight",
+    "Potato___Healthy",
+    "Potato___Late_Blight",
+    "Wheat___Healthy"
+  ],
+  "confusion_matrix": [
+    [
+      40,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      27,
+      0,
+      12,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      40,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      0,
+      37,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      39,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      37,
+      3,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      40,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "classification_report": {
+    "Corn___Common_Rust": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "Corn___Gray_Leaf_Spot": {
+      "precision": 0.9,
+      "recall": 0.675,
+      "f1-score": 0.7714285714285715,
+      "support": 40.0
+    },
+    "Corn___Healthy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "Corn___Northern_Leaf_Blight": {
+      "precision": 0.7551020408163265,
+      "recall": 0.925,
+      "f1-score": 0.8314606741573034,
+      "support": 40.0
+    },
+    "Potato___Early_Blight": {
+      "precision": 1.0,
+      "recall": 0.975,
+      "f1-score": 0.9873417721518988,
+      "support": 40.0
+    },
+    "Potato___Healthy": {
+      "precision": 1.0,
+      "recall": 0.925,
+      "f1-score": 0.961038961038961,
+      "support": 40.0
+    },
+    "Potato___Late_Blight": {
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "f1-score": 0.9523809523809523,
+      "support": 40.0
+    },
+    "Wheat___Healthy": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "accuracy": 0.9285714285714286,
+    "macro avg": {
+      "precision": 0.8205241187384045,
+      "recall": 0.8125,
+      "f1-score": 0.8129563663947108,
+      "support": 280.0
+    },
+    "weighted avg": {
+      "precision": 0.937741849986748,
+      "recall": 0.9285714285714286,
+      "f1-score": 0.9290929901653839,
+      "support": 280.0
+    }
+  },
+  "confidence_stats": {
+    "mean": 92.16314522283417,
+    "min": 50.16588568687439,
+    "max": 100.0,
+    "median": 99.76110458374023
+  },
+  "per_image_records": [
+    {
+      "file": "RS_Rust 2519.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2488.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 1937.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2281.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2303.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2570.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2234.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 1966.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 1890.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2184.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 1872.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 1721.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 1804.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2238.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2098.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2584.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 1574.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 1703.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2380.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2714.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2591.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2510.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2628.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2289.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2698.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2101.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 97.8
+    },
+    {
+      "file": "RS_Rust 2040.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2594.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2374.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2653.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2269.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2377.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 1868.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2262.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2406.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2133.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2369.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 1630.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2508.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "RS_Rust 2231.JPG",
+      "true": "Corn___Common_Rust",
+      "predicted": "Corn___Common_Rust",
+      "confidence": 100.0
+    },
+    {
+      "file": "7b0308b0-8997-4318-b3e0-26c658f8dadf___RS_GLSp 7300.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 95.49
+    },
+    {
+      "file": "75c57507-6463-4886-8195-b1319c434ef7___RS_GLSp 4390.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 76.41
+    },
+    {
+      "file": "b1a62b73-9ab9-464a-99dc-b6fb11130dde___RS_GLSp 4382.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 92.76
+    },
+    {
+      "file": "42423e5e-790d-4839-a683-abb2d9dce89a___RS_GLSp 7296.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 98.61
+    },
+    {
+      "file": "fa0d690b-b3ae-4ddd-b09d-ca8608233a1a___RS_GLSp 4629.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 53.85
+    },
+    {
+      "file": "2ff35cfb-2145-4844-9755-e977af5f661d___RS_GLSp 4434.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 76.47
+    },
+    {
+      "file": "e90fe656-399f-4863-8014-03dc30e84f8c___RS_GLSp 4326 copy.jpg",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 54.71
+    },
+    {
+      "file": "656c0edc-3b1f-4d8b-adce-6264b69f7aa8___RS_GLSp 4492.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 63.66
+    },
+    {
+      "file": "70b19141-ad0c-4370-a809-ab561cd74053___RS_GLSp 7291.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 64.0
+    },
+    {
+      "file": "8665d5b5-d53d-4501-a6bb-011e6ee1ed61___RS_GLSp 4651 copy 2.jpg",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 61.78
+    },
+    {
+      "file": "a27ab77f-274b-4785-95f7-4844aa141c32___RS_GLSp 9353.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 75.3
+    },
+    {
+      "file": "de4b44f2-76c6-40bf-b48a-d69d458bb68d___RS_GLSp 4638 copy 2.jpg",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 83.76
+    },
+    {
+      "file": "302d1d00-fe10-4ec1-878c-5ac721c6ec44___RS_GLSp 9356.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 70.05
+    },
+    {
+      "file": "52acf240-2625-4b4c-8484-6c93e998b115___RS_GLSp 7337.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 91.55
+    },
+    {
+      "file": "7cc0887b-1bbc-49f4-8779-f7ff62aab90e___RS_GLSp 9354.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 98.62
+    },
+    {
+      "file": "137762d7-fcd5-405c-a4d5-4096321951d0___RS_GLSp 9345.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 84.41
+    },
+    {
+      "file": "05daf90f-9100-499f-a4aa-ebc5dfc20adf___RS_GLSp 7335.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 89.49
+    },
+    {
+      "file": "3e21011f-edbd-4a4a-ae6d-16e08552169a___RS_GLSp 7310.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 90.97
+    },
+    {
+      "file": "cb07e000-acb9-44cc-abda-a4549ebe6037___RS_GLSp 4417.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 70.87
+    },
+    {
+      "file": "5b6fe4ff-01b0-4b9d-ad8d-4c6c8ef909be___RS_GLSp 9302.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 54.43
+    },
+    {
+      "file": "97bc3c85-3c34-47c1-9bb8-5eccc54d0427___RS_GLSp 9267.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 82.37
+    },
+    {
+      "file": "8788717a-1128-4cc4-a76e-71337500c5df___RS_GLSp 4623 copy.jpg",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 68.56
+    },
+    {
+      "file": "d58e8f58-8a71-4d49-a183-5026f861be1b___RS_GLSp 4563.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 57.05
+    },
+    {
+      "file": "1afa65e8-15a9-46d4-b612-e7a7b23b10b5___RS_GLSp 7326.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 97.61
+    },
+    {
+      "file": "ef2f5fe2-b4f0-40b4-8242-e521abeb812e___RS_GLSp 9288.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 90.86
+    },
+    {
+      "file": "6f4b40eb-6d14-4f30-9ef8-89f85bd841fd___RS_GLSp 4426.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 87.88
+    },
+    {
+      "file": "14913b5b-f425-43f4-8266-e6c353f96781___RS_GLSp 4328.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 96.28
+    },
+    {
+      "file": "7565238f-ba56-4a1b-93b6-a978fbc19e6a___RS_GLSp 4309.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 69.56
+    },
+    {
+      "file": "045080ca-8b98-4320-adcc-e431f88c1aaa___RS_GLSp 7313.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 93.68
+    },
+    {
+      "file": "d007f0d4-30a4-4d9c-b193-09cef70b547b___RS_GLSp 4617 copy.jpg",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 82.94
+    },
+    {
+      "file": "8372ebc2-c180-4161-b7b3-0b05a5700d0d___RS_GLSp 9325.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Wheat___Healthy",
+      "confidence": 66.28
+    },
+    {
+      "file": "59abb5c6-b107-4e6d-8ae7-25bcadc18b3e___RS_GLSp 4476.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 61.78
+    },
+    {
+      "file": "b9a39437-94b7-41e3-b309-080e9a93d5ca___RS_GLSp 4440.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 54.32
+    },
+    {
+      "file": "d4bf70c0-f7fe-4921-9944-a89717811183___RS_GLSp 4373.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 91.94
+    },
+    {
+      "file": "584a0a63-7d44-469c-a0b0-f4d0aaa4c82f___RS_GLSp 4445.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 52.79
+    },
+    {
+      "file": "e83678ff-832f-45eb-b95b-766701e6c051___RS_GLSp 9285.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 97.99
+    },
+    {
+      "file": "f8dafa02-edfb-4fc6-bea1-a51cab4d4111___RS_GLSp 4472 copy.jpg",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 94.66
+    },
+    {
+      "file": "171b34fb-183f-4b57-be91-7e02fcebb7df___RS_GLSp 4326.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 66.92
+    },
+    {
+      "file": "0b5492ee-253d-4a13-ad5a-780cb954b09a___RS_GLSp 4615 copy.jpg",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 89.72
+    },
+    {
+      "file": "d63f0a92-e489-4acd-b5df-847a83172abc___RS_GLSp 4607.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 56.59
+    },
+    {
+      "file": "81b0d8bd-b21a-448a-8aca-a1bf971bf014___R.S_HL 8029 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.91
+    },
+    {
+      "file": "161c4466-80c0-49b0-8d4d-b583c4c961b6___R.S_HL 0646 copy 5.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.99
+    },
+    {
+      "file": "28d6c05f-6bd8-4a26-ab71-8af6418562d9___R.S_HL 0632 copy 3.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.98
+    },
+    {
+      "file": "27cf1dd3-bee1-451d-b100-5a35369192d0___R.S_HL 8298 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.98
+    },
+    {
+      "file": "dcac2db4-95f4-4209-97fc-bccef6b0acca___R.S_HL 5537 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.9
+    },
+    {
+      "file": "bec2693a-e731-49a6-8ff8-cc07170bed12___R.S_HL 8098 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.99
+    },
+    {
+      "file": "13b33853-ad75-40ca-a00f-07281811638a___R.S_HL 8088 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.99
+    },
+    {
+      "file": "38618a59-09e8-48d9-93a8-3911040d224f___R.S_HL 8195 copy 3.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 100.0
+    },
+    {
+      "file": "61824665-0adc-4976-b974-5d604c2e1bec___R.S_HL 7949 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 98.88
+    },
+    {
+      "file": "cd3cda5b-be94-430f-b8be-066b1b544cc7___R.S_HL 8294 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.91
+    },
+    {
+      "file": "20046515-e844-4ad2-b3e0-38d2dabcef66___R.S_HL 8002 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.99
+    },
+    {
+      "file": "ac51fdb7-7110-4d50-b95f-19613eb22c15___R.S_HL 8317 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.99
+    },
+    {
+      "file": "f7f289da-cdf0-4f65-b4f8-1afc4507a32f___R.S_HL 7880 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.95
+    },
+    {
+      "file": "8a51e664-e6dc-4f0e-b3ee-bcd37fac243a___R.S_HL 7953 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.92
+    },
+    {
+      "file": "46277fc4-d989-4a82-ac74-719142e16f21___R.S_HL 7943 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 100.0
+    },
+    {
+      "file": "6a73943d-1b22-417e-b810-2b3c65d6f320___R.S_HL 8280 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.97
+    },
+    {
+      "file": "5c0d54a3-39dd-4720-ace7-d571ec6e7b61___R.S_HL 8048 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 100.0
+    },
+    {
+      "file": "3eb884a5-e02f-4f39-b406-977e49ce1957___R.S_HL 8209 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.83
+    },
+    {
+      "file": "5dd5c601-a601-45bf-90e9-1335869056cc___R.S_HL 0621 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.94
+    },
+    {
+      "file": "690aa499-e65c-42a5-ac1a-2eeebeb9ee9f___R.S_HL 5554 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.99
+    },
+    {
+      "file": "833d16ec-bdc3-47ec-9a67-d5080a6e0c91___R.S_HL 8106 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.85
+    },
+    {
+      "file": "de0baaf0-bd8c-40a4-924b-e7b3ad0a83d4___R.S_HL 8107 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 100.0
+    },
+    {
+      "file": "55dc128d-a5c8-4a38-8462-498f377f9e9c___R.S_HL 0610 copy 3.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.97
+    },
+    {
+      "file": "a357846d-9d74-425c-bd00-9f41a36ffc08___R.S_HL 8191 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.99
+    },
+    {
+      "file": "37f6cdf3-3424-4ff9-8106-7840c506ddd8___R.S_HL 8166 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 100.0
+    },
+    {
+      "file": "028ed539-32f5-4540-a6af-466179837de9___R.S_HL 8212 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.98
+    },
+    {
+      "file": "ee886864-6980-42b0-b849-c99dce1b636c___R.S_HL 7893 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.99
+    },
+    {
+      "file": "af647b0e-db3a-459e-915c-4e522cb46c6c___R.S_HL 8101 copy .jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.99
+    },
+    {
+      "file": "f3102f6c-af30-41a5-80b7-fcfa86635651___R.S_HL 8324 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.93
+    },
+    {
+      "file": "32a1562a-00ca-4e01-b8fa-9bb9a964f2fe___R.S_HL 7984 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.98
+    },
+    {
+      "file": "1dc85ac0-f1fb-4acc-b50b-5625d4a53f87___R.S_HL 7900 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.99
+    },
+    {
+      "file": "a35d50c8-99a0-486c-85f4-2eaa3b8395c8___R.S_HL 0626 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 90.3
+    },
+    {
+      "file": "4bf9482d-8953-49ca-bc10-ed2742d40e9c___R.S_HL 5522 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.48
+    },
+    {
+      "file": "1762fbc2-6b11-4501-9bb9-f0a7d60a5e19___R.S_HL 8052 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.98
+    },
+    {
+      "file": "a69fb110-6abc-4025-b22a-9ce26e02a4e4___R.S_HL 7961 copy 3.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.21
+    },
+    {
+      "file": "d0e16874-80b3-4f2a-8511-15d5e69d33c6___R.S_HL 8056 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 98.35
+    },
+    {
+      "file": "9202cb6d-a5bd-4cb7-860e-47f7299712ef___R.S_HL 8117 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 100.0
+    },
+    {
+      "file": "9528e518-5767-42b6-9ece-d647dfe6b5d6___R.S_HL 8014 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 100.0
+    },
+    {
+      "file": "10f7f563-e9bf-4ac6-8fc9-497ba8d01024___R.S_HL 5495 copy.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.36
+    },
+    {
+      "file": "99089d6e-ec29-4731-8b88-f6aebfd2fb93___R.S_HL 5504 copy 2.jpg",
+      "true": "Corn___Healthy",
+      "predicted": "Corn___Healthy",
+      "confidence": 99.97
+    },
+    {
+      "file": "811ac5c3-9079-43aa-ba29-8b1bc35dd156___RS_NLB 4069.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 78.96
+    },
+    {
+      "file": "496510d6-dd7c-4dda-8379-d66a89b1b42f___RS_NLB 3793.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 98.31
+    },
+    {
+      "file": "30f2767e-d618-41c6-ae4f-d7ddf806318b___RS_NLB 4068.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 51.86
+    },
+    {
+      "file": "9c7b6913-1640-4ee7-85b8-5e457fab550e___RS_NLB 3509.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 81.95
+    },
+    {
+      "file": "2fbb25c1-446d-4d0e-9a01-646bbcecd416___RS_NLB 3856.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 68.45
+    },
+    {
+      "file": "aab5319c-f249-41e2-86c1-ce96c4c89ca0___RS_NLB 3504.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 88.61
+    },
+    {
+      "file": "7d5fedec-591d-4f0c-a759-1984b5366e1c___RS_NLB 4691.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 98.81
+    },
+    {
+      "file": "8187d1cd-0de8-48d9-bd90-48c718ce090d___RS_NLB 3702.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 98.25
+    },
+    {
+      "file": "abc2c275-7eff-4cab-846a-fd3d2ad7f964___RS_NLB 4664.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 68.1
+    },
+    {
+      "file": "a25e0982-60a0-4282-bedf-0512171e2fde___RS_NLB 4061 copy.jpg",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 87.13
+    },
+    {
+      "file": "297448cd-10e7-4f57-bb1c-ae02d6134565___RS_NLB 3849.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 67.36
+    },
+    {
+      "file": "e9922bf3-c8dc-460b-bb52-65bba02ff618___RS_NLB 3478.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 78.7
+    },
+    {
+      "file": "426fad97-a40f-4629-bac8-01488bca3507___RS_NLB 3821.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 91.09
+    },
+    {
+      "file": "0b5eb8db-3477-488b-9cce-6a7712d895ab___RS_NLB 4232.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 91.6
+    },
+    {
+      "file": "7b45e9ce-9199-4f4f-9831-ef52e7c61816___RS_NLB 3547 copy 2.jpg",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 95.24
+    },
+    {
+      "file": "81b33e60-d234-4e3a-90d7-900927e74d7f___RS_NLB 4166.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 99.16
+    },
+    {
+      "file": "2fd737f7-bba3-4df7-8bd9-8c1d78b96bf3___RS_NLB 4127.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 99.14
+    },
+    {
+      "file": "07d88aa9-1c25-46c9-a48a-85db9d970905___RS_NLB 3976.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 79.18
+    },
+    {
+      "file": "59b2026f-6b96-4a60-9461-6da43560b2df___RS_NLB 0811.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 80.96
+    },
+    {
+      "file": "6f24eec3-fd4e-478f-9688-717515242cea___RS_NLB 4278.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 84.63
+    },
+    {
+      "file": "e59d2407-e225-47d5-96a7-6cdcc3868499___RS_NLB 4100.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 62.68
+    },
+    {
+      "file": "844fe769-fd03-46df-973e-e9b0b37891d2___RS_NLB 3858.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 58.23
+    },
+    {
+      "file": "32a99994-e15d-460c-818c-4b02afa5c880___RS_NLB 4179.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 88.61
+    },
+    {
+      "file": "ae554dde-24e0-44df-82f1-5e4a1b3dd86c___RS_NLB 0775.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 59.87
+    },
+    {
+      "file": "1268904c-797f-4e33-bb41-afb58f369c6b___RS_NLB 3755.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 92.2
+    },
+    {
+      "file": "92e0ba47-165f-457c-9be0-baa37eb16d40___RS_NLB 3624.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 62.57
+    },
+    {
+      "file": "ba97ee35-01d7-4cb4-a44c-913c329ca328___RS_NLB 4149.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 75.85
+    },
+    {
+      "file": "ba2884c9-c118-441a-8095-9a287f8a865d___RS_NLB 3954 copy.jpg",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 95.54
+    },
+    {
+      "file": "cea4e177-947e-466f-9b0f-fc2adae6a02e___RS_NLB 4198.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 99.76
+    },
+    {
+      "file": "82950cdc-cb72-437c-b1da-3e6988b9078d___RS_NLB 4131.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 91.65
+    },
+    {
+      "file": "0d0f6d14-be5c-4cb8-adb4-2cfd4d5f8540___RS_NLB 3642.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 67.01
+    },
+    {
+      "file": "3949d36a-42a7-4d40-a096-0b7d32698b04___RS_NLB 3502.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 98.4
+    },
+    {
+      "file": "a3597d3e-d2db-4068-aa85-d09464197fe2___RS_NLB 4137.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 98.55
+    },
+    {
+      "file": "9e657ac4-0de6-4ba4-b10c-49a5e8a1fa4d___RS_NLB 4174.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 98.47
+    },
+    {
+      "file": "96ad24f7-d865-433f-b3ef-798ed8cc78f1___RS_NLB 3819 copy 2.jpg",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 91.19
+    },
+    {
+      "file": "6544d35f-ffb9-4a00-8240-c6f50c4e5e41___RS_NLB 3500.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 57.24
+    },
+    {
+      "file": "39bbce49-e9e0-463b-8c87-a3c0b1204050___RS_NLB 4011.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 83.72
+    },
+    {
+      "file": "0c28faf9-15f7-4e78-bb72-0a1035d95f1f___RS_NLB 4236.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 94.47
+    },
+    {
+      "file": "e22976d4-ff48-4672-ad70-e17d50b65b1c___RS_NLB 3688.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Gray_Leaf_Spot",
+      "confidence": 54.66
+    },
+    {
+      "file": "82cbd4a0-2616-4375-addc-ad4a83ef95ec___RS_NLB 3595.JPG",
+      "true": "Corn___Northern_Leaf_Blight",
+      "predicted": "Corn___Northern_Leaf_Blight",
+      "confidence": 95.4
+    },
+    {
+      "file": "c9bff7de-c589-4ed2-92fe-cd9ca2a1df16___RS_Early.B 7846.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 95.79
+    },
+    {
+      "file": "85a9856f-d5ae-4740-a038-517489a25ff5___RS_Early.B 8635.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 94.44
+    },
+    {
+      "file": "e490f736-a52f-434f-ada7-3bb255d99635___RS_Early.B 7417.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.98
+    },
+    {
+      "file": "ed270d5d-3523-4bc2-b208-4f5304bbfeef___RS_Early.B 8218.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.99
+    },
+    {
+      "file": "094fbf4c-da00-4037-82af-03e712d8db47___RS_Early.B 6908.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "81bc4d94-be1f-4127-8203-da3ae29aa3d5___RS_Early.B 7305.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "17667077-cf29-4976-9282-359c6da25cf6___RS_Early.B 6971.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "c4dd703b-1d4c-4e4c-8064-0e1d743c47ae___RS_Early.B 7050.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "5dd2be45-9c02-4b82-a7be-ecbac29981a9___RS_Early.B 7947.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.97
+    },
+    {
+      "file": "8ace7694-6cdd-495e-a987-f9c0ee82bcab___RS_Early.B 9016.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "2fe81ef1-d7ec-4395-b071-c74d5beb4037___RS_Early.B 7242.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "d0fc4557-34a0-4324-8b2c-865853e0face___RS_Early.B 6912.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "6d1cebfa-ad84-484e-9f30-f8fffb289072___RS_Early.B 7703.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "a0d8a499-e9e4-4c88-829c-7c2270073735___RS_Early.B 8525.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 89.23
+    },
+    {
+      "file": "b4021eae-d195-400a-b7b7-9888367f5f2f___RS_Early.B 7881.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.99
+    },
+    {
+      "file": "849daa7e-b5ea-4445-93f9-b21d43c1bd44___RS_Early.B 7193.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "c5dc57d8-9a0d-4046-9eb4-b9db2f720a47___RS_Early.B 7047.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "0d987d4a-26bc-4f74-8a16-12f8969dfed8___RS_Early.B 7013.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.89
+    },
+    {
+      "file": "c10f959b-1f3d-4581-8299-640e87b1b653___RS_Early.B 7949.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "593de3cd-1e2e-4943-b5f3-ef9d5d857894___RS_Early.B 8336.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.99
+    },
+    {
+      "file": "7584a5b8-b701-4255-9dde-a60b6442cc37___RS_Early.B 9154.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "cceeec9d-e0d9-4512-a1f0-faa5dc6bbf40___RS_Early.B 8381.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 88.41
+    },
+    {
+      "file": "5caecfc6-8e1d-401b-8014-763dec01cb98___RS_Early.B 8063.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "7ace85c1-a488-4df2-8162-b73c17032099___RS_Early.B 7541.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.82
+    },
+    {
+      "file": "a3ed964c-36f1-403c-8146-b2a3b79a352d___RS_Early.B 8310.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 95.9
+    },
+    {
+      "file": "7dc2fac8-c581-4b69-9f54-dbe7d838956c___RS_Early.B 6677.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "a08eec21-8500-4ac5-92a9-d9b14067f01c___RS_Early.B 8985.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "906bb6f0-e61b-42f2-83a9-22593dadcedc___RS_Early.B 8564.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 73.25
+    },
+    {
+      "file": "610d8d2d-c28d-4d99-9f37-a6a79148b529___RS_Early.B 8023.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.91
+    },
+    {
+      "file": "c82e587c-a0f2-451e-9057-e3719a3d9562___RS_Early.B 6824.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.99
+    },
+    {
+      "file": "a5e73fd4-6d3e-4037-b440-f4e5234e4459___RS_Early.B 7645.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.99
+    },
+    {
+      "file": "f0f41a0d-7679-4e56-85df-44934fe0cb3b___RS_Early.B 7054.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "cf761f3d-755a-42b2-83cb-729443246c6a___RS_Early.B 7319.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.6
+    },
+    {
+      "file": "83f244c6-e33e-4fbb-a9ef-3996cd25a547___RS_Early.B 8700.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 50.17
+    },
+    {
+      "file": "ed78ac4f-ce50-4de8-b508-ad07b9d99176___RS_Early.B 7313.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.98
+    },
+    {
+      "file": "61d53ca2-a8e2-4e5d-b8cd-3f9608b74fc1___RS_Early.B 6746.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.99
+    },
+    {
+      "file": "9bc2ecbb-4a3c-43be-80ce-c6ac77e4b498___RS_Early.B 7145.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 99.99
+    },
+    {
+      "file": "bcf169b0-dea7-49eb-b976-4a2d1f36c574___RS_Early.B 7870.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "0e6b9e09-2bcd-41e0-b001-b80a33a8a78b___RS_Early.B 8694.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 96.81
+    },
+    {
+      "file": "6fcaba16-dfce-431a-b268-e0826a101553___RS_Early.B 6695.JPG",
+      "true": "Potato___Early_Blight",
+      "predicted": "Potato___Early_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "61b05f0a-14bc-4c8f-a256-57c8b8898d8c___RS_HL 1769.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 84.77
+    },
+    {
+      "file": "de9a8669-d437-40f0-aa56-fe2d8276a1e0___RS_HL 1910.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.97
+    },
+    {
+      "file": "a5050bde-febc-4931-b31d-45c9652df318___RS_HL 5373.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 53.35
+    },
+    {
+      "file": "bde33d08-678c-4f84-b80e-fcb986a9a446___RS_HL 5415.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 92.87
+    },
+    {
+      "file": "77c75478-e1f0-4aaa-9cbc-af1fed928a74___RS_HL 1748.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 65.03
+    },
+    {
+      "file": "3f369e63-81eb-4194-a145-df9ed91abc5d___RS_HL 1745.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 90.26
+    },
+    {
+      "file": "1dcfeaa9-006d-470c-b3e5-d67609d07d4e___RS_HL 1808.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 97.95
+    },
+    {
+      "file": "31a09d39-6791-4ecb-8f44-af2ed85dbd33___RS_HL 1970.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 98.94
+    },
+    {
+      "file": "7e6c8297-dfe1-4826-826e-01d696cc263b___RS_HL 1863.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.71
+    },
+    {
+      "file": "5df30492-0b54-474d-8883-bba9474ca88f___RS_HL 1801.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.42
+    },
+    {
+      "file": "aa04db6d-645f-4e8a-88dc-c9f9396f0800___RS_HL 1975.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 96.25
+    },
+    {
+      "file": "923d4cc3-021a-4bcd-9f5f-1d6f69e4ad33___RS_HL 1888.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 98.98
+    },
+    {
+      "file": "00fc2ee5-729f-4757-8aeb-65c3355874f2___RS_HL 1864.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 100.0
+    },
+    {
+      "file": "f0036dfd-9f46-4f2f-9001-5973495f2171___RS_HL 1849.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 97.94
+    },
+    {
+      "file": "b8b7b98a-eb1a-4213-9b0b-aeef4df427e8___RS_HL 1858.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.79
+    },
+    {
+      "file": "43fd6ace-3712-494a-9aba-de5482d22561___RS_HL 1968.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.63
+    },
+    {
+      "file": "51a03694-82cd-43a5-9877-ddce42c1a5ad___RS_HL 1779.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.84
+    },
+    {
+      "file": "c07db642-c675-4066-99b6-56bc8207fb37___RS_HL 4164.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 84.11
+    },
+    {
+      "file": "f4be3632-42a1-415a-9f7e-1d5ecb9f49d7___RS_HL 1783.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 94.49
+    },
+    {
+      "file": "8c1e1281-5937-4559-a02f-02817de6e122___RS_HL 4173.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 79.99
+    },
+    {
+      "file": "04481ca2-f94c-457e-b785-1ac05800b7ec___RS_HL 1930.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 97.78
+    },
+    {
+      "file": "c6abf1da-b06f-4cd2-8af6-d68be5eff6f9___RS_HL 1766.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.6
+    },
+    {
+      "file": "56ae1281-5ee5-4f2a-8678-c2e4491878c6___RS_HL 1869.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.98
+    },
+    {
+      "file": "7948ada9-eabc-4cb7-a579-b73e938eb716___RS_HL 4185.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 58.49
+    },
+    {
+      "file": "b61b9d33-59ea-41b0-a554-c382eb6128c5___RS_HL 1919.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.96
+    },
+    {
+      "file": "57c2663b-5d1d-4476-b067-38b2149c3b2d___RS_HL 1796.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 88.85
+    },
+    {
+      "file": "5d505af8-3f73-4781-980c-a4a696a04550___RS_HL 1934.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.77
+    },
+    {
+      "file": "046641c1-f837-49eb-b5f2-4109910a027c___RS_HL 1878.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 100.0
+    },
+    {
+      "file": "413bc2e9-eb2a-48fd-ba65-48b5121fd85c___RS_HL 4200.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 78.58
+    },
+    {
+      "file": "e1b49d1b-165b-4f4e-8a30-735e62bc39c5___RS_HL 1839.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.86
+    },
+    {
+      "file": "a02b6205-b40a-4178-8b34-3494f84b9d1f___RS_HL 1958.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.34
+    },
+    {
+      "file": "d340704d-cc00-4068-bb8a-ae70840b7bfa___RS_HL 1773.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.48
+    },
+    {
+      "file": "533abd3a-3e1d-42d0-ae9c-5189282b78af___RS_HL 5369.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 91.42
+    },
+    {
+      "file": "36bdc44c-96a4-40bb-86f7-63a91d706e96___RS_HL 4203.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.9
+    },
+    {
+      "file": "e51367c1-d582-45e3-acf6-b0e652b43d3a___RS_HL 1873.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 95.93
+    },
+    {
+      "file": "170f1f57-0fd4-421f-9c82-3b1804be63ad___RS_HL 1771.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 99.87
+    },
+    {
+      "file": "f0fdde26-78b4-46f0-9eb8-7c2a743d34aa___RS_HL 4165.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 52.21
+    },
+    {
+      "file": "dca8ac5c-b925-435a-a5e9-da09fa8938a1___RS_HL 4182.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 85.49
+    },
+    {
+      "file": "5ea316eb-10a2-42c0-b781-40d90356ccaa___RS_HL 1935.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 83.15
+    },
+    {
+      "file": "c6204cb3-cd9f-4d7b-92a6-9773fe562cab___RS_HL 1939.JPG",
+      "true": "Potato___Healthy",
+      "predicted": "Potato___Healthy",
+      "confidence": 95.39
+    },
+    {
+      "file": "cba4be0b-2554-4a9e-8dd0-94cbb2467388___RS_LB 3335.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 98.86
+    },
+    {
+      "file": "856b9ab9-c5af-43f1-a320-097b7380d314___RS_LB 2789.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.98
+    },
+    {
+      "file": "e465af98-028c-4222-b300-d9688b613d89___RS_LB 5137.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 90.71
+    },
+    {
+      "file": "eb34280e-0cfb-4166-a9b8-a15892c9ff5c___RS_LB 4450.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 82.64
+    },
+    {
+      "file": "05c29b23-ecdf-41fc-be67-910bb74cd67c___RS_LB 4016.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.94
+    },
+    {
+      "file": "7e486917-7f31-4a26-b0ca-6175ebc2beee___RS_LB 4113.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "17d846d2-f2b7-4ba2-847c-7561159334a3___RS_LB 2695.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.99
+    },
+    {
+      "file": "c4aec622-2e7b-49f6-bab3-6c4dce29f155___RS_LB 3118.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 93.01
+    },
+    {
+      "file": "5b816f46-32b8-4a67-9e73-760e3358bd06___RS_LB 3226.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.54
+    },
+    {
+      "file": "89c3b470-f3e6-4a8c-90a0-edfc0ef73085___RS_LB 4543.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "304b3fa0-f0cb-41b5-b835-9bd13773150a___RS_LB 4696.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 93.35
+    },
+    {
+      "file": "d3cbf715-a2a3-4024-ac5d-c6ae21a77720___RS_LB 2735.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.99
+    },
+    {
+      "file": "6fc1834e-7909-4177-9480-6cd9f23109b4___RS_LB 4023.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.94
+    },
+    {
+      "file": "a3389c1f-d888-430d-bcf7-a546247ad6d2___RS_LB 3092.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.92
+    },
+    {
+      "file": "b340ff00-3d44-4394-90c5-797dc39f8389___RS_LB 4953.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.91
+    },
+    {
+      "file": "84182903-22be-4563-8276-d72413958ada___RS_LB 4027.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 97.99
+    },
+    {
+      "file": "c6d79fa2-e6fc-4c95-a805-c7ff53075b15___RS_LB 4328.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.94
+    },
+    {
+      "file": "0c2628d4-8d64-48a9-a157-19a9c902e304___RS_LB 4590.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.99
+    },
+    {
+      "file": "bf07f2b7-6ab3-4192-a418-ecabc32a11fe___RS_LB 2576.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 100.0
+    },
+    {
+      "file": "56aa566a-41be-4109-91bc-0cc99c385b7f___RS_LB 3843.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.69
+    },
+    {
+      "file": "764311f2-6fd3-424d-aabc-9ad013a41997___RS_LB 3136.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.98
+    },
+    {
+      "file": "cf83a586-2f2a-423b-8e1c-f7c284a20ec1___RS_LB 2785.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.98
+    },
+    {
+      "file": "5a7127de-28ef-47fb-ba00-4b68bf0d4157___RS_LB 2822.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 93.75
+    },
+    {
+      "file": "793aaf75-3085-4bbb-bace-33a9593c3c94___RS_LB 4847.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.76
+    },
+    {
+      "file": "a4534f9b-87ca-4ce0-a6f8-84f94544ef37___RS_LB 2775.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 57.66
+    },
+    {
+      "file": "7c0ff85c-0a94-4ba3-9abf-010ba81a4780___RS_LB 4003.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.95
+    },
+    {
+      "file": "a30baff1-96fb-4df5-9511-e131359b5fd8___RS_LB 4464.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.87
+    },
+    {
+      "file": "919150bd-372b-44e0-a70e-a13e60dccbce___RS_LB 3263.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.9
+    },
+    {
+      "file": "5e92b00d-92ed-4de5-b3f7-0d14a076cf02___RS_LB 4004.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.98
+    },
+    {
+      "file": "c89d5a2a-2c1e-496e-84b8-b7a844a97ac9___RS_LB 4920.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.96
+    },
+    {
+      "file": "a7097c51-bb53-4149-8140-4b9c3d94dbd4___RS_LB 4108.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 97.59
+    },
+    {
+      "file": "f18c34fd-e43a-4338-b3f3-6537f2f84f98___RS_LB 4111.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.98
+    },
+    {
+      "file": "d20fef22-7016-4115-9930-a66b32c718c6___RS_LB 4417.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.92
+    },
+    {
+      "file": "81e4675f-5f16-4c8a-be12-acb79f46575e___RS_LB 3111.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 97.88
+    },
+    {
+      "file": "ebd47dca-590b-43c4-812d-32f95b776690___RS_LB 3834.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.91
+    },
+    {
+      "file": "5f6e341d-3a02-4bc5-ae02-c0a343a835ea___RS_LB 4882.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 98.88
+    },
+    {
+      "file": "9d0f96e2-93c7-4202-b1d1-6f878c066be7___RS_LB 3106.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 72.48
+    },
+    {
+      "file": "bb81b8a0-3d1e-4cef-aeb5-31ac32f1761a___RS_LB 5268.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.98
+    },
+    {
+      "file": "0e7f0484-16eb-4183-b702-0a5b4f94d015___RS_LB 4000.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 88.9
+    },
+    {
+      "file": "71cbb155-74cd-42f9-97ac-abca4a10ad79___RS_LB 4456.JPG",
+      "true": "Potato___Late_Blight",
+      "predicted": "Potato___Late_Blight",
+      "confidence": 99.76
+    }
+  ],
+  "CORRECTION_NOTICE": "The original classification_report field below includes a phantom 8th label (Wheat___Healthy, 0 true support) which artificially deflated macro F1 to 0.813. See ml_evaluation_strict7_classes.json for the corrected, properly-scoped 7-class metrics (macro F1 = 0.929). The out-of-scope prediction is reported separately there, not blended into the 7-class averages. Also see ml_evaluation_report.md for the forensic-audit correction to the \"held-out\" terminology.",
+  "forensic_audit_summary": {
+    "training_dataset_found": false,
+    "training_script_found": false,
+    "class_index_mapping_found": false,
+    "optimizer_state_present_in_model_file": true,
+    "optimizer_state_indicates_head_only_optimization_at_save_time": true,
+    "optimizer_state_note": "Strongly indicates only the classification head was being optimized in the training state represented by this saved optimizer; does NOT prove the backbone was never fine-tuned at an earlier stage that was later re-frozen and re-compiled.",
+    "plantvillage_training_overlap": "ambiguous -- cannot be proven or disproven",
+    "held_out_status": "CANNOT be described as held-out; use 'evaluation sample of unknown train/test overlap status'"
+  }
+}

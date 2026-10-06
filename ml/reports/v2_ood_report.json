@@ -1,0 +1,66 @@
+{
+ "evaluated_at": "2026-10-04",
+ "model": "modelB_research_gitergo",
+ "scope_note": "OOD evaluation refit for the model now in production. ID set = field_robust_v3 held-out test split (near-duplicate-group split, Corn/Potato, lab+field images). Real OOD = 300 PlantVillage images of Tomato/Apple/Grape classes never in training; plus 100 synthetic non-plant images. Thresholds calibrated on the VALIDATION split only.",
+ "id_set": "field_robust_v3 held-out test split (896 images, Corn/Potato)",
+ "ood_real_plant_set": {
+  "n": 300,
+  "composition": {
+   "Tomato___Bacterial_spot": 75,
+   "Tomato___Late_blight": 75,
+   "Apple___Black_rot": 75,
+   "Grape___Black_rot": 75
+  },
+  "source": "PlantVillage GitHub mirror (CC BY-SA 3.0)"
+ },
+ "ood_noise_set": {
+  "n": 100,
+  "composition": "25 each of: pure random noise, solid color, half-split block, linear gradient"
+ },
+ "threshold_calibration": {
+  "calibrated_on": "validation split only (never test or OOD data)",
+  "confidence_threshold": 0.4271,
+  "confidence_threshold_meaning": "reject if max softmax confidence < this value (5th percentile of val confidences)",
+  "mahalanobis_threshold": 183.81,
+  "mahalanobis_threshold_meaning": "reject if embedding distance > this value (95th percentile of val distances)"
+ },
+ "method_comparison": {
+  "confidence_thresholding": {
+   "auroc_vs_real_ood": 0.8195,
+   "fpr_at_95pct_tpr_vs_real_ood": 0.4844,
+   "auroc_vs_noise": 0.2552
+  },
+  "mahalanobis_embedding_distance": {
+   "auroc_vs_real_ood": 0.7997,
+   "fpr_at_95pct_tpr_vs_real_ood": 0.5301,
+   "auroc_vs_noise": 0.9882
+  }
+ },
+ "results_by_set": {
+  "internal_test_id": {
+   "n": 896,
+   "mean_confidence": 0.8112,
+   "mean_mahalanobis_distance": 79.53,
+   "rejection_rate_confidence_rule": 0.0346,
+   "rejection_rate_embedding_rule": 0.0368,
+   "rejection_rate_combined_or_rule": 0.0703
+  },
+  "real_off_taxonomy_ood": {
+   "n": 300,
+   "mean_confidence": 0.5928,
+   "mean_mahalanobis_distance": 121.11,
+   "rejection_rate_confidence_rule": 0.2133,
+   "rejection_rate_embedding_rule": 0.08,
+   "rejection_rate_combined_or_rule": 0.2733
+  },
+  "synthetic_noise_nonplant": {
+   "n": 100,
+   "mean_confidence": 0.9323,
+   "mean_mahalanobis_distance": 384.53,
+   "rejection_rate_confidence_rule": 0.0,
+   "rejection_rate_embedding_rule": 1.0,
+   "rejection_rate_combined_or_rule": 1.0
+  }
+ },
+ "interpretation": "AUROC 0.5 = chance, 1.0 = perfect separation. FPR95 = fraction of in-distribution images wrongly rejected when 95% of OOD is caught; lower is better."
+}

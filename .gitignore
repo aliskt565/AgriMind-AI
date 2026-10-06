@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+.next/
+out/
+.swc/
+tsconfig.tsbuildinfo
+
+# Env files -- never commit real secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Storage (local mock uploads)
+apps/api/storage/*
+!apps/api/storage/plant-vision/
+apps/api/storage/plant-vision/*
+!apps/api/storage/plant-vision/.gitkeep
+
+# OS/editor
+.DS_Store
+*.swp

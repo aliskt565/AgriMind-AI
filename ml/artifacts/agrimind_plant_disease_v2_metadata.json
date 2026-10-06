@@ -1,0 +1,259 @@
+{
+ "model_version": "agrimind_plant_disease_v3-field-research",
+ "status": "RESEARCH BUILD \u2014 selected as best of 3 models by field-photo accuracy; trained on unlicensed gitergo data, so NOT cleared for commercial release; not field-validated on farmer photos",
+ "creation_timestamp": "2026-10-04",
+ "architecture": "MobileNetV2 (ImageNet-pretrained) -> GlobalAveragePooling2D -> Dense(128, relu) -> Dropout(0.3) -> Dense(7, softmax)",
+ "backbone": "MobileNetV2 (ImageNet weights from a GitHub-hosted mirror)",
+ "canonical_class_list": [
+  "Corn___Common_Rust",
+  "Corn___Gray_Leaf_Spot",
+  "Corn___Healthy",
+  "Corn___Northern_Leaf_Blight",
+  "Potato___Early_Blight",
+  "Potato___Healthy",
+  "Potato___Late_Blight"
+ ],
+ "class_indices": {
+  "Corn___Common_Rust": 0,
+  "Corn___Gray_Leaf_Spot": 1,
+  "Corn___Healthy": 2,
+  "Corn___Northern_Leaf_Blight": 3,
+  "Potato___Early_Blight": 4,
+  "Potato___Healthy": 5,
+  "Potato___Late_Blight": 6
+ },
+ "num_classes": 7,
+ "taxonomy_scope_note": "V2-alpha covers Corn and Potato only (7 of the originally frozen 18 classes). Rice/Wheat/Sugarcane are DEFERRED due to a real network-access blocker (Mendeley/Zenodo/Kaggle unreachable this session), not silently dropped -- see dataset_manifest.json:datasets_deferred.",
+ "preprocessing": {
+  "image_size": [
+   224,
+   224
+  ],
+  "resize_method": "PIL bilinear",
+  "color_mode": "RGB",
+  "normalization": "tf.keras.applications.mobilenet_v2.preprocess_input (scales to [-1, 1])",
+  "shared_implementation_module": "scripts/preprocessing.py:load_and_preprocess",
+  "used_identically_by": [
+   "training",
+   "validation",
+   "test evaluation",
+   "OOD evaluation",
+   "inference wrapper"
+  ]
+ },
+ "training_configuration": {
+  "random_seed": 42,
+  "python_version": "3.12.3",
+  "tensorflow_version": "2.21.0",
+  "keras_version": "3.15.1",
+  "architecture": "MobileNetV2 (ImageNet-pretrained) -> GlobalAveragePooling2D -> Dense(128, relu) -> Dropout(0.3) -> Dense(7, softmax)",
+  "image_size": [
+   224,
+   224
+  ],
+  "optimizer": "Adam",
+  "stage1_learning_rate": 0.001,
+  "stage2_learning_rate": 1e-05,
+  "stage2_unfrozen_top_layers": 20,
+  "batch_size": 32,
+  "stage1_epochs_run": 6,
+  "stage2_epochs_run": 6,
+  "stage1_best_epoch": 4,
+  "stage2_best_epoch": 6,
+  "augmentation": "random horizontal flip, random brightness (+-0.15), random contrast (0.85-1.15), random crop after pad -- train split only, applied after split assignment",
+  "class_weights": {
+   "Corn___Common_Rust": 0.7196,
+   "Corn___Gray_Leaf_Spot": 1.6293,
+   "Corn___Healthy": 0.8094,
+   "Corn___Northern_Leaf_Blight": 0.8016,
+   "Potato___Early_Blight": 0.8457,
+   "Potato___Healthy": 6.1698,
+   "Potato___Late_Blight": 0.8554
+  },
+  "dataset_manifest_sha256": "b6d771718242c1cd5c2f0b6740d258d463242dec7c7e91748689480838904afd",
+  "n_train_images": 5269,
+  "n_val_images": 658,
+  "stage1_training_duration_seconds": 854.5,
+  "stage2_training_duration_seconds": 837.2,
+  "total_training_duration_seconds": 1692.9
+ },
+ "dataset_manifest_sha256": "502cd4ddf18c2e0b49102d6b28bb4895c7675391feb8b866824ed4e62bdfc815",
+ "model_file_size_bytes": 27952624,
+ "validation_metrics_at_best_checkpoint": {
+  "stage1_best_val_loss": 0.17723,
+  "stage2_best_val_loss": 0.20079,
+  "note": "Stage 2 best val_loss (0.20079) did not beat Stage 1 best (0.17723) even though val_accuracy improved -- see docs/ml_v2_training_report.md for the honest discussion of this."
+ },
+ "internal_held_out_test_metrics": {
+  "n_test_images": 659,
+  "overall_accuracy": 0.9211,
+  "macro_precision": 0.8876,
+  "macro_recall": 0.9267,
+  "macro_f1": 0.902,
+  "weighted_f1": 0.923,
+  "source_breakdown": {
+   "plantdoc": {
+    "n": 63,
+    "accuracy": 0.6349,
+    "mean_confidence": 0.7547
+   },
+   "plantvillage": {
+    "n": 596,
+    "accuracy": 0.9513,
+    "mean_confidence": 0.9681
+   }
+  },
+  "per_class": {
+   "Corn___Common_Rust": {
+    "precision": 0.9843,
+    "recall": 0.9542,
+    "f1": 0.969,
+    "support": 131
+   },
+   "Corn___Gray_Leaf_Spot": {
+    "precision": 0.6579,
+    "recall": 0.8621,
+    "f1": 0.7463,
+    "support": 58
+   },
+   "Corn___Healthy": {
+    "precision": 0.9829,
+    "recall": 0.9914,
+    "f1": 0.9871,
+    "support": 116
+   },
+   "Corn___Northern_Leaf_Blight": {
+    "precision": 0.9029,
+    "recall": 0.7881,
+    "f1": 0.8416,
+    "support": 118
+   },
+   "Potato___Early_Blight": {
+    "precision": 0.9643,
+    "recall": 0.973,
+    "f1": 0.9686,
+    "support": 111
+   },
+   "Potato___Healthy": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1": 0.8571,
+    "support": 15
+   },
+   "Potato___Late_Blight": {
+    "precision": 0.9712,
+    "recall": 0.9182,
+    "f1": 0.9439,
+    "support": 110
+   }
+  }
+ },
+ "ood_metrics": {
+  "scope_note": "V1's original SAGE real-world, 2,265-image off-taxonomy, and Sugarcane-OOD test sets could NOT be replicated for V2 -- the delivered AgriMind-ML-Evaluation.zip contains only V1's prediction CSVs for those tests, not the underlying source images (verified this session: only 07_Manual_Test/test_corn_rust.jpg is an actual image file anywhere in that archive). This OOD evaluation instead uses real, license-verified PlantVillage images from four crops/diseases outside V2-alpha's own taxonomy (Tomato Bacterial Spot, Tomato Late Blight, Apple Black Rot, Grape Black Rot) as a genuine real-image OOD set, plus 100 synthetic non-plant images. This is NOT the same test V1 was scored against, so V1-vs-V2 OOD numbers are NOT directly comparable -- see docs/ml_v2_ood_report.md for the full honest comparison caveat.",
+  "method_comparison": {
+   "confidence_thresholding": {
+    "auroc_vs_real_ood": 0.7913,
+    "fpr_at_95pct_tpr_vs_real_ood": 0.4841,
+    "auroc_vs_noise": 0.7537
+   },
+   "mahalanobis_embedding_distance": {
+    "auroc_vs_real_ood": 0.7925,
+    "fpr_at_95pct_tpr_vs_real_ood": 0.5873,
+    "auroc_vs_noise": 0.9792
+   }
+  },
+  "results_by_set": {
+   "internal_test_id": {
+    "n": 659,
+    "mean_confidence": 0.9477,
+    "mean_mahalanobis_distance": 95.25,
+    "rejection_rate_confidence_rule": 0.0501,
+    "rejection_rate_embedding_rule": 0.0455,
+    "rejection_rate_combined_or_rule": 0.088
+   },
+   "real_off_taxonomy_ood": {
+    "n": 300,
+    "mean_confidence": 0.8635,
+    "mean_mahalanobis_distance": 128.58,
+    "rejection_rate_confidence_rule": 0.1467,
+    "rejection_rate_embedding_rule": 0.15,
+    "rejection_rate_combined_or_rule": 0.2667
+   },
+   "synthetic_noise_nonplant": {
+    "n": 100,
+    "mean_confidence": 0.9518,
+    "mean_mahalanobis_distance": 187.4,
+    "rejection_rate_confidence_rule": 0.0,
+    "rejection_rate_embedding_rule": 0.89,
+    "rejection_rate_combined_or_rule": 0.89
+   }
+  },
+  "recommended_rule": "combined_or (confidence OR embedding-distance) -- see docs/ml_v2_ood_report.md for why neither method alone, nor this combined rule, is considered production-adequate"
+ },
+ "known_limitations": [
+  "Covers only Corn and Potato (7 classes) -- Rice, Wheat, Sugarcane not yet trained",
+  "Real-world (PlantDoc) test accuracy (63.5%) is far below lab-image (PlantVillage) test accuracy (95.1%) on the same held-out test split -- the lab-to-field generalization gap V1 demonstrated is NOT resolved in V2-alpha",
+  "Corn Gray Leaf Spot vs Northern Leaf Blight confusion persists (same pair V1 struggled with)",
+  "OOD rejection substantially improved over V1 for synthetic non-plant input via the embedding-distance method (89% rejection vs V1s demonstrated near-total failure) but real off-taxonomy PLANT disease images are still missed roughly 73% of the time by the combined rule -- OOD is not solved",
+  "V1s original SAGE/2,265-image/Sugarcane-OOD test sets could not be re-run against V2 because only V1s prediction CSVs, not the source images, were available this session"
+ ],
+ "not_integrated_into_production": false,
+ "is_experimental": true,
+ "production_integration": {
+  "active_model_path": "apps/api/models/agrimind_plant_disease_model.keras",
+  "service": "apps/api/app/services/plant_vision_cnn.py",
+  "quick_scan_endpoint": "/api/v1/ai/plant-vision/scan",
+  "crop_detection_endpoint": "/api/v1/ai/plant-vision/crops/{crop_id}/detect",
+  "supported_crops": [
+   "Corn",
+   "Potato"
+  ],
+  "deferred_crops": [
+   "Rice",
+   "Wheat",
+   "Sugarcane"
+  ],
+  "v1_legacy_backup": "DELETED 2026-10-04 (old CNN models removed; only the selected V3 model is kept)"
+ },
+ "dataset_manifest_sha256_note": "2026-09-23: this field was updated to reflect the CURRENT dataset_manifest.json content after documentation-only corrections (duplicate-count terminology, PlantVillage license wording). No dataset or model change resulted from those corrections. artifacts/training_config.json intentionally retains the ORIGINAL hash (b6d771718242c1cd5c2f0b6740d258d463242dec7c7e91748689480838904afd) as a frozen, immutable record of the manifest content at the actual moment of training -- this is expected and correct, not an inconsistency: training_config.json is a historical training-time record and is never modified after training; this metadata file is documentation ABOUT the model and is corrected when documentation-level errors are found.",
+ "model_sha256": "eba6c3aab64abfb0a4c89ea2465a67c18fe851eceeeb9171f2fb8c4dcb9d21e5",
+ "v3_training_summary": "See ml/experiments/field_robust_v3/MODEL_CARD.md. Training: 3 epochs head + 4 epochs fine-tune (top 80 layers, BN frozen), field images weight x3, label smoothing 0.1, heavy field augmentation. Data: PlantVillage + PlantDoc + gitergo Natural_environment, near-duplicate-group split.",
+ "v3_test_accuracy": {
+  "plantvillage": {
+   "n": 542,
+   "correct": 518,
+   "acc": 0.9557,
+   "ci95": [
+    0.935,
+    0.9701
+   ]
+  },
+  "plantdoc": {
+   "n": 57,
+   "correct": 40,
+   "acc": 0.7018,
+   "ci95": [
+    0.5734,
+    0.8047
+   ]
+  },
+  "gitergo_field": {
+   "n": 297,
+   "correct": 273,
+   "acc": 0.9192,
+   "ci95": [
+    0.8826,
+    0.9451
+   ]
+  },
+  "all_field_combined": {
+   "n": 354,
+   "correct": 313,
+   "acc": 0.8842,
+   "ci95": [
+    0.8466,
+    0.9135
+   ]
+  }
+ }
+}

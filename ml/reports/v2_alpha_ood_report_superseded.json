@@ -1,0 +1,65 @@
+{
+  "evaluated_at": "2026-09-21",
+  "scope_note": "V1's original SAGE real-world, 2,265-image off-taxonomy, and Sugarcane-OOD test sets could NOT be replicated for V2 -- the delivered AgriMind-ML-Evaluation.zip contains only V1's prediction CSVs for those tests, not the underlying source images (verified this session: only 07_Manual_Test/test_corn_rust.jpg is an actual image file anywhere in that archive). This OOD evaluation instead uses real, license-verified PlantVillage images from four crops/diseases outside V2-alpha's own taxonomy (Tomato Bacterial Spot, Tomato Late Blight, Apple Black Rot, Grape Black Rot) as a genuine real-image OOD set, plus 100 synthetic non-plant images. This is NOT the same test V1 was scored against, so V1-vs-V2 OOD numbers are NOT directly comparable -- see docs/ml_v2_ood_report.md for the full honest comparison caveat.",
+  "id_set": "V2-alpha internal held-out test split (659 images, Corn/Potato)",
+  "ood_real_plant_set": {
+    "n": 300,
+    "composition": {
+      "Tomato___Bacterial_Spot": 75,
+      "Tomato___Late_Blight_OFFTAXONOMY": 75,
+      "Apple___Black_Rot": 75,
+      "Grape___Black_Rot": 75
+    },
+    "source": "PlantVillage GitHub mirror (CC BY-SA 3.0), classes never included in V2-alpha training"
+  },
+  "ood_noise_set": {
+    "n": 100,
+    "composition": "25 each of: pure random noise, solid color, half-split block, linear gradient"
+  },
+  "threshold_calibration": {
+    "calibrated_on": "validation split only (never test or OOD data)",
+    "confidence_threshold": 0.6335,
+    "confidence_threshold_meaning": "reject if max softmax confidence < this value (5th percentile of val confidences)",
+    "mahalanobis_threshold": 164.42,
+    "mahalanobis_threshold_meaning": "reject if embedding distance > this value (95th percentile of val distances)"
+  },
+  "method_comparison": {
+    "confidence_thresholding": {
+      "auroc_vs_real_ood": 0.7913,
+      "fpr_at_95pct_tpr_vs_real_ood": 0.4841,
+      "auroc_vs_noise": 0.7537
+    },
+    "mahalanobis_embedding_distance": {
+      "auroc_vs_real_ood": 0.7925,
+      "fpr_at_95pct_tpr_vs_real_ood": 0.5873,
+      "auroc_vs_noise": 0.9792
+    }
+  },
+  "results_by_set": {
+    "internal_test_id": {
+      "n": 659,
+      "mean_confidence": 0.9477,
+      "mean_mahalanobis_distance": 95.25,
+      "rejection_rate_confidence_rule": 0.0501,
+      "rejection_rate_embedding_rule": 0.0455,
+      "rejection_rate_combined_or_rule": 0.088
+    },
+    "real_off_taxonomy_ood": {
+      "n": 300,
+      "mean_confidence": 0.8635,
+      "mean_mahalanobis_distance": 128.58,
+      "rejection_rate_confidence_rule": 0.1467,
+      "rejection_rate_embedding_rule": 0.15,
+      "rejection_rate_combined_or_rule": 0.2667
+    },
+    "synthetic_noise_nonplant": {
+      "n": 100,
+      "mean_confidence": 0.9518,
+      "mean_mahalanobis_distance": 187.4,
+      "rejection_rate_confidence_rule": 0.0,
+      "rejection_rate_embedding_rule": 0.89,
+      "rejection_rate_combined_or_rule": 0.89
+    }
+  },
+  "interpretation": "AUROC of 0.5 = no better than chance at separating ID from OOD; 1.0 = perfect separation. FPR95 = the false-positive rate (ID images wrongly rejected) when the threshold is set to catch 95% of true OOD images -- lower is better. See docs/ml_v2_ood_report.md for which method (if either) is recommended, chosen from these measured numbers, not assumed."
+}

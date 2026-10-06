@@ -1,0 +1,93 @@
+[
+ {
+  "stage": "s1",
+  "epoch": 1,
+  "loss": 1.241974115371704,
+  "val": {
+   "plantdoc": 0.5666666666666667,
+   "plantdoc_n": 60,
+   "plantvillage": 0.8988970588235294,
+   "plantvillage_n": 544
+  },
+  "score": 0.5666666666666667,
+  "sec": 206
+ },
+ {
+  "stage": "s1",
+  "epoch": 2,
+  "loss": 1.0465315580368042,
+  "val": {
+   "plantdoc": 0.5666666666666667,
+   "plantdoc_n": 60,
+   "plantvillage": 0.8841911764705882,
+   "plantvillage_n": 544
+  },
+  "score": 0.5666666666666667,
+  "sec": 160
+ },
+ {
+  "stage": "s1",
+  "epoch": 3,
+  "loss": 0.9860610365867615,
+  "val": {
+   "plantdoc": 0.6,
+   "plantdoc_n": 60,
+   "plantvillage": 0.9264705882352942,
+   "plantvillage_n": 544
+  },
+  "score": 0.6,
+  "sec": 156
+ },
+ {
+  "stage": "s2",
+  "epoch": 1,
+  "loss": 0.9897032380104065,
+  "val": {
+   "plantdoc": 0.6833333333333333,
+   "plantdoc_n": 60,
+   "plantvillage": 0.875,
+   "plantvillage_n": 544
+  },
+  "score": 0.6833333333333333,
+  "sec": 217
+ },
+ {
+  "stage": "s2",
+  "epoch": 2,
+  "loss": 0.9264129400253296,
+  "val": {
+   "plantdoc": 0.6166666666666667,
+   "plantdoc_n": 60,
+   "plantvillage": 0.9319852941176471,
+   "plantvillage_n": 544
+  },
+  "score": 0.6166666666666667,
+  "sec": 215
+ },
+ {
+  "stage": "s2",
+  "epoch": 3,
+  "loss": 0.8960628509521484,
+  "val": {
+   "plantdoc": 0.6333333333333333,
+   "plantdoc_n": 60,
+   "plantvillage": 0.9319852941176471,
+   "plantvillage_n": 544
+  },
+  "score": 0.6333333333333333,
+  "sec": 216
+ },
+ {
+  "stage": "s2",
+  "epoch": 4,
+  "loss": 0.8700907826423645,
+  "val": {
+   "plantdoc": 0.65,
+   "plantdoc_n": 60,
+   "plantvillage": 0.9393382352941176,
+   "plantvillage_n": 544
+  },
+  "score": 0.65,
+  "sec": 214
+ }
+]

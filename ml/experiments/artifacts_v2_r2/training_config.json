@@ -1,0 +1,63 @@
+{
+  "model_name": "agrimind_plant_disease_v2-alpha-r2",
+  "base_run": "agrimind_plant_disease_v2-alpha (train.py) -- same data, same split, same taxonomy",
+  "change_summary": [
+    "PlantDoc (real-world) training samples upweighted 3.0x via tf.data sample_weight",
+    "Added realistic field-photo augmentation: motion blur (p=0.35), JPEG compression artifacts quality 25-70 (p=0.5), perspective warp up to 12% corner shift (p=0.4), cutout occlusion (p=0.3) -- applied to ~70% of augmented training images, train split only, after split assignment",
+    "Widened basic augmentation ranges (brightness, contrast, saturation) vs v2-alpha",
+    "Stage 2 unfreezes top 40 backbone layers (v2-alpha used 20)",
+    "Epochs 3+3, patience=4 (v2-alpha used 6+6, patience=3)"
+  ],
+  "random_seed": 42,
+  "python_version": "3.12.3",
+  "tensorflow_version": "2.21.0",
+  "keras_version": "3.15.1",
+  "architecture": "MobileNetV2 (ImageNet-pretrained) -> GlobalAveragePooling2D -> Dense(128, relu) -> Dropout(0.3) -> Dense(7, softmax)",
+  "image_size": [
+    224,
+    224
+  ],
+  "optimizer": "Adam",
+  "stage1_learning_rate": 0.001,
+  "stage2_learning_rate": 1e-05,
+  "stage2_unfrozen_top_layers": 40,
+  "batch_size": 32,
+  "stage1_epochs_run": 3,
+  "stage2_epochs_run": 3,
+  "stage1_best_epoch": 3,
+  "stage2_best_epoch": 1,
+  "plantdoc_sample_weight": 3.0,
+  "class_weights": {
+    "Corn___Common_Rust": 0.7196,
+    "Corn___Gray_Leaf_Spot": 1.6293,
+    "Corn___Healthy": 0.8094,
+    "Corn___Northern_Leaf_Blight": 0.8016,
+    "Potato___Early_Blight": 0.8457,
+    "Potato___Healthy": 6.1698,
+    "Potato___Late_Blight": 0.8554
+  },
+  "dataset_manifest_sha256": "502cd4ddf18c2e0b49102d6b28bb4895c7675391feb8b866824ed4e62bdfc815",
+  "n_train_images": 5269,
+  "n_val_images": 658,
+  "stage1_training_duration_seconds": 428.7,
+  "stage2_training_duration_seconds": 611.9,
+  "total_training_duration_seconds": 1042.8,
+  "preprocessing": {
+    "image_size": [
+      224,
+      224
+    ],
+    "resize_method": "PIL bilinear",
+    "color_mode": "RGB",
+    "normalization": "tf.keras.applications.mobilenet_v2.preprocess_input (scales to [-1, 1])",
+    "shared_implementation_module": "scripts/preprocessing.py:load_and_preprocess",
+    "used_identically_by": [
+      "training",
+      "validation",
+      "test evaluation",
+      "OOD evaluation",
+      "inference wrapper"
+    ]
+  },
+  "measured_real_world_accuracy_note": "52.40% on a 3,380-image real Corn validation set (measurement only, not used for training) -- see experiments/reports/corn_natural_environment_external_validation.json and CONTINUATION_NOTES.md"
+}

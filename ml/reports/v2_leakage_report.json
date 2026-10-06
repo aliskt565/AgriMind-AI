@@ -1,0 +1,269 @@
+{
+  "generated_at": "2026-09-20",
+  "input_record_count": 6602,
+  "exact_duplicate_summary": "8 exact-duplicate groups were identified (0 ordinary same-label, 8 cross-class label conflicts), involving 16 records in total across those groups. 16 records were excluded from the final dataset: 0 ordinary redundant same-label copies (one kept per group) plus 16 records from cross-class conflict groups (ALL copies excluded, not just the extras).",
+  "exact_duplicate_groups": 8,
+  "exact_duplicate_groups_same_label": 0,
+  "exact_duplicate_groups_cross_class_conflict": 8,
+  "exact_duplicate_records_dropped_same_label_redundant": 0,
+  "exact_duplicate_records_excluded_cross_class_conflict": 16,
+  "exact_duplicate_records_excluded_total": 16,
+  "exact_duplicate_cross_class_conflicts": [
+    {
+      "sha256": "6e777d1b6829140e66573f918c0f1681ca4cd2979859c37435c84977153ec223",
+      "labels": [
+        "Corn___Northern_Leaf_Blight",
+        "Corn___Gray_Leaf_Spot"
+      ],
+      "image_ids": [
+        "f3ac6857-e3e3-4f76-b5e8-b3e8171b440d",
+        "ed443379-d4a6-4f66-9570-f8621e2bc341"
+      ]
+    },
+    {
+      "sha256": "9120578a76fd8539da220def6e0609ebb2435decc7a9c34b949e46e86e794c8d",
+      "labels": [
+        "Corn___Northern_Leaf_Blight",
+        "Corn___Gray_Leaf_Spot"
+      ],
+      "image_ids": [
+        "2e69c21f-3274-4b78-8736-5351f635e763",
+        "86099c25-84fe-41ec-b016-7b52c61c19a7"
+      ]
+    },
+    {
+      "sha256": "ee3838e2249e671b7b4510b0d3831f30882e2bcbf20c9c8c42ee8f4e1b95fcce",
+      "labels": [
+        "Corn___Northern_Leaf_Blight",
+        "Corn___Gray_Leaf_Spot"
+      ],
+      "image_ids": [
+        "179e3881-ed78-4e36-8920-e6a04da51cfe",
+        "3c1442a4-01d8-42a1-8548-40d305a3457f"
+      ]
+    },
+    {
+      "sha256": "c53ad8d40c38debfbc0b79a87d0f3649c20b933a65f5b78a6931f59d06aad498",
+      "labels": [
+        "Potato___Early_Blight",
+        "Potato___Late_Blight"
+      ],
+      "image_ids": [
+        "4ab67278-dda0-435b-a027-fa9e347e7a40",
+        "375faaeb-35c9-4613-95a2-438a4d4d2e4c"
+      ]
+    },
+    {
+      "sha256": "e5f14a70fc7a687a5846749d5499872c7c3320e81aea1358e481f7100b7ba242",
+      "labels": [
+        "Potato___Early_Blight",
+        "Potato___Late_Blight"
+      ],
+      "image_ids": [
+        "1cc7c251-dc97-4b60-9b90-cfe1c561bd6b",
+        "107bdb22-f49c-4b7a-a4f9-e3587a58d562"
+      ]
+    },
+    {
+      "sha256": "a981ee59e5e1dcafd0d225f74369a05969200352c17743318c31987083ab6f4c",
+      "labels": [
+        "Potato___Early_Blight",
+        "Potato___Late_Blight"
+      ],
+      "image_ids": [
+        "55af3092-3364-4bf2-a4f2-e58eb3e871b7",
+        "22a71b5c-58a4-4df2-b864-a8339b8bb980"
+      ]
+    },
+    {
+      "sha256": "9dd93b4217495fbb725cfdded86d3dc5f98955c9616fff5323be1a00df17be8b",
+      "labels": [
+        "Potato___Early_Blight",
+        "Potato___Late_Blight"
+      ],
+      "image_ids": [
+        "58ff43ab-18bf-4ee9-8cba-7f81a3642777",
+        "f3949dd6-bc8e-48fd-9a29-47d8210f043e"
+      ]
+    },
+    {
+      "sha256": "64c0f7b5701e815769bad881c0834ffb3b58018233fc3af42c3a1b7968f86973",
+      "labels": [
+        "Potato___Late_Blight",
+        "Potato___Early_Blight"
+      ],
+      "image_ids": [
+        "ca7fd84a-07da-49d6-b75e-5e741ab272ee",
+        "646d286f-482d-4f0f-b532-a25f04905992"
+      ]
+    }
+  ],
+  "cross_class_conflict_images_excluded": [
+    "107bdb22-f49c-4b7a-a4f9-e3587a58d562",
+    "179e3881-ed78-4e36-8920-e6a04da51cfe",
+    "1cc7c251-dc97-4b60-9b90-cfe1c561bd6b",
+    "22a71b5c-58a4-4df2-b864-a8339b8bb980",
+    "2e69c21f-3274-4b78-8736-5351f635e763",
+    "375faaeb-35c9-4613-95a2-438a4d4d2e4c",
+    "3c1442a4-01d8-42a1-8548-40d305a3457f",
+    "4ab67278-dda0-435b-a027-fa9e347e7a40",
+    "55af3092-3364-4bf2-a4f2-e58eb3e871b7",
+    "58ff43ab-18bf-4ee9-8cba-7f81a3642777",
+    "646d286f-482d-4f0f-b532-a25f04905992",
+    "86099c25-84fe-41ec-b016-7b52c61c19a7",
+    "ca7fd84a-07da-49d6-b75e-5e741ab272ee",
+    "ed443379-d4a6-4f66-9570-f8621e2bc341",
+    "f3949dd6-bc8e-48fd-9a29-47d8210f043e",
+    "f3ac6857-e3e3-4f76-b5e8-b3e8171b440d"
+  ],
+  "exact_duplicate_drop_log": [],
+  "policy_note": "Cross-class exact-duplicate conflicts (identical image, different label from source) are EXCLUDED entirely (all copies) rather than arbitrarily assigning one label. Ordinary same-label exact duplicates keep exactly one copy per group.",
+  "deduplicated_record_count": 6586,
+  "phash_algorithm": "imagehash.phash (perceptual hash, 64-bit DCT-based)",
+  "phash_near_duplicate_threshold_hamming": 5,
+  "near_duplicate_pairs_within_class": 15,
+  "near_duplicate_pairs_cross_source": 0,
+  "near_duplicate_pair_log": [
+    {
+      "image_id_a": "a19bb279-c829-45b9-8344-ea4b062c3e45",
+      "image_id_b": "dfc0dc42-864c-41a7-a6bf-121ff8230e48",
+      "canonical_label": "Corn___Common_Rust",
+      "hamming_distance": 0
+    },
+    {
+      "image_id_a": "038a43c0-ba6d-4b1e-b587-bfa142fc6806",
+      "image_id_b": "fd7b9840-a82d-48d2-8bbf-9fb245ac1788",
+      "canonical_label": "Corn___Northern_Leaf_Blight",
+      "hamming_distance": 2
+    },
+    {
+      "image_id_a": "0c73b735-3778-486e-ad9d-9440789de1be",
+      "image_id_b": "4104de3b-896d-498b-a229-f374c113bc0c",
+      "canonical_label": "Corn___Northern_Leaf_Blight",
+      "hamming_distance": 4
+    },
+    {
+      "image_id_a": "092de3dd-5a5c-45cb-9ad2-854713b65fd7",
+      "image_id_b": "f522c3d4-b975-4939-98dc-f66368ca54d6",
+      "canonical_label": "Corn___Northern_Leaf_Blight",
+      "hamming_distance": 2
+    },
+    {
+      "image_id_a": "6ee2cb41-bc65-4282-8ccf-17ed08fc4f89",
+      "image_id_b": "97b00c39-3c1d-4be2-bbd7-47d9c96b9636",
+      "canonical_label": "Corn___Northern_Leaf_Blight",
+      "hamming_distance": 4
+    },
+    {
+      "image_id_a": "004332ac-118e-4af7-8527-c51d0d4a2925",
+      "image_id_b": "e00489a6-20ac-4551-9b68-2cd4ef37491a",
+      "canonical_label": "Corn___Northern_Leaf_Blight",
+      "hamming_distance": 0
+    },
+    {
+      "image_id_a": "65283c72-5043-40bc-9b61-b52546e0afe5",
+      "image_id_b": "1d21a6c0-6b36-4866-8c9f-41e006d7dd32",
+      "canonical_label": "Corn___Northern_Leaf_Blight",
+      "hamming_distance": 0
+    },
+    {
+      "image_id_a": "7771854f-2616-4aa7-ae97-c3887be45e23",
+      "image_id_b": "268ed972-2cd0-4cf5-92cc-3d7788db4b42",
+      "canonical_label": "Corn___Healthy",
+      "hamming_distance": 4
+    },
+    {
+      "image_id_a": "fc3541e3-8e49-4364-ac9c-d5399d61cbae",
+      "image_id_b": "58902d08-034e-4a0b-b99d-db65bf772bb0",
+      "canonical_label": "Corn___Healthy",
+      "hamming_distance": 0
+    },
+    {
+      "image_id_a": "6d8aca42-45ef-4412-b5ef-d100e610c0f8",
+      "image_id_b": "9ecab0dc-747b-48e1-be1c-b7c2d9d34344",
+      "canonical_label": "Corn___Healthy",
+      "hamming_distance": 4
+    },
+    {
+      "image_id_a": "a225a471-b175-4a49-89af-fa8d81c67df9",
+      "image_id_b": "3de3e115-7278-4204-b283-a429472befa7",
+      "canonical_label": "Potato___Early_Blight",
+      "hamming_distance": 4
+    },
+    {
+      "image_id_a": "393e0a89-0889-449c-9c90-909d4d9f5deb",
+      "image_id_b": "11203249-398c-4d20-8b53-472fc8594d39",
+      "canonical_label": "Potato___Early_Blight",
+      "hamming_distance": 2
+    },
+    {
+      "image_id_a": "0f97010c-2736-488a-9294-d09d4c991031",
+      "image_id_b": "a0865b21-44fc-401c-afea-f5f37b25f3c5",
+      "canonical_label": "Potato___Late_Blight",
+      "hamming_distance": 4
+    },
+    {
+      "image_id_a": "034ad2b8-b592-4472-989a-8ee0ae83cf50",
+      "image_id_b": "4efeca4b-ceb7-4266-b983-37933051b34b",
+      "canonical_label": "Potato___Late_Blight",
+      "hamming_distance": 0
+    },
+    {
+      "image_id_a": "b71c76cf-26a9-4e84-bb8e-30129bd62839",
+      "image_id_b": "a325a4b5-455f-4ada-967f-133a2eccb80f",
+      "canonical_label": "Potato___Late_Blight",
+      "hamming_distance": 0
+    }
+  ],
+  "note": "Near-duplicate scan was run within each canonical-label bucket (all same-class pairs checked pairwise); a full cross-class all-pairs scan was not run due to runtime cost (O(n^2) over 6.6k images) and because near-duplicates spanning different disease labels would already be far apart in feature/appearance space in the overwhelming majority of real cases. This is a documented scope limitation, not a silent gap.",
+  "split_random_seed": 42,
+  "split_fractions": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "connected_components": 6571,
+  "cross_split_near_duplicate_violations": 0,
+  "cross_split_verification_status": "PASSED",
+  "per_class_split_counts": {
+    "Corn___Gray_Leaf_Spot": {
+      "train": 462,
+      "val": 58,
+      "test": 58
+    },
+    "Corn___Common_Rust": {
+      "train": 1046,
+      "val": 131,
+      "test": 131
+    },
+    "Corn___Northern_Leaf_Blight": {
+      "train": 939,
+      "val": 117,
+      "test": 118
+    },
+    "Corn___Healthy": {
+      "train": 930,
+      "val": 116,
+      "test": 116
+    },
+    "Potato___Early_Blight": {
+      "train": 890,
+      "val": 111,
+      "test": 111
+    },
+    "Potato___Late_Blight": {
+      "train": 880,
+      "val": 110,
+      "test": 110
+    },
+    "Potato___Healthy": {
+      "train": 122,
+      "val": 15,
+      "test": 15
+    }
+  },
+  "test_split_source_breakdown": {
+    "plantvillage": 607,
+    "plantdoc": 52
+  }
+}

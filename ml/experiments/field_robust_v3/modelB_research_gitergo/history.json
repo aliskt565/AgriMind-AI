@@ -1,0 +1,107 @@
+[
+ {
+  "stage": "s1",
+  "epoch": 1,
+  "loss": 1.7927708625793457,
+  "val": {
+   "gitergo_field": 0.7020057306590258,
+   "gitergo_field_n": 349,
+   "plantdoc": 0.48333333333333334,
+   "plantdoc_n": 60,
+   "plantvillage": 0.8602941176470589,
+   "plantvillage_n": 544
+  },
+  "score": 0.5926695319961796,
+  "sec": 267
+ },
+ {
+  "stage": "s1",
+  "epoch": 2,
+  "loss": 1.4581570625305176,
+  "val": {
+   "gitergo_field": 0.7335243553008596,
+   "gitergo_field_n": 349,
+   "plantdoc": 0.45,
+   "plantdoc_n": 60,
+   "plantvillage": 0.8933823529411765,
+   "plantvillage_n": 544
+  },
+  "score": 0.5917621776504298,
+  "sec": 268
+ },
+ {
+  "stage": "s1",
+  "epoch": 3,
+  "loss": 1.3479573726654053,
+  "val": {
+   "gitergo_field": 0.7736389684813754,
+   "gitergo_field_n": 349,
+   "plantdoc": 0.48333333333333334,
+   "plantdoc_n": 60,
+   "plantvillage": 0.9172794117647058,
+   "plantvillage_n": 544
+  },
+  "score": 0.6284861509073544,
+  "sec": 267
+ },
+ {
+  "stage": "s2",
+  "epoch": 1,
+  "loss": 1.4389506578445435,
+  "val": {
+   "gitergo_field": 0.7564469914040115,
+   "gitergo_field_n": 349,
+   "plantdoc": 0.5833333333333334,
+   "plantdoc_n": 60,
+   "plantvillage": 0.9301470588235294,
+   "plantvillage_n": 544
+  },
+  "score": 0.6698901623686724,
+  "sec": 323
+ },
+ {
+  "stage": "s2",
+  "epoch": 2,
+  "loss": 1.3132972717285156,
+  "val": {
+   "gitergo_field": 0.8108882521489972,
+   "gitergo_field_n": 349,
+   "plantdoc": 0.55,
+   "plantdoc_n": 60,
+   "plantvillage": 0.8970588235294118,
+   "plantvillage_n": 544
+  },
+  "score": 0.6804441260744987,
+  "sec": 313
+ },
+ {
+  "stage": "s2",
+  "epoch": 3,
+  "loss": 1.250760555267334,
+  "val": {
+   "gitergo_field": 0.8911174785100286,
+   "gitergo_field_n": 349,
+   "plantdoc": 0.55,
+   "plantdoc_n": 60,
+   "plantvillage": 0.9283088235294118,
+   "plantvillage_n": 544
+  },
+  "score": 0.7205587392550143,
+  "sec": 321
+ },
+ {
+  "stage": "s2",
+  "epoch": 4,
+  "loss": 1.222156047821045,
+  "val": {
+   "gitergo_field": 0.8796561604584527,
+   "gitergo_field_n": 349,
+   "plantdoc": 0.5833333333333334,
+   "plantdoc_n": 60,
+   "plantvillage": 0.9411764705882353,
+   "plantvillage_n": 544
+  },
+  "score": 0.731494746895893,
+  "sec": 326
+ }
+]

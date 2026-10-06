@@ -1,0 +1,116 @@
+[
+  {
+    "case": "solid_green.jpg",
+    "note": "solid green, green_ratio=1.000",
+    "status_code": 200,
+    "body": {
+      "status": "rejected",
+      "message": "Model is image ko recognize nahi kar saka. Yeh plant leaf nahi hai ya confidence bohat kam hai.",
+      "confidence_score": 31.17
+    }
+  },
+  {
+    "case": "solid_brown_necrotic.jpg",
+    "note": "solid brown/necrotic, green_ratio=0.000",
+    "status_code": 200,
+    "body": {
+      "status": "rejected",
+      "message": "Yeh plant leaf nahi hai. Baraye karam sirf fasal ke patte ki saaf tasveer upload karein.",
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "case": "green_leaf_partial_lesion.jpg",
+    "note": "~40% brown lesion on green leaf, green_ratio=0.759",
+    "status_code": 200,
+    "body": {
+      "status": "success",
+      "prediction": "Rice___Brown_Spot",
+      "confidence_score": 92.59
+    }
+  },
+  {
+    "case": "green_leaf_severe_lesion.jpg",
+    "note": "~85% brown lesion on green leaf (severe disease simulation), green_ratio=0.242",
+    "status_code": 200,
+    "body": {
+      "status": "rejected",
+      "message": "Model is image ko recognize nahi kar saka. Yeh plant leaf nahi hai ya confidence bohat kam hai.",
+      "confidence_score": 60.74
+    }
+  },
+  {
+    "case": "solid_gray_background.jpg",
+    "note": "solid gray non-plant, green_ratio=0.000",
+    "status_code": 200,
+    "body": {
+      "status": "rejected",
+      "message": "Yeh plant leaf nahi hai. Baraye karam sirf fasal ke patte ki saaf tasveer upload karein.",
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "case": "random_noise.jpg",
+    "note": "random noise, green_ratio=0.286",
+    "status_code": 200,
+    "body": {
+      "status": "success",
+      "prediction": "Wheat___Healthy",
+      "confidence_score": 81.28
+    }
+  },
+  {
+    "case": "fake.jpg",
+    "note": "corrupt/non-image bytes with image/jpeg content-type",
+    "status_code": 500,
+    "body": {
+      "error": {
+        "type": "http_error",
+        "message": "Prediction processing failed: cannot identify image file <_io.BytesIO object at 0x7f749a3c8ea0>",
+        "details": null
+      }
+    }
+  },
+  {
+    "case": "doc.pdf",
+    "note": "real jpeg bytes but content-type says application/pdf",
+    "status_code": 400,
+    "body": {
+      "error": {
+        "type": "http_error",
+        "message": "Invalid file type. Please upload a valid image file.",
+        "details": null
+      }
+    }
+  },
+  {
+    "case": "0d6f08f1-7004-4ac4-b1ed-682381f12ea9.jpg",
+    "note": "unlabeled real-world-style photo, green_ratio=0.718, size=(364, 549)",
+    "status_code": 200,
+    "body": {
+      "status": "success",
+      "prediction": "Red Rot",
+      "confidence_score": 88.96
+    }
+  },
+  {
+    "case": "6b0b34c8-f927-4686-81db-7ccd77e8d5c0.jpg",
+    "note": "unlabeled real-world-style photo, green_ratio=0.901, size=(195, 280)",
+    "status_code": 200,
+    "body": {
+      "status": "success",
+      "prediction": "Corn___Healthy",
+      "confidence_score": 90.99
+    }
+  },
+  {
+    "case": "dad03e17-9564-456c-9b85-535977100ef9.jpg",
+    "note": "unlabeled real-world-style photo, green_ratio=0.355, size=(394, 507)",
+    "status_code": 200,
+    "body": {
+      "status": "rejected",
+      "message": "Model is image ko recognize nahi kar saka. Yeh plant leaf nahi hai ya confidence bohat kam hai.",
+      "confidence_score": 38.25
+    }
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "purpose": "Structured summary of the expanded Google Colab evaluation run (source: AgriMind-ML-Evaluation.zip). This is ADDITIONAL evidence layered on top of, not a replacement for, the original 280-image evaluation in ml_evaluation_report.json / ml_evaluation_strict7_classes.json.",
+    "model_evaluated": "apps/api/models/agrimind_plant_disease_model.keras -- unchanged, this is V1, nothing was retrained or modified",
+    "date_added_to_docs": "2026-09-18",
+    "raw_source_files": "Full per-image CSVs are in the AgriMind-ML-Evaluation.zip deliverable (01_Full_5_Crop_Evaluation/, 02_Error_Analysis/, 03_Full_Dataset_Test/, 04_PlantVillage_250_Test/, 05_SAGE_Real_World/, 06_SAGE_Sugarcane_OOD/) and are not checked into this docs/ folder -- the figures below were computed directly from those CSVs.",
+    "held_out_status_unchanged": "None of the evaluations below resolve the original-training-data provenance question. Whether any of this evaluation imagery overlaps with whatever data originally trained the model remains UNKNOWN, exactly as for the original 280-image evaluation."
+  },
+  "A_full_five_crop_diseases_dataset": {
+    "valid_accuracy_benchmark": true,
+    "total_images": 13324,
+    "correct": 11652,
+    "micro_accuracy": 0.8745,
+    "macro_precision": 0.84,
+    "macro_recall": 0.81,
+    "macro_f1": 0.82,
+    "weighted_f1": 0.87,
+    "classes_covered": "All 17 in-taxonomy classes with real ground truth present in this dataset (Background___Non_Plant never appears as a true label here)",
+    "crop_level_accuracy": {
+      "Corn": 0.9372,
+      "Potato": 0.9758,
+      "Wheat": 0.8681,
+      "Rice": 0.7916,
+      "Sugarcane_generic_classes": 0.5333
+    },
+    "note": "Sugarcane_generic_classes = the model's 3 non-crop-prefixed classes (Healthy, Bacterial Blight, Red Rot), which is all the sugarcane-adjacent coverage this model has; see section E for real sugarcane disease OOD behavior.",
+    "notable_weak_classes": [
+      "Rice___Leaf_Blast (54.0% recall, largest confusion with Rice___Healthy and Rice___Brown_Spot)",
+      "Corn___Gray_Leaf_Spot (76.0% accuracy, dominant bidirectional confusion with Corn___Northern_Leaf_Blight)"
+    ],
+    "training_data_overlap": "UNKNOWN -- images sourced from a public Kaggle dataset per the recorded image_path column; no evidence either way on overlap with this model's original (unrecoverable) training data."
+  },
+  "B_plantvillage_250_image_evaluation": {
+    "valid_accuracy_benchmark": true,
+    "total_images": 250,
+    "correct": 240,
+    "accuracy": 0.96,
+    "classes_covered": "7 classes: Corn___Common_Rust, Corn___Gray_Leaf_Spot, Corn___Healthy, Corn___Northern_Leaf_Blight, Potato___Early_Blight, Potato___Healthy, Potato___Late_Blight",
+    "relationship_to_prior_280_image_evaluation": "THIS IS A DIFFERENT, SEPARATE, NEWER RUN -- not a re-statement or correction of the original 92.86%/280-image figure in ml_evaluation_report.md. Same 7-class scope, different image sample (250 vs 280 images), different result (96.0% vs 92.86%). Both figures should be reported and neither should be treated as superseding the other -- they are two independent data points on the same 7-class scope, both subject to the same unresolved train/test-overlap caveat."
+  },
+  "C_2265_image_external_dataset": {
+    "valid_accuracy_benchmark": false,
+    "reason_invalid": "Both ground-truth labels present in this dataset (Corn_(Maize)___Leaf_Spot and Corn_(Maize)___Maize_Streak_Virus) are OUTSIDE the model's 18-class taxonomy. There is no correct answer the model could have given for any of these 2,265 images.",
+    "total_images": 2265,
+    "exact_label_matches": 0,
+    "do_not_report_as": "0% accuracy -- this framing is misleading because the task itself was impossible under this model's taxonomy",
+    "correct_framing": "Taxonomy-mismatch / out-of-distribution evidence only",
+    "observed_behavior": "The model does not abstain when shown genuinely off-taxonomy plant disease images. Predictions scattered across many known classes (Wheat___Healthy 656x, Corn___Healthy 408x, Wheat___Brown_Rust 359x, and 15 other classes) at a relatively high average confidence (0.78, up to 0.9999).",
+    "avg_confidence": 0.7835
+  },
+  "D_sage_real_world_matched_evaluation": {
+    "valid_accuracy_benchmark": true,
+    "sample_note": "Referred to as \"51\" in the source filename; 46 rows of usable data are present in the delivered CSV.",
+    "total_images": 46,
+    "correct": 26,
+    "accuracy": 0.5652,
+    "crop_breakdown": {
+      "Corn": "12/25",
+      "Potato": "13/15",
+      "Rice": "1/6"
+    },
+    "classes_covered": "In-taxonomy only: Corn (Common_Rust, Gray_Leaf_Spot, Northern_Leaf_Blight), Potato (Early_Blight, Late_Blight), Rice (Brown_Spot)",
+    "significance": "Small sample, but the only evaluation sourced from diverse real-world image origins (Bugwood, LeafNet, CDDM, New_Plant_Di -- not single-source lab photography like PlantVillage). Accuracy drops sharply versus the lab-image evaluations (A and B above), and several errors occur at >99% confidence.",
+    "caveat": "Small-N (46 images) -- treat as directional evidence of a lab-to-real-world generalization gap, not a precise accuracy figure."
+  },
+  "E_sage_sugarcane_ood": {
+    "valid_accuracy_benchmark": false,
+    "reason_invalid": "17 distinct real sugarcane disease labels tested (Yellow_Spot, Grassy_Shoot, Sett_Rot, Banded_Chlorosis, Pokkah_Boeng, Sugarcane_Mosaic_Virus, Leaf_Scald, Brown_Rust, Brown_Spot, Streak_Mosaic_Scsmv, Yellow_Leaf, Eye_Spot, Common_Rust, Dried_Leaves, Leaf_Mosaic_Virus, Red_Spot, Smut), none of which map cleanly onto the model's only sugarcane-adjacent classes (generic Healthy / Bacterial Blight / Red Rot).",
+    "total_images": 110,
+    "avg_confidence": 0.6604,
+    "images_at_or_above_68_percent_threshold": 50,
+    "images_at_or_above_68_percent_threshold_pct": 0.4545,
+    "key_finding": "45% of these unsupported-class images still passed the model's 68% confidence gate, meaning the existing confidence threshold does not reliably reject this class of out-of-taxonomy input.",
+    "do_not_report_as": "an accuracy test -- there is no valid ground-truth label for any of these images under the current 18-class taxonomy"
+  },
+  "error_analysis_findings": {
+    "high_confidence_wrong_predictions_csv_correction": "docs note: 02_Error_Analysis/high_confidence_wrong_predictions.csv in the delivered evaluation package is NOT filtered to a high-confidence subset. It contains the same 1,672 rows as all_wrong_predictions.csv (confidence range 22.0%-99.998%), sorted by confidence descending. Treat it as 'all wrong predictions, sorted by confidence' when using it, not as a pre-filtered high-confidence-only sample.",
+    "corn_gray_leaf_spot_vs_northern_leaf_blight": "Confirmed recurring bidirectional confusion, consistent with the original 280-image evaluation: 112 Gray_Leaf_Spot images predicted as Northern_Leaf_Blight, 104 Northern_Leaf_Blight images predicted as Gray_Leaf_Spot, in the 13,324-image test alone.",
+    "confidence_is_not_calibrated": "Across every evaluation set checked (13,324-image, SAGE real-world, SAGE sugarcane OOD), correct and incorrect predictions have substantially overlapping confidence ranges, and multiple wrong predictions exceed 99% confidence. Confidence should not be treated as a calibrated probability of correctness.",
+    "ood_rejection_remains_unreliable": "Three independent pieces of evidence now show the model does not reliably reject out-of-taxonomy input: (1) the original synthetic-noise probe (ml_probe_results.json), (2) the 2,265-image off-taxonomy Corn disease test (section C), (3) the 110-image off-taxonomy Sugarcane disease test (section E). No threshold-based fix has been evidence-backed."
+  }
+}

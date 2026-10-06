@@ -1,0 +1,144 @@
+{
+  "evaluated_at": "2026-09-21",
+  "model_path": "/home/claude/ml_workspace/project_ml/artifacts/agrimind_plant_disease_v2.keras",
+  "n_test_images": 659,
+  "overall_accuracy": 0.9211,
+  "macro_precision": 0.8876,
+  "macro_recall": 0.9267,
+  "macro_f1": 0.902,
+  "weighted_precision": 0.9298,
+  "weighted_recall": 0.9211,
+  "weighted_f1": 0.923,
+  "mean_confidence_overall": 0.9477,
+  "per_class": {
+    "Corn___Common_Rust": {
+      "precision": 0.9843,
+      "recall": 0.9542,
+      "f1": 0.969,
+      "support": 131
+    },
+    "Corn___Gray_Leaf_Spot": {
+      "precision": 0.6579,
+      "recall": 0.8621,
+      "f1": 0.7463,
+      "support": 58
+    },
+    "Corn___Healthy": {
+      "precision": 0.9829,
+      "recall": 0.9914,
+      "f1": 0.9871,
+      "support": 116
+    },
+    "Corn___Northern_Leaf_Blight": {
+      "precision": 0.9029,
+      "recall": 0.7881,
+      "f1": 0.8416,
+      "support": 118
+    },
+    "Potato___Early_Blight": {
+      "precision": 0.9643,
+      "recall": 0.973,
+      "f1": 0.9686,
+      "support": 111
+    },
+    "Potato___Healthy": {
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "support": 15
+    },
+    "Potato___Late_Blight": {
+      "precision": 0.9712,
+      "recall": 0.9182,
+      "f1": 0.9439,
+      "support": 110
+    }
+  },
+  "confusion_matrix": [
+    [
+      125,
+      2,
+      0,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      50,
+      0,
+      6,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      115,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      23,
+      2,
+      93,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      108,
+      0,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      4,
+      5,
+      101
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "Corn___Common_Rust",
+    "Corn___Gray_Leaf_Spot",
+    "Corn___Healthy",
+    "Corn___Northern_Leaf_Blight",
+    "Potato___Early_Blight",
+    "Potato___Healthy",
+    "Potato___Late_Blight"
+  ],
+  "source_breakdown": {
+    "plantdoc": {
+      "n": 63,
+      "accuracy": 0.6349,
+      "mean_confidence": 0.7547
+    },
+    "plantvillage": {
+      "n": 596,
+      "accuracy": 0.9513,
+      "mean_confidence": 0.9681
+    }
+  },
+  "note": "This is V2-alpha's internal held-out test (leakage-gated, near-dup-safe split). It is NOT held-out in the sense of being independent of V1's unknown training data lineage -- it IS independent of V2's own training/validation split, which V1 could never claim (V1's training provenance is unknown)."
+}

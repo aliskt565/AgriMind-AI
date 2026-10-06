@@ -1,0 +1,259 @@
+{
+  "project_name": "AgriMind AI",
+  "formal_title": "AI-Based Smart Agriculture Advisory System",
+  "generated_at": "2026-09-25",
+  "stack": {
+    "backend": [
+      "Python",
+      "FastAPI",
+      "SQLAlchemy",
+      "Alembic",
+      "PostgreSQL",
+      "Pydantic v2",
+      "python-jose",
+      "passlib/bcrypt",
+      "pytest",
+      "keras/tensorflow-cpu/numpy/pillow (experimental /predict-disease endpoint only, lazily loaded)"
+    ],
+    "frontend": [
+      "Next.js (App Router)",
+      "React",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Jest",
+      "React Testing Library"
+    ],
+    "no_animation_library_installed": true,
+    "git_initialized": false
+  },
+  "versions": {
+    "python": "3.12.3",
+    "node": "22.22.2",
+    "npm": "10.9.7",
+    "fastapi": "0.141.1",
+    "sqlalchemy": "2.0.51",
+    "alembic": "1.19.1",
+    "postgresql": "16",
+    "bcrypt": "4.0.1",
+    "nextjs": "16.3.0",
+    "keras": "3.15.1",
+    "tensorflow_cpu": "2.21.0",
+    "numpy": "2.5.3",
+    "pillow": "12.3.0"
+  },
+  "backend": {
+    "test_count_passed": 136,
+    "test_command": "cd apps/api && .venv/bin/pytest -q",
+    "test_count_breakdown": "126 product tests + 10 ML contract/smoke tests (app/tests/test_ml_plant_disease_model.py, skips cleanly without ML deps installed)",
+    "startup_verified": true,
+    "route_count": 29,
+    "route_count_note": "28 versioned product routes + 1 unversioned experimental route (POST /predict-disease)",
+    "migration_head": "b85fbd724fc1",
+    "migration_chain": [
+      "e6f26901453a_initial_schema",
+      "f2f0a0aa857b_audit_log_actor_fk_set_null_on_delete",
+      "24cf6fbb2e55_add_copilot_conversations_and_messages",
+      "d8ca07977247_copilot_message_json_fields_not_null",
+      "916f8297b1b4_add_canal_tubewell_other_irrigation_types",
+      "b85fbd724fc1_add_signal_key_to_ai_risks"
+    ],
+    "databases": {
+      "dev": "agrimind_dev",
+      "test": "agrimind_test (connection hardcoded in conftest.py, not read from .env)"
+    }
+  },
+  "frontend": {
+    "test_count_passed": 51,
+    "test_suite_count": 9,
+    "test_command": "cd apps/web && npx jest",
+    "typescript_status": "PASS",
+    "typescript_command": "npx tsc --noEmit",
+    "eslint_status": "PASS",
+    "eslint_command": "npx eslint src --max-warnings=0",
+    "production_build_status": "PASS",
+    "production_build_command": "npx next build",
+    "compiled_routes": 9
+  },
+  "features": {
+    "authentication": {
+      "status": "IMPLEMENTED"
+    },
+    "rbac_ownership": {
+      "status": "IMPLEMENTED"
+    },
+    "farm_crud_backend": {
+      "status": "IMPLEMENTED"
+    },
+    "farm_edit_frontend": {
+      "status": "NOT IMPLEMENTED",
+      "evidence": "grep for 'Edit farm'/'editingFarmId' in apps/web/src/app/farms/page.tsx returns 0 matches -- still true as of this snapshot"
+    },
+    "field_crud_backend": {
+      "status": "IMPLEMENTED"
+    },
+    "field_initial_crops_backend": {
+      "status": "IMPLEMENTED"
+    },
+    "field_initial_crops_frontend": {
+      "status": "NOT IMPLEMENTED",
+      "evidence": "grep for 'initial_crop_types'/'COMMON_CROP_TYPES' in the field-creation page returns 0 matches -- still true as of this snapshot"
+    },
+    "crop_lifecycle": {
+      "status": "IMPLEMENTED"
+    },
+    "weather_intelligence": {
+      "status": "IMPLEMENTED (mock)"
+    },
+    "ai_crop_advisor": {
+      "status": "IMPLEMENTED (mock)"
+    },
+    "plant_vision": {
+      "status": "IMPLEMENTED (real V2 CNN)",
+      "note": "Plant Vision now uses the integrated V2-alpha MobileNetV2 CNN service for Corn and Potato. Rice, Wheat and Sugarcane remain explicitly unsupported until their V2 classes are trained and evaluated. Quick Scan is wired to the same shared V2 service."
+    },
+    "risk_engine": {
+      "status": "IMPLEMENTED"
+    },
+    "recommendation_engine": {
+      "status": "IMPLEMENTED"
+    },
+    "ai_copilot": {
+      "status": "IMPLEMENTED (mock)"
+    },
+    "dashboard_backend": {
+      "status": "IMPLEMENTED"
+    },
+    "dashboard_frontend": {
+      "status": "IMPLEMENTED"
+    },
+    "visual_motion_overhaul": {
+      "status": "IMPLEMENTED",
+      "evidence": [
+        "apps/web/src/components/AmbientBackground.tsx present, mounted on every page with a per-page atmosphere variant",
+        "apps/web/src/components/ThemeToggle.tsx present, dark-default + light theme, localStorage-persisted",
+        "globals.css v2 design-token system: layered surfaces, shadow/motion tokens, stagger utilities",
+        "Upgraded Button/Card/Input/States/AppShell all present and in use",
+        "Corrected this snapshot: this was previously (and incorrectly) reported as NOT IMPLEMENTED in an earlier, now-stale version of this document -- it has been implemented, fixed (a real stacking-context bug that hid AmbientBackground was found and fixed), and visually verified via headless-browser screenshots since that earlier snapshot was written."
+      ]
+    },
+    "real_llm_provider": {
+      "status": "NOT IMPLEMENTED",
+      "evidence": "app/ai/factory.py raises NotImplementedError for AI_MODE=real / COPILOT_PROVIDER=real / WEATHER_PROVIDER=real by design"
+    },
+    "experimental_cnn_endpoint": {
+      "status": "LEGACY V1 ARCHIVE / REPLACED BY V2",
+      "path": "POST /predict-disease (backward-compatible endpoint)",
+      "model_artifact": "apps/api/models/agrimind_plant_disease_model.keras now contains the V2-alpha 7-class model; the original V1 binary is preserved at ml/evaluation_archive/v1_legacy/agrimind_plant_disease_model_v1_legacy.keras",
+      "integration_status": "The production Plant Vision and Quick Scan flows use the V2 service. The legacy V1 artifact is retained only for historical comparison/rollback reference.",
+      "evaluation_status": "See docs/ml_v2_evaluation_report.md and docs/ml_v2_ood_report.md for the current V2 measurements."
+    },
+    "v2_plant_disease_model": {
+      "status": "INTEGRATED (ALPHA)",
+      "classes": 7,
+      "crops": [
+        "Corn",
+        "Potato"
+      ],
+      "model_version": "agrimind_plant_disease_v2-alpha",
+      "model_path": "apps/api/models/agrimind_plant_disease_model.keras",
+      "canonical_artifact": "ml/artifacts/agrimind_plant_disease_v2.keras",
+      "scan_path": "/api/v1/ai/plant-vision/scan",
+      "crop_detection_path": "/api/v1/ai/plant-vision/crops/{crop_id}/detect",
+      "ood": "Combined calibrated confidence + Mahalanobis embedding-distance rejection",
+      "status_note": "Integrated into the local product as an alpha model. It is not a claim of field-validated diagnosis or commercial legal clearance."
+    }
+  },
+  "security": {
+    "cross_tenant_recommendation_fix": "applied and tested -- dedup key now includes farmer_id and field_id",
+    "idor_test_coverage": [
+      "farms",
+      "fields",
+      "crops",
+      "activities",
+      "weather",
+      "risk",
+      "recommendations",
+      "ai_crop_intelligence",
+      "ai_plant_vision",
+      "copilot"
+    ],
+    "secret_key_production_guard": "app/main.py refuses to start with the default placeholder SECRET_KEY when ENVIRONMENT != development",
+    "predict_disease_endpoint_note": "This experimental endpoint is unauthenticated by design (not yet integrated) -- do not deploy it to a publicly reachable environment without adding authentication and rate limiting first."
+  },
+  "known_limitations": [
+    "Farm Edit frontend UI is not implemented (backend PATCH exists and is tested)",
+    "Field initial-crop-selection frontend UI is not implemented (backend contract exists and is tested)",
+    "No real LLM/weather API integration -- all AI/weather providers are explicitly mocked by design",
+    "No field-edit UI for modifying an existing field's crop set (only initial creation)",
+    "No toast/notification component system -- inline banners used instead",
+    "V2 Plant Vision currently covers only Corn and Potato (7 classes); Rice, Wheat and Sugarcane remain deferred.",
+    "V2 internal held-out accuracy is 92.11%, but the PlantDoc real-world subset is 63.49% versus 95.13% on PlantVillage-style images, so the lab-to-field gap is not resolved.",
+    "V2 OOD rejection is not production-proven: combined rejection was 26.67% on the measured real off-taxonomy plant OOD set and 89% on synthetic non-plant/noise.",
+    "V2 training sources and licenses are documented in the ML reports; commercial distribution requires separate legal review of dataset/model licensing terms."
+  ],
+  "known_bugs": [],
+  "known_bugs_fixed_historically": [
+    "weather_context never populated for AI Crop Advisor",
+    "rotation_history never populated for AI Crop Advisor",
+    "Risk Engine only checked a rare extreme_weather_alert flag, ignored rainfall/temperature/humidity thresholds",
+    "signal_key missing -- concurrent weather risk findings silently overwrote each other",
+    "planting never recorded as a CropActivity -- inconsistent/impossible activity-gap risk detection",
+    "validation error handler crashed with 500 on a raw ValueError inside a Pydantic field_validator",
+    "CRITICAL: cross-tenant recommendation overwrite -- dedup key missing farmer_id/field_id",
+    "AmbientBackground component was completely invisible due to a CSS stacking-context bug (opaque wrapper backgrounds + duplicate html/body background declarations) -- found via headless-browser pixel sampling, not just code review, and fixed",
+    "/predict-disease had no declared ML dependencies in requirements.txt (broke fresh installs/CI), no file-size limit, and returned 500 instead of 400 for corrupt/invalid uploads -- all three fixed"
+  ],
+  "environment_variables": {
+    "backend": [
+      "ENVIRONMENT",
+      "DEBUG",
+      "DATABASE_URL",
+      "SECRET_KEY",
+      "CORS_ORIGINS",
+      "AI_MODE",
+      "WEATHER_PROVIDER",
+      "COPILOT_PROVIDER",
+      "COPILOT_LLM_API_KEY",
+      "COPILOT_LLM_MODEL_NAME",
+      "STORAGE_BACKEND",
+      "STORAGE_LOCAL_DIR",
+      "MAX_UPLOAD_SIZE_MB"
+    ],
+    "frontend": [
+      "NEXT_PUBLIC_API_URL"
+    ]
+  },
+  "history": {
+    "note": "This section is HISTORICAL CONTEXT ONLY. Do not treat anything here as describing the current state -- see 'features' and 'backend'/'frontend' above for that.",
+    "environment_reset": "The sandbox environment reset mid-project at one point; the working directory was lost and restored from the most recent prior ZIP export. That export predated Farm Edit frontend UI, field initial-crop-selection frontend UI, and (at the time) the entire visual/motion design overhaul. Backend portions of that gap were reconstructed and re-verified. The visual/motion overhaul was subsequently built from scratch in a later session and is now present (see features.visual_motion_overhaul) -- it was NOT restored from any lost prior version.",
+    "farm_edit_and_initial_crops_frontend": "These two frontend pieces were never rebuilt after the reset and remain missing as of this snapshot -- this is current fact, not just history."
+  },
+  "current_development_phase": "V2-alpha Plant Vision model integrated for Corn/Potato; Scan and crop-linked Plant Vision use the same V2 inference service; Rice/Wheat/Sugarcane extension and real-world generalization remain open",
+  "roadmap_status": {
+    "core_backend_platform": "Complete",
+    "core_frontend_platform": "Mostly complete (auth, farms list/create, fields, crops, activities, weather, risk scan, AI Crop Advisor, Plant Vision, Copilot all present and tested)",
+    "farm_edit": "Partial -- backend complete, frontend missing",
+    "field_initial_crops": "Partial -- backend complete, frontend missing",
+    "visual_motion_overhaul": "Complete and visually verified",
+    "real_ai_llm_provider": "Not started (intentionally deferred, mock-first architecture in place)",
+    "experimental_cnn_model": "V1 is archived as a legacy reference. The production Plant Vision path now uses V2-alpha for Corn/Potato.",
+    "v2_plant_disease_model": "INTEGRATED AS ALPHA: 7-class Corn/Potato V2 model is wired into Plant Vision and Quick Scan. Internal held-out accuracy 92.11%; PlantVillage 95.13% vs PlantDoc 63.49%; combined OOD rejection 26.67% on real off-taxonomy plant images and 89% on synthetic non-plant/noise. Rice/Wheat/Sugarcane remain deferred. V2 is not yet field-validated or commercially cleared.",
+    "note": "Percentages are not used because they cannot be defensibly justified from the verified evidence; qualitative status only, per instruction. V2's percentages above are an exception -- they come from this session's own measured, leakage-gated evaluation, not from unverifiable prior evidence."
+  },
+  "handoff_documents": [
+    "docs/CLAUDE_HANDOFF.md",
+    "docs/PROJECT_STATE.json",
+    "docs/VERIFICATION_REPORT.md",
+    "docs/NEXT_STEPS.md",
+    "docs/ml_evaluation_report.md",
+    "docs/ml_evaluation_report.json",
+    "docs/ml_evaluation_strict7_classes.json",
+    "docs/ml_evaluation_expanded_2026_09.json",
+    "docs/ml_v2_dataset_license_verification_2026_09.md",
+    "docs/ml_v2_dataset_license_verification_2026_09.json",
+    "docs/ml_v2_training_report.md",
+    "docs/ml_v2_evaluation_report.md",
+    "docs/ml_v2_ood_report.md",
+    "docs/ml_v2_model_card.md"
+  ]
+}

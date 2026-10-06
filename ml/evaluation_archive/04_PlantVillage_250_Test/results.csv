@@ -1,0 +1,251 @@
+filename,actual_class,predicted_class,confidence_percent,correct
+001_RS_Rust 2226.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+002_RS_Rust 1678.JPG,Corn___Common_Rust,Corn___Common_Rust,99.99997615814209,True
+003_RS_Rust 1588.JPG,Corn___Common_Rust,Corn___Common_Rust,99.98899698257446,True
+004_RS_Rust 2331.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+005_RS_Rust 1848.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+006_RS_Rust 1815.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+007_RS_Rust 1792.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+008_RS_Rust 1706.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+009_RS_Rust 2326.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+010_RS_Rust 1668.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+011_RS_Rust 2264.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+012_RS_Rust 2330.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+013_RS_Rust 2490.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+014_RS_Rust 2129.JPG,Corn___Common_Rust,Corn___Common_Rust,99.9798595905304,True
+015_RS_Rust 1653.JPG,Corn___Common_Rust,Corn___Common_Rust,99.99462366104126,True
+016_RS_Rust 2175.JPG,Corn___Common_Rust,Corn___Common_Rust,99.99998807907104,True
+017_RS_Rust 2002.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+018_RS_Rust 1595.JPG,Corn___Common_Rust,Corn___Common_Rust,94.14522647857666,True
+019_RS_Rust 1593.JPG,Corn___Common_Rust,Corn___Common_Rust,97.44380712509155,True
+020_RS_Rust 1659.JPG,Corn___Common_Rust,Corn___Common_Rust,99.99998807907104,True
+021_RS_Rust 1787.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+022_RS_Rust 1803.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+023_RS_Rust 2087.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+024_RS_Rust 2187.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+025_RS_Rust 1590.JPG,Corn___Common_Rust,Corn___Common_Rust,99.99755620956421,True
+026_RS_Rust 2145.JPG,Corn___Common_Rust,Corn___Common_Rust,99.99995231628418,True
+027_RS_Rust 1767.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+028_RS_Rust 2305.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+029_RS_Rust 2237.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+030_RS_Rust 2290.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+031_RS_Rust 1999.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+032_RS_Rust 1789.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+033_RS_Rust 2029.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+034_RS_Rust 2174.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+035_RS_Rust 1851.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+036_RS_Rust 2404.JPG,Corn___Common_Rust,Corn___Common_Rust,100.0,True
+001_038464d1-47a9-4169-afb1-72c87e568a95___RS_GLSp 4480.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,82.37654566764832,True
+002_5b6fe4ff-01b0-4b9d-ad8d-4c6c8ef909be___RS_GLSp 9302.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,54.42587733268738,True
+003_d58e8f58-8a71-4d49-a183-5026f861be1b___RS_GLSp 4563.JPG,Corn___Gray_Leaf_Spot,Corn___Northern_Leaf_Blight,57.05022215843201,False
+004_b342337b-b5f2-4d24-9c61-dd7fa4421b5d___RS_GLSp 9315.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,91.26123785972595,True
+005_9ac3c670-7ccf-46a8-870c-c075a26374b0___RS_GLSp 9344.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,96.85870409011841,True
+006_598ba05d-f9b0-46da-803f-ed4276534ede___RS_GLSp 4414.JPG,Corn___Gray_Leaf_Spot,Corn___Northern_Leaf_Blight,70.35825848579407,False
+007_7944b10d-96b5-4219-882d-22b1e2380544___RS_GLSp 7309.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,88.97746801376343,True
+008_b1a62b73-9ab9-464a-99dc-b6fb11130dde___RS_GLSp 4382.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,92.76310801506042,True
+009_36584bae-f3bb-40c0-b866-ed5ba0c2f7ae___RS_GLSp 4577.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,64.061439037323,True
+010_30554ff6-3eef-4d17-8304-de6a8a478f2b___RS_GLSp 4683.JPG,Corn___Gray_Leaf_Spot,Corn___Northern_Leaf_Blight,63.50783705711365,False
+011_c517891d-1411-4f7a-8d34-286ff2a7571f___RS_GLSp 4404.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,71.13057971000671,True
+012_346e5b39-b83e-4b5f-a02b-bc01fc230842___RS_GLSp 4311.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,69.6592390537262,True
+013_bb7244cb-5a7e-4446-85e0-f9b7db6d197d___RS_GLSp 7295.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,93.98775100708008,True
+014_b50e4d92-099f-4213-b5b8-0f76afa10124___RS_GLSp 4675.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,79.20215129852295,True
+015_950e2b3f-a007-48c5-bb85-8c68336a7e76___RS_GLSp 4453.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,65.92622399330139,True
+016_18aae193-d119-417b-837a-84f33835e788___RS_GLSp 4497.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,71.01271748542786,True
+017_eba7c3d9-7e8e-4cfc-9a84-7eb39671d480___RS_GLSp 9318.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,95.42613625526428,True
+018_42423e5e-790d-4839-a683-abb2d9dce89a___RS_GLSp 7296.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,98.60769510269165,True
+019_c47c1b5d-7527-4f1c-a3b0-8d737c5ccbaf___RS_GLSp 4457.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,95.14943361282349,True
+020_29d60537-2717-45e1-b608-c19270302f67___RS_GLSp 4558.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,59.787505865097046,True
+021_a27ab77f-274b-4785-95f7-4844aa141c32___RS_GLSp 9353.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,75.30423402786255,True
+022_bc1f8969-f563-4300-b792-93f75d23a483___RS_GLSp 9306.JPG,Corn___Gray_Leaf_Spot,Wheat___Brown_Rust,50.44451355934143,False
+023_6f4b40eb-6d14-4f30-9ef8-89f85bd841fd___RS_GLSp 4426.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,87.88411021232605,True
+024_2788c3da-4e36-408e-b2e5-a08442f7f432___RS_GLSp 4500.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,75.7780909538269,True
+025_1b1991ac-4e5c-4528-ac3d-096d63fb05aa___RS_GLSp 4491.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,66.56999588012695,True
+026_80a35c48-04ed-457d-a7e0-ac5179c7b53a___RS_GLSp 7292.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,46.95973992347717,True
+027_a142d0e0-bdc3-44ad-9866-545ec2b006c3___RS_GLSp 9361.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,71.83813452720642,True
+028_29f064ba-c8cd-47f7-add1-24fe1263f2db___RS_GLSp 9319.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,95.90238928794861,True
+029_837474e2-d11d-44b7-b39b-0a21442b1e04___RS_GLSp 4455.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,60.80882549285889,True
+030_36001a30-9fc6-4955-9a14-49944cc8078a___RS_GLSp 4393.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,74.36688542366028,True
+031_e728b124-21b4-4022-aed0-3608564f6b6f___RS_GLSp 4473.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,73.56038689613342,True
+032_bd1ec5bd-8220-4c11-b48f-3f90d35ba40e___RS_GLSp 9295.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,86.02180480957031,True
+033_5cfe5cf5-bdba-44b5-8295-c5bda6e34ae3___RS_GLSp 9353 copy.jpg,Corn___Gray_Leaf_Spot,Corn___Northern_Leaf_Blight,67.41812825202942,False
+034_c0240d98-f8f7-4e02-95a3-0723d1f61ca1___RS_GLSp 4383.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,91.37789011001587,True
+035_b9fbe0b3-7f05-4ec3-be16-0cf13b86e8fe___RS_GLSp 4374.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,75.69067478179932,True
+036_75d924d6-a630-4e26-9e74-5b1e6dfc5e22___RS_GLSp 4475.JPG,Corn___Gray_Leaf_Spot,Corn___Gray_Leaf_Spot,79.68049049377441,True
+001_9275afa7-daf0-4052-b092-47d36132e69d___R.S_HL 8189 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.99366998672485,True
+002_3a188d29-5d0c-4707-bd8d-cfa29fe88eae___R.S_HL 8283 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.99955892562866,True
+003_9b75245d-d020-4508-a032-f7aa0e8d5589___R.S_HL 7995 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.99631643295288,True
+004_d0378d5a-47f6-4340-950b-18b4c2a8a598___R.S_HL 0600.JPG,Corn___Healthy,Corn___Healthy,99.95620846748352,True
+005_965d2fb1-0fc2-46ff-86a6-3d72c176187f___R.S_HL 5550 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.7536301612854,True
+006_8cdec02e-6273-452f-8681-1319a74d3698___R.S_HL 8185 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.98103976249695,True
+007_0fc63695-5bae-4313-ae41-9e9e09ce855b___R.S_HL 0620 copy.jpg,Corn___Healthy,Corn___Healthy,99.84637498855591,True
+008_852e8e42-c48b-4a49-9f06-cae0ecb7747e___R.S_HL 8271 copy.jpg,Corn___Healthy,Corn___Healthy,99.99946355819702,True
+009_8a08b66c-17a6-4689-a64e-bf22d57cc60a___R.S_HL 8173 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.9849796295166,True
+010_2251b665-207d-4500-a396-bc9bb097c34b___R.S_HL 8073 copy.jpg,Corn___Healthy,Corn___Healthy,99.44065809249878,True
+011_7399e301-9493-4e45-8674-aa1f676d6d92___R.S_HL 7900 copy 3.jpg,Corn___Healthy,Corn___Healthy,99.99728202819824,True
+012_a07d9b98-d0e6-42be-8a97-b3b9470b384c___R.S_HL 7921 copy 3.jpg,Corn___Healthy,Corn___Healthy,99.98531341552734,True
+013_33ae3386-f7ce-4c52-92d0-13d964f1cfae___R.S_HL 8331 copy.jpg,Corn___Healthy,Corn___Healthy,99.99940395355225,True
+014_205f8753-7598-4469-86c2-59307f90e85c___R.S_HL 8228 copy.jpg,Corn___Healthy,Corn___Healthy,99.98379945755005,True
+015_6376db56-3188-411e-a53a-275517e271e1___R.S_HL 7978 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.75526928901672,True
+016_5243e506-339c-4c97-8e1a-86f146aa5684___R.S_HL 8057 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.99499320983887,True
+017_3a668261-388a-45c1-8a8e-584cb3966bf0___R.S_HL 8071 copy.jpg,Corn___Healthy,Corn___Healthy,99.9917984008789,True
+018_cbf3bab4-8c89-4025-b844-9bd9a120bcfb___R.S_HL 8339 copy.jpg,Corn___Healthy,Corn___Healthy,95.71217894554138,True
+019_8afc9635-c5e3-41be-aac0-74109d6112ed___R.S_HL 0601 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.99079704284668,True
+020_99020386-3a33-4b62-b707-2986786393c3___R.S_HL 8200 copy.jpg,Corn___Healthy,Corn___Healthy,99.49782490730286,True
+021_79a3c505-b637-4ebb-b7e9-61f46bc0eb0b___R.S_HL 7922 copy.jpg,Corn___Healthy,Corn___Healthy,99.65492486953735,True
+022_2cd74832-29e5-441a-84b1-5bc5379c16c2___R.S_HL 8111 copy.jpg,Corn___Healthy,Corn___Healthy,99.9983549118042,True
+023_97433b9f-77bb-4279-b9d2-7b7bd6e12f5d___R.S_HL 7941 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.98961687088013,True
+024_45c4f454-dcbb-43f3-9727-18e029a6901c___R.S_HL 5518 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.99755620956421,True
+025_b6a4900e-03ae-41c6-b2a3-dc1345aaaddc___R.S_HL 0615 copy.jpg,Corn___Healthy,Corn___Healthy,99.96053576469421,True
+026_a9fb7f08-cb01-431e-ae32-cbeb1279e866___R.S_HL 8313 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.99829530715942,True
+027_ab077499-4113-4aec-b483-e2e23f9ff109___R.S_HL 7931 copy.jpg,Corn___Healthy,Corn___Healthy,99.35311675071716,True
+028_0cdeb628-7351-4bff-abfe-dfe75ad931e4___R.S_HL 8224 copy.jpg,Corn___Healthy,Corn___Healthy,99.96989965438843,True
+029_2ee333db-befc-4ef1-985f-d07df669eddc___R.S_HL 8131 copy.jpg,Corn___Healthy,Corn___Healthy,99.99642372131348,True
+030_b2495f66-78f3-40d5-b3e0-1a02545825cc___R.S_HL 5510 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.99890327453613,True
+031_07eae7fd-96f5-4f09-ba7a-1b108987c6af___R.S_HL 0600 copy 3.jpg,Corn___Healthy,Corn___Healthy,99.99561309814453,True
+032_aff53dc4-7545-4109-a8b3-eabc57d8deb7___R.S_HL 7921 copy.jpg,Corn___Healthy,Corn___Healthy,99.17827844619751,True
+033_442c3578-cee3-43bf-b636-b447a508a3f8___R.S_HL 8250 copy.jpg,Corn___Healthy,Corn___Healthy,99.97944235801697,True
+034_57e69775-d8c7-4701-9f93-f88dfa27e7f2___R.S_HL 8190 copy.jpg,Corn___Healthy,Corn___Healthy,99.91276860237122,True
+035_3a2379b9-d453-4d61-a9ff-9b2cfdd70553___R.S_HL 8194 copy 2.jpg,Corn___Healthy,Corn___Healthy,99.94588494300842,True
+036_0f3ce24e-fcf4-4738-94db-dc39881c0c73___R.S_HL 8038 copy.jpg,Corn___Healthy,Corn___Healthy,99.87974166870117,True
+001_369b969a-f820-40ec-a43c-7500df90e6d1___RS_NLB 3615.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,90.94411730766296,True
+002_f13d43cb-e365-4df6-aac8-746e4d6d7dab___RS_NLB 3528.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,98.96835088729858,True
+003_fae01c0a-db82-4189-9193-bdad09ede531___RS_NLB 4165 copy.jpg,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,92.36279726028442,True
+004_99ee381f-c18c-4cf4-b62a-af315af69d5d___RS_NLB 3493.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,56.94553256034851,True
+005_e9c01f8e-6d45-4243-b274-6036ab3e5529___RS_NLB 0774.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,96.2324321269989,True
+006_c2ef8b22-9934-4a61-b2d3-13521bef65b5___RS_NLB 3973.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,61.90510392189026,True
+007_57d6fe49-6ac4-4672-ae90-02729f1430fb___RS_NLB 4197.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,93.97733807563782,True
+008_36c5fd81-d688-4013-8635-19d0fd14eeb9___RS_NLB 4666.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,94.42886710166931,True
+009_b05a1bee-0b31-4c32-8091-8257ce42abd0___RS_NLB 4207.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,93.37964057922363,True
+010_86062894-9b3a-475f-b321-28b4cf9074ae___RS_NLB 3903.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,97.37362265586853,True
+011_6aa24d2e-df4b-495b-a246-91f14df01f68___RS_NLB 3516.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,74.55669641494751,True
+012_eb3708a1-b2b4-4e03-b8ae-59c14ef89e67___RS_NLB 3818 copy.jpg,Corn___Northern_Leaf_Blight,Corn___Gray_Leaf_Spot,53.382474184036255,False
+013_f23ac0bb-a341-45d3-9e3d-8180658ddc96___RS_NLB 4230.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,83.36082100868225,True
+014_acb55b5e-ed74-48b1-8853-0f44e943abe0___RS_NLB 4104.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,88.97594213485718,True
+015_7c2262ee-b83a-4f5c-97d8-e1bf57ac4a60___RS_NLB 3681.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,80.61338663101196,True
+016_25d61835-1eda-4e54-b316-a0993c72f919___RS_NLB 3918.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,87.52826452255249,True
+017_476e3e28-06e0-47ba-980c-4eb5e1fbbfe9___RS_NLB 4235.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,99.2720365524292,True
+018_24fee780-a78e-47d7-a48f-604dadf295ce___RS_NLB 3498.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,87.75888085365295,True
+019_40c2375e-92e1-4259-b268-d2433137e456___RS_NLB 4009.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,60.068923234939575,True
+020_c9c8abd4-f8e9-45b7-9660-afeccb515539___RS_NLB 4235 copy.jpg,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,89.25769925117493,True
+021_97bb609b-99f9-4dd8-9468-cb24cb17bf7c___RS_NLB 3497.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,98.52457642555237,True
+022_92ace470-d37c-45c6-9416-c03b6ea60f6f___RS_NLB 3882.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,84.73219275474548,True
+023_474797d0-3298-4480-ba05-7c49026ffbbf___RS_NLB 3529.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,97.8545069694519,True
+024_ca030ee1-dbaa-496d-a111-98927d15de23___RS_NLB 3819 copy.jpg,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,79.44472432136536,True
+025_9ebe7867-1d2c-4d72-8a7f-ff45ea5fa534___RS_NLB 3672 copy3.jpg,Corn___Northern_Leaf_Blight,Corn___Gray_Leaf_Spot,54.62055802345276,False
+026_751475e8-516b-4708-8509-7137931ad7ae___RS_NLB 3597.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,95.02630829811096,True
+027_ed8c1c19-dbd4-4c65-9ec0-e5c206667ac1___RS_NLB 3801.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,55.29927611351013,True
+028_9e99be96-fd57-4fee-930c-340ccdad9a20___RS_NLB 4178.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,77.97511219978333,True
+029_6b885bcd-1cf3-410a-81e7-49b2d63201e2___RS_NLB 4044 copy.jpg,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,90.75070023536682,True
+030_61e17b1e-9858-4d1f-b51e-a017eaaeae08___RS_NLB 3920.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,99.86903071403503,True
+031_38b794a9-d3c7-4861-9cff-4465ed936f48___RS_NLB 3948.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,75.22631287574768,True
+032_24da71bd-3323-41f8-a6e2-7d1a4a438608___RS_NLB 3537.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,98.98451566696167,True
+033_89faef04-7b28-41bc-a910-d89890f028d1___RS_NLB 0795.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,57.19963312149048,True
+034_839ba99e-e297-43b4-9067-69b74ab61ab7___RS_NLB 4063.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,95.12423872947693,True
+035_18bfb36b-a816-43b4-8338-fe8793d91f04___RS_NLB 3665.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,88.06522488594055,True
+036_cc3c5678-ed5a-43f6-bf74-5c13e9ee71ee___RS_NLB 3651.JPG,Corn___Northern_Leaf_Blight,Corn___Northern_Leaf_Blight,53.08268070220947,True
+001_0d2e2971-f1c9-4278-b35c-91dd8a22a64d___RS_Early.B 7581.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99958276748657,True
+002_e0326fde-a613-4ec2-bc3b-e1d2154bdbcd___RS_Early.B 7679.JPG,Potato___Early_Blight,Potato___Early_Blight,99.97889399528503,True
+003_1de8ed75-0778-4364-9178-52c1bd0dffb4___RS_Early.B 6729.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99934434890747,True
+004_29508e75-1a9d-4838-b929-cf42f8638e83___RS_Early.B 6782.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99103546142578,True
+005_aa0ad1ba-f08a-4376-82a1-fec51fbf6810___RS_Early.B 7478.JPG,Potato___Early_Blight,Potato___Early_Blight,99.9915599822998,True
+006_2b3e46d9-09dd-4966-99c6-fe44c741b94c___RS_Early.B 8290.JPG,Potato___Early_Blight,Potato___Early_Blight,99.13673996925354,True
+007_d1184bb1-defe-44b3-aa71-d03fe11bf535___RS_Early.B 8787.JPG,Potato___Early_Blight,Potato___Early_Blight,74.12080764770508,True
+008_b7712e86-f508-4485-8a42-5dd447f3b510___RS_Early.B 7103.JPG,Potato___Early_Blight,Potato___Early_Blight,99.95299577713013,True
+009_71ab124e-93ba-4d4e-ae53-68ac12fcb858___RS_Early.B 8129.JPG,Potato___Early_Blight,Potato___Early_Blight,99.60976839065552,True
+010_9ebf9d7d-0cfe-44f5-9126-89c70d38321a___RS_Early.B 8986.JPG,Potato___Early_Blight,Potato___Early_Blight,98.31123948097229,True
+011_1131b92e-ef46-441e-ac5f-c18ac09bf69a___RS_Early.B 8064.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99867677688599,True
+012_67468907-b28a-4740-a9f4-ce69b93878c9___RS_Early.B 7142.JPG,Potato___Early_Blight,Potato___Early_Blight,99.32384490966797,True
+013_667c593c-acbf-468a-91a3-6fd8006c46c2___RS_Early.B 7830.JPG,Potato___Early_Blight,Potato___Early_Blight,99.9993085861206,True
+014_7fb3dc5c-f90b-46fe-8eb6-2d21038976ff___RS_Early.B 7256.JPG,Potato___Early_Blight,Potato___Early_Blight,99.93723034858704,True
+015_8f0e2872-e5c6-43b2-97f9-269da00cd400___RS_Early.B 8089.JPG,Potato___Early_Blight,Potato___Early_Blight,99.953293800354,True
+016_454203b9-0376-4db3-92ed-047545daa7c6___RS_Early.B 6953.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99523162841797,True
+017_fdc691b0-2b15-4cb6-8f5d-c4e5654389e0___RS_Early.B 7935.JPG,Potato___Early_Blight,Potato___Early_Blight,99.97475743293762,True
+018_92a30efc-6b2f-4e17-8688-e477e5d39bd9___RS_Early.B 7343.JPG,Potato___Early_Blight,Potato___Early_Blight,98.13218712806702,True
+019_f7740cb1-3295-4022-ae6c-7ffeee775f6f___RS_Early.B 8991.JPG,Potato___Early_Blight,Potato___Early_Blight,99.92244243621826,True
+020_044c3abc-0bc9-45fb-8fd5-094aeb605f90___RS_Early.B 8044.JPG,Potato___Early_Blight,Potato___Early_Blight,99.80465173721313,True
+021_c30ce1e1-5f05-4cb7-a95a-f22d3621c54f___RS_Early.B 6964.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99998807907104,True
+022_1f56ef5b-9a3b-4731-bf82-b08aeb84fcb5___RS_Early.B 9032.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99866485595703,True
+023_b805f812-ef18-47ed-9756-1f5a5dd05b5d___RS_Early.B 7746.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99858140945435,True
+024_e6d7262c-803d-4346-a36d-4f384196e21c___RS_Early.B 6893.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99483823776245,True
+025_900514b4-8768-4370-bc53-998e390644db___RS_Early.B 7788.JPG,Potato___Early_Blight,Potato___Early_Blight,99.91316199302673,True
+026_c7f27f40-6634-4118-9990-6897e0c68579___RS_Early.B 7197.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99988079071045,True
+027_4a35b485-4f57-471a-a2cc-d5d7ebd41c40___RS_Early.B 7651.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99607801437378,True
+028_cc63b147-ad2a-4bc1-aa05-a07b3c6b7761___RS_Early.B 7091.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99998807907104,True
+029_acff9d5e-4b38-4817-a239-93c115a0b3ff___RS_Early.B 8993.JPG,Potato___Early_Blight,Potato___Early_Blight,99.98694658279419,True
+030_5c3363d5-5873-40f5-b179-37ab6df0328c___RS_Early.B 8828.JPG,Potato___Early_Blight,Potato___Early_Blight,85.49551367759705,True
+031_1e671694-5713-4568-b8ad-06f15688d25e___RS_Early.B 7659.JPG,Potato___Early_Blight,Potato___Early_Blight,99.97362494468689,True
+032_4f5ed8b8-7266-451d-a726-c1dbba2e5381___RS_Early.B 7384.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99973773956299,True
+033_74316ef6-7cce-4ed9-8fbf-9bf42d14657c___RS_Early.B 7352.JPG,Potato___Early_Blight,Potato___Early_Blight,97.8333055973053,True
+034_2a9d3616-0bf1-4d98-b649-0a46d36dab7c___RS_Early.B 6703.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99809265136719,True
+035_7a7ff9ee-1d6f-4ca8-a393-9c56ca74d7bb___RS_Early.B 8158.JPG,Potato___Early_Blight,Potato___Early_Blight,99.99920129776001,True
+036_00d8f10f-5038-4e0f-bb58-0b885ddc0cc5___RS_Early.B 8722.JPG,Potato___Early_Blight,Potato___Early_Blight,99.65329170227051,True
+001_61b8a692-91d8-40f5-a4a4-4d910875a638___RS_HL 1966.JPG,Potato___Healthy,Potato___Healthy,99.7056245803833,True
+002_d227e4c8-e203-4aa4-b813-25b96baa2869___RS_HL 1831.JPG,Potato___Healthy,Potato___Healthy,99.4922935962677,True
+003_46b2555a-c0a6-48c2-af13-0816e147e4de___RS_HL 1943.JPG,Potato___Healthy,Potato___Healthy,99.99958276748657,True
+004_d287be3d-cac6-4485-8c31-674fb8b459be___RS_HL 1973.JPG,Potato___Healthy,Potato___Healthy,74.3739664554596,True
+005_2e0b8b4b-e900-408b-b760-730690bbd382___RS_HL 1901.JPG,Potato___Healthy,Potato___Healthy,99.99827146530151,True
+006_799b10e8-ba67-4e08-9abe-748789572ad1___RS_HL 1881.JPG,Potato___Healthy,Potato___Healthy,99.97605681419373,True
+007_f5bd2732-197b-4d8e-bb50-a4966dc416f5___RS_HL 1840.JPG,Potato___Healthy,Potato___Healthy,99.96607303619385,True
+008_52dd2fdd-6966-450c-a42b-ee14428d4271___RS_HL 1955.JPG,Potato___Healthy,Potato___Healthy,99.61025714874268,True
+009_413bc2e9-eb2a-48fd-ba65-48b5121fd85c___RS_HL 4200.JPG,Potato___Healthy,Potato___Healthy,78.58173251152039,True
+010_9d7d1bb9-1b10-4a8f-a961-e404b9d5acf8___RS_HL 1960.JPG,Potato___Healthy,Potato___Healthy,99.98737573623657,True
+011_415ac4a2-8f16-4052-880e-1e1f208965f0___RS_HL 1884.JPG,Potato___Healthy,Potato___Healthy,99.71177577972412,True
+012_e51367c1-d582-45e3-acf6-b0e652b43d3a___RS_HL 1873.JPG,Potato___Healthy,Potato___Healthy,95.93164920806885,True
+013_de9a8669-d437-40f0-aa56-fe2d8276a1e0___RS_HL 1910.JPG,Potato___Healthy,Potato___Healthy,99.9687671661377,True
+014_00fc2ee5-729f-4757-8aeb-65c3355874f2___RS_HL 1864.JPG,Potato___Healthy,Potato___Healthy,99.99864101409912,True
+015_8583c4ff-2d8b-4b6f-89a8-fcc98917ce9b___RS_HL 1961.JPG,Potato___Healthy,Potato___Healthy,99.97679591178894,True
+016_c85bacb0-e5e8-4127-a0b0-a7342f2cab5f___RS_HL 5406.JPG,Potato___Healthy,Potato___Healthy,76.35027766227722,True
+017_07dfb451-4378-49d1-b699-33a5fc49ff07___RS_HL 5399.JPG,Potato___Healthy,Potato___Healthy,85.44161915779114,True
+018_30126310-39de-4c02-b10a-23409417a4f6___RS_HL 1826.JPG,Potato___Healthy,Potato___Healthy,71.77039980888367,True
+019_9a6eb7c4-6b43-477a-89e0-69f62ef67991___RS_HL 1846.JPG,Potato___Healthy,Potato___Healthy,99.9969482421875,True
+020_7e6c8297-dfe1-4826-826e-01d696cc263b___RS_HL 1863.JPG,Potato___Healthy,Potato___Healthy,99.70665574073792,True
+021_5df30492-0b54-474d-8883-bba9474ca88f___RS_HL 1801.JPG,Potato___Healthy,Potato___Healthy,99.42092895507812,True
+022_170f1f57-0fd4-421f-9c82-3b1804be63ad___RS_HL 1771.JPG,Potato___Healthy,Potato___Healthy,99.87457990646362,True
+023_d340704d-cc00-4068-bb8a-ae70840b7bfa___RS_HL 1773.JPG,Potato___Healthy,Potato___Healthy,99.48375821113586,True
+024_20ac28d6-5708-4e31-8676-1b1979de094f___RS_HL 1735.JPG,Potato___Healthy,Potato___Healthy,99.96581077575684,True
+025_22322780-95b4-4b45-b626-26b22965d55e___RS_HL 1880.JPG,Potato___Healthy,Potato___Healthy,99.98452663421631,True
+026_9b5be0c5-7d7e-493d-88ba-c721c85f73ca___RS_HL 5405.JPG,Potato___Healthy,Potato___Healthy,75.0470519065857,True
+027_5e19b1f4-fd65-4c4d-bcd2-18c8c519eddb___RS_HL 1965.JPG,Potato___Healthy,Potato___Healthy,92.71878600120544,True
+028_af15ac00-67ff-4114-ace8-6dca48b94665___RS_HL 1865.JPG,Potato___Healthy,Potato___Healthy,99.99977350234985,True
+029_1106c3fc-92cb-41a6-a6c6-8f08b9b45108___RS_HL 1914.JPG,Potato___Healthy,Potato___Healthy,99.99771118164062,True
+030_a1abff90-34e5-464d-b4d3-0c09f5924900___RS_HL 5414.JPG,Potato___Healthy,Potato___Late_Blight,99.78963136672974,False
+031_683b04ad-7941-4819-9965-ba32c725eb22___RS_HL 1861.JPG,Potato___Healthy,Potato___Healthy,99.70210194587708,True
+032_a3ec91aa-8503-4711-a912-0d1427e25686___RS_HL 5409.JPG,Potato___Healthy,Potato___Healthy,89.75629210472107,True
+033_1ae826e2-5148-47bd-a44c-711ec9cc9c75___RS_HL 1954.JPG,Potato___Healthy,Potato___Healthy,89.00617957115173,True
+034_bf2bffbb-cd8f-4d36-bd58-847808397c75___RS_HL 1786.JPG,Potato___Healthy,Potato___Healthy,99.14975762367249,True
+035_875d6ded-5f01-495c-a945-ad2e17f87f91___RS_HL 1848.JPG,Potato___Healthy,Potato___Healthy,99.94089603424072,True
+001_7efcdebc-93be-4168-9965-2b2be46823d8___RS_LB 3249.JPG,Potato___Late_Blight,Potato___Late_Blight,99.91341233253479,True
+002_f95a6bbd-39a3-48e7-a612-8833c2b7b3ff___RS_LB 2784.JPG,Potato___Late_Blight,Potato___Late_Blight,99.47267174720764,True
+003_94c50d24-cfd7-486c-a4ac-a10f552d0f8b___RS_LB 4329.JPG,Potato___Late_Blight,Potato___Late_Blight,99.23284649848938,True
+004_2c2b39ed-75f9-49f6-a28e-36a2cb608297___RS_LB 2794.JPG,Potato___Late_Blight,Potato___Late_Blight,99.95381832122803,True
+005_456f2c6a-a8c8-4dac-9de1-73668e39cd01___RS_LB 3008.JPG,Potato___Late_Blight,Potato___Early_Blight,74.14572238922119,False
+006_8f12dae8-d44b-4d16-8815-4da5f9a9ff55___RS_LB 4283.JPG,Potato___Late_Blight,Potato___Late_Blight,97.99356460571289,True
+007_e40a1e10-fca8-4831-b124-48bc07f92eb1___RS_LB 2897.JPG,Potato___Late_Blight,Potato___Late_Blight,85.43506264686584,True
+008_a440233c-0ef8-408f-8ebb-1c12e8bc4464___RS_LB 4768.JPG,Potato___Late_Blight,Potato___Late_Blight,64.94787931442261,True
+009_72e10017-f8a6-4813-8036-0cde4dad6057___RS_LB 4666.JPG,Potato___Late_Blight,Potato___Late_Blight,99.96758699417114,True
+010_fdb4e132-c71b-413f-93c0-c863dd4582a7___RS_LB 2582.JPG,Potato___Late_Blight,Potato___Late_Blight,99.95667338371277,True
+011_36fc1631-634b-42d3-a865-cc858557a8a8___RS_LB 4427.JPG,Potato___Late_Blight,Potato___Late_Blight,99.9096155166626,True
+012_f4e6847d-d381-4849-9ff1-930cfb597d08___RS_LB 5097.JPG,Potato___Late_Blight,Potato___Late_Blight,99.24511313438416,True
+013_910139a3-cd42-4adc-a24b-3602fd4de7d3___RS_LB 4415.JPG,Potato___Late_Blight,Potato___Late_Blight,90.73054790496826,True
+014_c98f32e2-c52c-4a35-bc34-c32af5a18b07___RS_LB 2807.JPG,Potato___Late_Blight,Potato___Late_Blight,99.4884192943573,True
+015_c3cd2ad3-174e-48b4-a7a5-ce63be745fd5___RS_LB 3243.JPG,Potato___Late_Blight,Potato___Late_Blight,99.99428987503052,True
+016_b89a9e11-b184-4b4d-bc56-5f27a2626982___RS_LB 2512.JPG,Potato___Late_Blight,Potato___Late_Blight,98.11872243881226,True
+017_350662fe-0ebf-4e6b-9ff9-6ceaf9d22067___RS_LB 3877.JPG,Potato___Late_Blight,Potato___Late_Blight,99.45268034934998,True
+018_be6b5fab-c3de-4d33-b7fc-87bf794d8705___RS_LB 4850.JPG,Potato___Late_Blight,Potato___Late_Blight,71.732097864151,True
+019_53b09253-988e-4a22-966c-b5a03ed6bc44___RS_LB 2924.JPG,Potato___Late_Blight,Potato___Late_Blight,99.90742206573486,True
+020_6d51bd53-2556-410c-b151-547c83a06287___RS_LB 3276.JPG,Potato___Late_Blight,Potato___Late_Blight,98.06212782859802,True
+021_b469e38c-ef99-4ed1-b294-1e65727138fb___RS_LB 4056.JPG,Potato___Late_Blight,Potato___Late_Blight,99.97082352638245,True
+022_afc0f88e-8a22-44d1-8575-8945058360c7___RS_LB 4895.JPG,Potato___Late_Blight,Potato___Late_Blight,60.85248589515686,True
+023_63ec8c33-368c-433d-8953-f28f30e5985f___RS_LB 2943.JPG,Potato___Late_Blight,Potato___Early_Blight,53.985363245010376,False
+024_75fd327f-c30c-4b73-b7a1-fd11aab8206e___RS_LB 2508.JPG,Potato___Late_Blight,Potato___Late_Blight,99.4674563407898,True
+025_eb2bd15b-a92b-4302-98a1-bbc13a0f95bb___RS_LB 2671.JPG,Potato___Late_Blight,Potato___Late_Blight,99.3196964263916,True
+026_8bf37a1e-4535-4919-953e-69376f5be48a___RS_LB 2611.JPG,Potato___Late_Blight,Potato___Late_Blight,99.99449253082275,True
+027_782bc9dd-286b-46ee-b896-fa5520f57b0c___RS_LB 4408.JPG,Potato___Late_Blight,Potato___Late_Blight,99.96846914291382,True
+028_2122118e-02ee-452b-864c-adf36ed5ce9c___RS_LB 2890.JPG,Potato___Late_Blight,Potato___Late_Blight,99.83226656913757,True
+029_41e3b4c0-7aec-4d49-a84c-f37ed2637407___RS_LB 4377.JPG,Potato___Late_Blight,Potato___Late_Blight,99.95230436325073,True
+030_3a728bc7-b08d-4a11-bb49-b25d803c3336___RS_LB 4074.JPG,Potato___Late_Blight,Potato___Late_Blight,99.99338388442993,True
+031_12ce2ab1-14c4-4960-81d4-e6ae776510e9___RS_LB 2880.JPG,Potato___Late_Blight,Potato___Late_Blight,99.97838139533997,True
+032_58f100f0-490b-4868-95d1-5883fc3432d3___RS_LB 3302.JPG,Potato___Late_Blight,Potato___Late_Blight,97.02235460281372,True
+033_0450570b-44d1-4290-956d-5d970164a2e2___RS_LB 5160.JPG,Potato___Late_Blight,Potato___Late_Blight,66.29811525344849,True
+034_9f5acd9c-13b2-4246-a938-77774ba89318___RS_LB 3153.JPG,Potato___Late_Blight,Potato___Late_Blight,99.87545013427734,True
+035_958a4438-2ced-4d8c-af73-871376cf6ed5___RS_LB 4483.JPG,Potato___Late_Blight,Potato___Late_Blight,99.47600960731506,True

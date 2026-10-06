@@ -1,0 +1,146 @@
+{
+  "report": {
+    "Corn___Common_Rust": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "Corn___Gray_Leaf_Spot": {
+      "precision": 0.9,
+      "recall": 0.675,
+      "f1-score": 0.7714285714285715,
+      "support": 40.0
+    },
+    "Corn___Healthy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "Corn___Northern_Leaf_Blight": {
+      "precision": 0.7551020408163265,
+      "recall": 0.925,
+      "f1-score": 0.8314606741573034,
+      "support": 40.0
+    },
+    "Potato___Early_Blight": {
+      "precision": 1.0,
+      "recall": 0.975,
+      "f1-score": 0.9873417721518988,
+      "support": 40.0
+    },
+    "Potato___Healthy": {
+      "precision": 1.0,
+      "recall": 0.925,
+      "f1-score": 0.961038961038961,
+      "support": 40.0
+    },
+    "Potato___Late_Blight": {
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "f1-score": 0.9523809523809523,
+      "support": 40.0
+    },
+    "micro avg": {
+      "precision": 0.931899641577061,
+      "recall": 0.9285714285714286,
+      "f1-score": 0.9302325581395349,
+      "support": 280.0
+    },
+    "macro avg": {
+      "precision": 0.9377418499867479,
+      "recall": 0.9285714285714285,
+      "f1-score": 0.9290929901653838,
+      "support": 280.0
+    },
+    "weighted avg": {
+      "precision": 0.937741849986748,
+      "recall": 0.9285714285714286,
+      "f1-score": 0.9290929901653839,
+      "support": 280.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      40,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      27,
+      0,
+      12,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      40,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      0,
+      37,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      39,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      37,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      40
+    ]
+  ],
+  "labels": [
+    "Corn___Common_Rust",
+    "Corn___Gray_Leaf_Spot",
+    "Corn___Healthy",
+    "Corn___Northern_Leaf_Blight",
+    "Potato___Early_Blight",
+    "Potato___Healthy",
+    "Potato___Late_Blight"
+  ],
+  "out_of_scope_predictions": [
+    {
+      "file": "8372ebc2-c180-4161-b7b3-0b05a5700d0d___RS_GLSp 9325.JPG",
+      "true": "Corn___Gray_Leaf_Spot",
+      "predicted": "Wheat___Healthy",
+      "confidence": 66.28
+    }
+  ]
+}

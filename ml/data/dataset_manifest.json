@@ -1,0 +1,84 @@
+{
+  "manifest_version": "2026-09-20",
+  "purpose": "V2-alpha training dataset manifest for AgriMind AI Plant Disease Model. Records every dataset actually acquired and used this session, with license/provenance evidence. This is NOT the full V2 dataset blueprint (see docs/ml_v2_dataset_license_verification_2026_09.md for the broader verified pool) -- it is the acquisition record for what was actually reachable and used in this execution pass.",
+  "environment_constraint_note": "This session's network sandbox allows outbound access only to a fixed domain allowlist that includes github.com/codeload.github.com/raw.githubusercontent.com but does NOT include data.mendeley.com, zenodo.org, or kaggle.com (confirmed via direct HTTP checks returning 403 host_not_allowed for all three, 2026-09-20). Every Class-A source verified for Rice, Wheat, and Sugarcane in docs/ml_v2_dataset_license_verification_2026_09.md lives on one of those three blocked hosts. Only the Corn/Potato sources below, both GitHub-hosted, were reachable.",
+  "datasets_acquired": [
+    {
+      "dataset_name": "PlantVillage (raw/color subset: Corn and Potato classes only)",
+      "source_url": "https://github.com/spMohanty/PlantVillage-Dataset",
+      "version": "master branch, commit as of 2026-09-20 (git sparse-checkout, blob:none filter, cone mode)",
+      "license": "CC BY-SA 3.0",
+      "license_evidence_url": "https://github.com/spMohanty/PlantVillage-Dataset (README and repository history; cross-checked against docs/ml_evaluation_report.md's original forensic note on this same source)",
+      "crops": ["Corn", "Potato"],
+      "classes_acquired": [
+        "Corn___Gray_Leaf_Spot", "Corn___Common_Rust", "Corn___Northern_Leaf_Blight", "Corn___Healthy",
+        "Potato___Early_Blight", "Potato___Late_Blight", "Potato___Healthy"
+      ],
+      "image_count_acquired": 6004,
+      "acquisition_date": "2026-09-20",
+      "acquisition_method": "git sparse-checkout of exactly the 7 needed class folders under raw/color/ -- the full repository (raw + grayscale + segmented, 14 crops) was NOT downloaded, only the classes in scope",
+      "provenance_notes": "Lab-style, controlled-background imagery (consistent with the well-documented characteristics of this dataset). Image-vs-training-provenance overlap with V1's unknown original training set cannot be ruled out -- flagged in the evaluation docs, applies equally here.",
+      "commercial_use_status": "PlantVillage source material is licensed under CC BY-SA 3.0. The dataset license permits use subject to its terms (attribution, and share-alike for redistribution of the dataset/derivative databases), but the downstream licensing implications for trained model weights and commercial distribution require separate legal review. Technical use of the dataset in this experiment should not be interpreted as legal clearance for commercial release of the resulting model."
+    },
+    {
+      "dataset_name": "PlantDoc-Dataset (Corn and Potato disease classes; no healthy classes present for either crop)",
+      "source_url": "https://github.com/pratikkayal/PlantDoc-Dataset",
+      "version": "master branch (codeload.github.com zip snapshot, 2026-09-20)",
+      "license": "CC BY 4.0",
+      "license_evidence_url": "https://github.com/pratikkayal/PlantDoc-Dataset/blob/master/LICENSE.txt (fetched and confirmed directly this session)",
+      "crops": ["Corn", "Potato"],
+      "classes_acquired": [
+        "Corn___Gray_Leaf_Spot", "Corn___Common_Rust", "Corn___Northern_Leaf_Blight",
+        "Potato___Early_Blight", "Potato___Late_Blight"
+      ],
+      "image_count_acquired": 582,
+      "acquisition_date": "2026-09-20",
+      "acquisition_method": "full repository zip download via codeload.github.com, train/ and test/ folders",
+      "provenance_notes": "Real-world, internet-scraped field imagery -- this is the source specifically intended to help close V1's demonstrated lab-to-field generalization gap. Label mapping note: PlantDoc's 'Corn leaf blight' class was mapped to Corn___Northern_Leaf_Blight as a DOCUMENTED, non-silent assumption (see scripts/taxonomy.py) -- PlantDoc's own materials do not disambiguate this from other corn leaf blights. 8 exact-duplicate groups were identified, involving 16 images in total (2 byte-identical images per group), each group appearing under two different PlantDoc class folders with conflicting labels (a real data-quality issue in the source, not an ingestion bug). All 16 images were excluded entirely from training rather than arbitrarily assigned a label; see reports/v2_leakage_report.json for the full accounting.",
+      "commercial_use_status": "Permitted under CC BY 4.0, subject to standard attribution"
+    }
+  ],
+  "datasets_deferred": [
+    {
+      "dataset_name": "Rice Leaf Disease Image Samples (Sethy et al.)",
+      "reason_deferred": "Authoritative source is data.mendeley.com, not reachable from this session's network sandbox (confirmed 403 host_not_allowed)",
+      "verified_status": "Class A in docs/ml_v2_dataset_license_verification_2026_09.md -- CC BY 4.0, ready to use once network/manual acquisition is available",
+      "retry_path": "Acquire via https://data.mendeley.com/datasets/fwcj7stb8r/1 from an environment with Mendeley access, or have the person upload the archive directly to this project for ingestion"
+    },
+    {
+      "dataset_name": "Wheat Disease Dataset - Small (Long et al.)",
+      "reason_deferred": "Authoritative source is zenodo.org, not reachable from this session's network sandbox (confirmed 403 host_not_allowed)",
+      "verified_status": "Class A in docs/ml_v2_dataset_license_verification_2026_09.md -- CC BY 4.0, ready to use once network/manual acquisition is available",
+      "retry_path": "Acquire via https://zenodo.org/records/7573133 from an environment with Zenodo access, or manual upload"
+    },
+    {
+      "dataset_name": "Sugarcane Plant Diseases Dataset (akilesh253) and Thite et al. Sugarcane Leaf Dataset",
+      "reason_deferred": "Authoritative/hosting sources are kaggle.com and data.mendeley.com, not reachable from this session's network sandbox (confirmed 403 host_not_allowed)",
+      "verified_status": "Both Class A in docs/ml_v2_dataset_license_verification_2026_09.md (CDLA-Sharing-1.0 and CC BY 4.0 respectively), ready to use once network/manual acquisition is available",
+      "retry_path": "Acquire via https://www.kaggle.com/datasets/akilesh253/sugarcane-plant-diseases-dataset and https://data.mendeley.com/datasets/355y629ynj/1 from an environment with Kaggle/Mendeley access, or manual upload"
+    }
+  ],
+  "datasets_excluded_by_policy": [
+    {
+      "dataset_name": "Five Crop Diseases Dataset (shubham2703)",
+      "reason": "CC BY-NC-SA 4.0 -- NonCommercial, confirmed unsuitable for commercial training in docs/ml_v2_dataset_license_verification_2026_09.md. Remains evaluation-only, as it already was for V1."
+    },
+    {
+      "dataset_name": "SAGE-derived real-world/OOD evaluation images (AgriMind-ML-Evaluation.zip)",
+      "reason": "Per explicit instruction, remain external-test-only and were used only for evaluation in this pipeline, never for training."
+    }
+  ],
+  "total_images_used_for_training_pipeline": 6586,
+  "total_images_after_exact_duplicate_and_label_conflict_removal": 6586,
+  "final_class_distribution": {
+    "Corn___Gray_Leaf_Spot": 578,
+    "Corn___Common_Rust": 1308,
+    "Corn___Northern_Leaf_Blight": 1174,
+    "Corn___Healthy": 1162,
+    "Potato___Early_Blight": 1112,
+    "Potato___Late_Blight": 1100,
+    "Potato___Healthy": 152
+  },
+  "class_imbalance_note": "Potato___Healthy is materially smaller (152 images) than every other class (1100+) -- this is a real, disclosed imbalance stemming from PlantVillage's own smaller healthy-potato folder combined with PlantDoc having no potato-healthy images at all. Addressed via class weighting in training (see docs/ml_v2_training_report.md), not by fabricating additional images.",
+  "v2_alpha_taxonomy_scope": "7 classes across Corn and Potato only. Rice (5 classes), Wheat (5 classes), and Sugarcane (5 classes) from the originally frozen 18-class taxonomy are explicitly DEFERRED, not dropped -- see datasets_deferred above and docs/ml_v2_training_report.md for the full explanation."
+}

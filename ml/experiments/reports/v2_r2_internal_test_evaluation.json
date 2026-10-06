@@ -1,0 +1,14 @@
+{
+  "overall_accuracy": 0.8543,
+  "macro_f1": 0.8119,
+  "source_breakdown": {
+    "plantdoc": {
+      "n": 52,
+      "accuracy": 0.5962
+    },
+    "plantvillage": {
+      "n": 607,
+      "accuracy": 0.8764
+    }
+  }
+}

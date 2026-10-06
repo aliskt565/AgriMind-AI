@@ -1,0 +1,111 @@
+disease,prediction,confidence,filename
+Yellow_Spot,Rice___Leaf_Blast,0.5458077788352966,SugarLeaf_ID_169.jpg
+Grassy_Shoot,Wheat___Healthy,0.9986735582351685,LeafNet_158.jpg
+Sugarcane_Mosaic_Virus,Healthy,0.43957871198654175,SugarLeaf_ID_193.jpg
+Leaf_Scald,Rice___Leaf_Blast,0.25594156980514526,SugarLeaf_ID_95.jpg
+Red_Spot,Wheat___Brown_Rust,0.6032614707946777,SugarLeaf_ID_31.jpg
+Smut,Wheat___Yellow_Rust,0.9667603969573975,LeafNet_104.jpg
+Pokkah_Boeng,Background___Non_Plant,0.4196781814098358,SugarLeaf_ID_299.jpg
+Grassy_Shoot,Wheat___Brown_Rust,0.5350579619407654,LeafNet_18.jpg
+Brown_Spot,Rice___Brown_Spot,0.7788762450218201,LeafNet_781.jpg
+Streak_Mosaic_Scsmv,Wheat___Brown_Rust,0.7188440561294556,SugarLeaf_ID_265.jpg
+Sett_Rot,Wheat___Healthy,0.8299472332000732,LeafNet_97.jpg
+Leaf_Scald,Wheat___Yellow_Rust,0.6985474824905396,SugarLeaf_ID_150.jpg
+Yellow_Spot,Wheat___Brown_Rust,0.7694002389907837,SugarLeaf_ID_59.jpg
+Yellow_Leaf,Rice___Leaf_Blast,0.5668708086013794,LeafNet_205.jpg
+Brown_Rust,Rice___Brown_Spot,0.6657407879829407,LeafNet_104.jpg
+Brown_Spot,Bacterial Blight,0.933693528175354,LeafNet_635.jpg
+Eye_Spot,Wheat___Brown_Rust,0.5543960928916931,SugarLeaf_ID_337.jpg
+Grassy_Shoot,Wheat___Healthy,0.8618720173835754,LeafNet_122.jpg
+Yellow_Leaf,Rice___Healthy,0.9873422384262085,LeafNet_187.jpg
+Smut,Red Rot,0.7883832454681396,LeafNet_154.jpg
+Common_Rust,Wheat___Healthy,0.3056345582008362,SugarLeaf_ID_416.jpg
+Dried_Leaves,Rice___Leaf_Blast,0.5139555335044861,LeafNet_190.jpg
+Eye_Spot,Corn___Healthy,0.5355681777000427,SugarLeaf_ID_451.jpg
+Sett_Rot,Wheat___Healthy,0.9837613701820374,LeafNet_299.jpg
+Red_Spot,Wheat___Brown_Rust,0.33303970098495483,SugarLeaf_ID_29.jpg
+Banded_Chlorosis,Rice___Brown_Spot,0.5142881870269775,LeafNet_29.jpg
+Banded_Chlorosis,Rice___Leaf_Blast,0.6566665172576904,LeafNet_166.jpg
+Eye_Spot,Corn___Northern_Leaf_Blight,0.6596174836158752,SugarLeaf_ID_507.jpg
+Streak_Mosaic_Scsmv,Potato___Early_Blight,0.7070459127426147,SugarLeaf_ID_379.jpg
+Grassy_Shoot,Wheat___Healthy,0.8888439536094666,LeafNet_116.jpg
+Pokkah_Boeng,Wheat___Brown_Rust,0.4910244643688202,SugarLeaf_ID_147.jpg
+Sugarcane_Mosaic_Virus,Wheat___Brown_Rust,0.585448145866394,SugarLeaf_ID_209.jpg
+Leaf_Mosaic_Virus,Rice___Leaf_Blast,0.6718027591705322,LeafNet_281.jpg
+Banded_Chlorosis,Rice___Brown_Spot,0.8267632126808167,LeafNet_55.jpg
+Brown_Spot,Rice___Brown_Spot,0.7408145070075989,LeafNet_376.jpg
+Leaf_Scald,Corn___Healthy,0.8500479459762573,SugarLeaf_ID_59.jpg
+Brown_Rust,Red Rot,0.6902055144309998,LeafNet_66.jpg
+Sett_Rot,Corn___Healthy,0.44621542096138,LeafNet_123.jpg
+Sett_Rot,Potato___Early_Blight,0.9708758592605591,LeafNet_173.jpg
+Smut,Wheat___Healthy,0.7935328483581543,LeafNet_125.jpg
+Streak_Mosaic_Scsmv,Corn___Healthy,0.9541324973106384,SugarLeaf_ID_377.jpg
+Brown_Spot,Wheat___Brown_Rust,0.3861325979232788,LeafNet_1045.jpg
+Grassy_Shoot,Red Rot,0.5540918707847595,LeafNet_61.jpg
+Eye_Spot,Rice___Neck_Blast,0.9971451163291931,SugarLeaf_ID_208.jpg
+Pokkah_Boeng,Corn___Northern_Leaf_Blight,0.4742248058319092,SugarLeaf_ID_165.jpg
+Leaf_Mosaic_Virus,Rice___Healthy,0.5658473968505859,LeafNet_404.jpg
+Dried_Leaves,Wheat___Brown_Rust,0.43619775772094727,LeafNet_81.jpg
+Sett_Rot,Wheat___Healthy,0.7349411249160767,LeafNet_5.jpg
+Streak_Mosaic_Scsmv,Corn___Gray_Leaf_Spot,0.42827504873275757,SugarLeaf_ID_339.jpg
+Grassy_Shoot,Wheat___Healthy,0.9806815981864929,LeafNet_10.jpg
+Grassy_Shoot,Wheat___Healthy,0.9944261312484741,LeafNet_24.jpg
+Yellow_Leaf,Wheat___Yellow_Rust,0.46372750401496887,LeafNet_540.jpg
+Brown_Spot,Red Rot,0.663571298122406,LeafNet_180.jpg
+Eye_Spot,Wheat___Brown_Rust,0.5742012858390808,SugarLeaf_ID_260.jpg
+Banded_Chlorosis,Red Rot,0.5784027576446533,LeafNet_236.jpg
+Grassy_Shoot,Wheat___Healthy,0.9442705512046814,LeafNet_8.jpg
+Brown_Rust,Bacterial Blight,0.6842932105064392,LeafNet_179.jpg
+Eye_Spot,Wheat___Healthy,0.9093416929244995,SugarLeaf_ID_206.jpg
+Sugarcane_Mosaic_Virus,Wheat___Yellow_Rust,0.8334042429924011,SugarLeaf_ID_140.jpg
+Dried_Leaves,Rice___Healthy,0.6962704658508301,LeafNet_223.jpg
+Leaf_Scald,Rice___Neck_Blast,0.5973256826400757,SugarLeaf_ID_27.jpg
+Yellow_Spot,Corn___Healthy,0.9748517274856567,SugarLeaf_ID_80.jpg
+Brown_Rust,Red Rot,0.8150837421417236,LeafNet_92.jpg
+Pokkah_Boeng,Corn___Northern_Leaf_Blight,0.36187466979026794,SugarLeaf_ID_174.jpg
+Pokkah_Boeng,Red Rot,0.5015295147895813,LeafNet_57.jpg
+Smut,Wheat___Healthy,0.6990439891815186,LeafNet_200.jpg
+Sett_Rot,Wheat___Healthy,0.9998970031738281,LeafNet_174.jpg
+Brown_Spot,Rice___Brown_Spot,0.648830771446228,LeafNet_612.jpg
+Streak_Mosaic_Scsmv,Wheat___Brown_Rust,0.8982179164886475,SugarLeaf_ID_352.jpg
+Yellow_Leaf,Wheat___Brown_Rust,0.7163472175598145,LeafNet_626.jpg
+Red_Spot,Corn___Northern_Leaf_Blight,0.594165563583374,SugarLeaf_ID_163.jpg
+Yellow_Leaf,Rice___Brown_Spot,0.6530033349990845,LeafNet_323.jpg
+Yellow_Spot,Corn___Gray_Leaf_Spot,0.3589101731777191,SugarLeaf_ID_165.jpg
+Leaf_Scald,Rice___Neck_Blast,0.3323929011821747,SugarLeaf_ID_10.jpg
+Banded_Chlorosis,Wheat___Brown_Rust,0.6475771069526672,LeafNet_188.jpg
+Yellow_Spot,Background___Non_Plant,0.29910337924957275,SugarLeaf_ID_39.jpg
+Dried_Leaves,Rice___Healthy,0.8462123274803162,LeafNet_108.jpg
+Red_Spot,Corn___Northern_Leaf_Blight,0.4941706359386444,SugarLeaf_ID_91.jpg
+Brown_Rust,Rice___Neck_Blast,0.43075546622276306,LeafNet_211.jpg
+Banded_Chlorosis,Rice___Leaf_Blast,0.4954829812049866,LeafNet_314.jpg
+Streak_Mosaic_Scsmv,Red Rot,0.3993155062198639,SugarLeaf_ID_238.jpg
+Banded_Chlorosis,Rice___Healthy,0.46384140849113464,LeafNet_302.jpg
+Leaf_Scald,Wheat___Brown_Rust,0.9101027250289917,SugarLeaf_ID_206.jpg
+Yellow_Leaf,Rice___Brown_Spot,0.5187346935272217,LeafNet_591.jpg
+Common_Rust,Wheat___Brown_Rust,0.7806258201599121,SugarLeaf_ID_319.jpg
+Smut,Red Rot,0.8974944949150085,LeafNet_32.jpg
+Red_Spot,Wheat___Brown_Rust,0.8964449167251587,SugarLeaf_ID_278.jpg
+Sugarcane_Mosaic_Virus,Healthy,0.2839231491088867,SugarLeaf_ID_172.jpg
+Pokkah_Boeng,Wheat___Yellow_Rust,0.33586740493774414,SugarLeaf_ID_34.jpg
+Yellow_Leaf,Wheat___Healthy,0.6599676012992859,LeafNet_661.jpg
+Yellow_Spot,Corn___Healthy,0.36271533370018005,SugarLeaf_ID_179.jpg
+Red_Spot,Bacterial Blight,0.4120408296585083,SugarLeaf_ID_92.jpg
+Red_Spot,Wheat___Healthy,0.96241295337677,SugarLeaf_ID_221.jpg
+Leaf_Mosaic_Virus,Rice___Healthy,0.9177056550979614,LeafNet_94.jpg
+Pokkah_Boeng,Rice___Neck_Blast,0.7021000981330872,SugarLeaf_ID_219.jpg
+Common_Rust,Corn___Gray_Leaf_Spot,0.5188593864440918,SugarLeaf_ID_47.jpg
+Banded_Chlorosis,Rice___Leaf_Blast,0.6351646780967712,LeafNet_174.jpg
+Leaf_Mosaic_Virus,Rice___Leaf_Blast,0.6956937313079834,LeafNet_341.jpg
+Sett_Rot,Wheat___Healthy,0.864757776260376,LeafNet_149.jpg
+Brown_Spot,Rice___Brown_Spot,0.499268114566803,LeafNet_1084.jpg
+Sugarcane_Mosaic_Virus,Wheat___Brown_Rust,0.6075517535209656,SugarLeaf_ID_28.jpg
+Streak_Mosaic_Scsmv,Corn___Gray_Leaf_Spot,0.49425601959228516,SugarLeaf_ID_172.jpg
+Sett_Rot,Wheat___Healthy,0.9852758646011353,LeafNet_136.jpg
+Brown_Rust,Rice___Leaf_Blast,0.5803455710411072,LeafNet_48.jpg
+Red_Spot,Wheat___Brown_Rust,0.5319575667381287,SugarLeaf_ID_261.jpg
+Yellow_Spot,Corn___Healthy,0.9415158629417419,SugarLeaf_ID_139.jpg
+Leaf_Scald,Wheat___Brown_Rust,0.4797598123550415,SugarLeaf_ID_8.jpg
+Red_Spot,Wheat___Brown_Rust,0.7017276883125305,SugarLeaf_ID_64.jpg
+Eye_Spot,Wheat___Yellow_Rust,0.9296547174453735,SugarLeaf_ID_407.jpg
+Common_Rust,Wheat___Yellow_Rust,0.3723202645778656,SugarLeaf_ID_318.jpg

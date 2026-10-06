@@ -1,0 +1,53 @@
+{
+  "random_seed": 42,
+  "python_version": "3.12.3",
+  "tensorflow_version": "2.21.0",
+  "keras_version": "3.15.1",
+  "architecture": "MobileNetV2 (ImageNet-pretrained) -> GlobalAveragePooling2D -> Dense(128, relu) -> Dropout(0.3) -> Dense(7, softmax)",
+  "image_size": [
+    224,
+    224
+  ],
+  "optimizer": "Adam",
+  "stage1_learning_rate": 0.001,
+  "stage2_learning_rate": 1e-05,
+  "stage2_unfrozen_top_layers": 20,
+  "batch_size": 32,
+  "stage1_epochs_run": 6,
+  "stage2_epochs_run": 6,
+  "stage1_best_epoch": 4,
+  "stage2_best_epoch": 6,
+  "augmentation": "random horizontal flip, random brightness (+-0.15), random contrast (0.85-1.15), random crop after pad -- train split only, applied after split assignment",
+  "class_weights": {
+    "Corn___Common_Rust": 0.7196,
+    "Corn___Gray_Leaf_Spot": 1.6293,
+    "Corn___Healthy": 0.8094,
+    "Corn___Northern_Leaf_Blight": 0.8016,
+    "Potato___Early_Blight": 0.8457,
+    "Potato___Healthy": 6.1698,
+    "Potato___Late_Blight": 0.8554
+  },
+  "dataset_manifest_sha256": "b6d771718242c1cd5c2f0b6740d258d463242dec7c7e91748689480838904afd",
+  "n_train_images": 5269,
+  "n_val_images": 658,
+  "stage1_training_duration_seconds": 854.5,
+  "stage2_training_duration_seconds": 837.2,
+  "total_training_duration_seconds": 1692.9,
+  "preprocessing": {
+    "image_size": [
+      224,
+      224
+    ],
+    "resize_method": "PIL bilinear",
+    "color_mode": "RGB",
+    "normalization": "tf.keras.applications.mobilenet_v2.preprocess_input (scales to [-1, 1])",
+    "shared_implementation_module": "scripts/preprocessing.py:load_and_preprocess",
+    "used_identically_by": [
+      "training",
+      "validation",
+      "test evaluation",
+      "OOD evaluation",
+      "inference wrapper"
+    ]
+  }
+}

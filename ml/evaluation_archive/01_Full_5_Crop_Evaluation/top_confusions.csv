@@ -1,0 +1,72 @@
+actual,predicted,count
+Rice___Leaf_Blast,Rice___Healthy,359
+Wheat___Healthy,Wheat___Yellow_Rust,167
+Rice___Brown_Spot,Rice___Healthy,116
+Corn___Gray_Leaf_Spot,Corn___Northern_Leaf_Blight,112
+Rice___Healthy,Rice___Leaf_Blast,110
+Corn___Northern_Leaf_Blight,Corn___Gray_Leaf_Spot,104
+Rice___Brown_Spot,Rice___Leaf_Blast,95
+Wheat___Yellow_Rust,Wheat___Brown_Rust,58
+Wheat___Brown_Rust,Wheat___Yellow_Rust,48
+Rice___Leaf_Blast,Rice___Brown_Spot,47
+Rice___Leaf_Blast,Rice___Neck_Blast,43
+Rice___Healthy,Rice___Brown_Spot,35
+Potato___Late_Blight,Potato___Early_Blight,29
+Rice___Brown_Spot,Rice___Neck_Blast,28
+Wheat___Healthy,Red Rot,22
+Healthy,Red Rot,20
+Bacterial Blight,Red Rot,20
+Wheat___Healthy,Wheat___Brown_Rust,19
+Red Rot,Bacterial Blight,19
+Bacterial Blight,Wheat___Brown_Rust,16
+Healthy,Wheat___Brown_Rust,16
+Potato___Healthy,Potato___Late_Blight,13
+Rice___Neck_Blast,Rice___Healthy,12
+Wheat___Yellow_Rust,Wheat___Healthy,11
+Corn___Gray_Leaf_Spot,Wheat___Healthy,9
+Red Rot,Wheat___Yellow_Rust,8
+Bacterial Blight,Wheat___Yellow_Rust,8
+Healthy,Wheat___Yellow_Rust,8
+Healthy,Corn___Healthy,8
+Wheat___Brown_Rust,Wheat___Healthy,8
+Potato___Early_Blight,Potato___Late_Blight,8
+Wheat___Brown_Rust,Corn___Northern_Leaf_Blight,7
+Wheat___Brown_Rust,Red Rot,7
+Wheat___Brown_Rust,Corn___Gray_Leaf_Spot,6
+Wheat___Brown_Rust,Healthy,5
+Wheat___Brown_Rust,Bacterial Blight,5
+Red Rot,Wheat___Brown_Rust,5
+Corn___Northern_Leaf_Blight,Wheat___Healthy,4
+Corn___Common_Rust,Corn___Northern_Leaf_Blight,3
+Red Rot,Healthy,3
+Wheat___Brown_Rust,Potato___Early_Blight,3
+Wheat___Healthy,Corn___Healthy,3
+Wheat___Healthy,Potato___Early_Blight,3
+Wheat___Brown_Rust,Corn___Healthy,3
+Wheat___Healthy,Bacterial Blight,3
+Corn___Northern_Leaf_Blight,Potato___Late_Blight,3
+Wheat___Healthy,Rice___Neck_Blast,2
+Wheat___Brown_Rust,Rice___Leaf_Blast,2
+Corn___Gray_Leaf_Spot,Wheat___Brown_Rust,2
+Corn___Healthy,Wheat___Brown_Rust,2
+Healthy,Bacterial Blight,2
+Red Rot,Corn___Healthy,2
+Rice___Neck_Blast,Wheat___Yellow_Rust,2
+Wheat___Brown_Rust,Rice___Brown_Spot,2
+Bacterial Blight,Healthy,1
+Bacterial Blight,Corn___Healthy,1
+Rice___Brown_Spot,Corn___Healthy,1
+Potato___Late_Blight,Wheat___Healthy,1
+Red Rot,Corn___Gray_Leaf_Spot,1
+Corn___Northern_Leaf_Blight,Potato___Early_Blight,1
+Corn___Northern_Leaf_Blight,Corn___Common_Rust,1
+Healthy,Background___Non_Plant,1
+Healthy,Wheat___Healthy,1
+Corn___Healthy,Rice___Neck_Blast,1
+Potato___Late_Blight,Potato___Healthy,1
+Rice___Neck_Blast,Red Rot,1
+Rice___Neck_Blast,Corn___Northern_Leaf_Blight,1
+Wheat___Healthy,Healthy,1
+Wheat___Healthy,Corn___Northern_Leaf_Blight,1
+Wheat___Healthy,Corn___Gray_Leaf_Spot,1
+Wheat___Yellow_Rust,Corn___Northern_Leaf_Blight,1
